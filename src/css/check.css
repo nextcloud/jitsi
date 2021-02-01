@@ -1,0 +1,48 @@
+.tol-check {
+	align-items: start;
+	display: flex;
+}
+
+.tol-check-right {
+	flex: 1
+}
+
+.tol-check-title-row {
+	align-items: center;
+	display: flex;
+}
+
+.tol-check-title {
+	font-weight: bold;
+}
+
+.tol-check-text {
+	margin-bottom: 8px;
+}
+
+.tol-check-help-button {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.tol-check-help-button__icon {
+	height: 16px;
+	margin-right: 8px;
+	width: 16px;
+}
+
+.tol-check-select {
+	width: 100%;
+}
+
+.tol-check-divider {
+	background-color: var(--color-border);
+	border: 0;
+	height: 1px;
+	margin: 16px 0;
+}
+
+.check-result-icon-container {
+	margin-right: 8px;
+}

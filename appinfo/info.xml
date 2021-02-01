@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>jitsi</id>
+    <name>Jitsi Integration</name>
+    <summary>Jitsi Integration (unofficial)</summary>
+    <description><![CDATA[Jitsi Integration]]></description>
+    <version>0.5.0</version>
+    <licence>agpl</licence>
+    <author mail="mail@michael-weimann.eu" homepage="https://weimann.digital/">Michael Weimann</author>
+    <namespace>jitsi</namespace>
+    <category>social</category>
+    <bugs>https://git.weimann.digital/projects/nextcloud-jitsi/issues/list</bugs>
+
+	<settings>
+		<admin>OCA\jitsi\Settings\AdminSettings</admin>
+		<admin-section>OCA\jitsi\Settings\AdminSection</admin-section>
+	</settings>
+
+    <dependencies>
+        <nextcloud min-version="20" max-version="20"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Conferences</name>
+            <route>jitsi.page.index</route>
+        </navigation>
+    </navigations>
+</info>
