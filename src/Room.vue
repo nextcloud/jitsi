@@ -43,7 +43,7 @@
 							class="room__system-test-summary__icon"
 							src="/index.php/svg/core/actions/error?color=ea580c">
 						<div class="room__system-test-summary__title">
-							Probleme erkannt
+							{{ t('jitsi', 'Problems detected') }}
 						</div>
 					</div>
 					<div class="room__system-test-summary__text">
@@ -52,7 +52,7 @@
 								v-if="browserStatus === 'warning'">
 								<b>Browser nicht optimal:</b><br>
 								Bild- und Tonqualität könnten schlecht sein.<br>
-								Wir empfehlen den neusten <b>Chrome</b> <b>Chromium</b>.
+								Empfohlen wird der neuste <b>Chrome</b>/<b>Chromium</b>.
 							</li>
 							<li v-if="browserStatus === 'error'">Browser nicht unterstützt</li>
 						</ul>
