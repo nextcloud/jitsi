@@ -1,3 +1,4 @@
-node_modules
-vendor
-translationtool.phar
+/node_modules
+/vendor
+/translationtool.phar
+/js/*
