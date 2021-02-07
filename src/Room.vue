@@ -541,7 +541,7 @@ export default {
 }
 
 .room__system-test-summary--warning {
-	background-color: #fed7aa;
+	background-color: #eca700;
 }
 
 .room__system-test-summary__title__row {
@@ -558,12 +558,13 @@ export default {
 }
 
 .room__system-test-summary__title {
-	color: #1e293b;
+	color: #222;
 	font-size: 24px;
 	font-weight: bold;
 }
 
 .room__system-test-summary__text {
+	color: #222;
 	margin-bottom: 16px;
 }
 
