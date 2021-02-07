@@ -1,28 +1,29 @@
 <?php
 
-/**
- * @var array $_
- */
+use OCP\IL10N;
 
-// quick hacky low-tec info page about unsupported browsers
+/**
+ * quick hacky low-tec info page about unsupported browsers
+ *
+ * @var array $_
+ * @var IL10N $l
+ */
 
 ?>
 
 <div
 	style="width: 100vw; height: 100vh; background-color: #fff; padding-top: 150px; text-align: center;">
 	<p style="font-size: 24px; color: #767676; margin-bottom: 24px;">
-		Ihr Browser (<?php echo $_['browserName']; ?>) ist veraltet
-		und<br>
-		wird leider nicht mehr unterstützt
+		<?= $l->t('Your browser (%1$s) is outdated and<br>no longer supported', $_['browserName']); ?>
 	</p>
 	<p style="margin-bottom: 4px; color: #000;">
-		Empfohlen wird die neuste Version eines dieser Browser:
+		<?php p($l->t('It is recommended to use the latest version of one of the following browsers:')); ?>
 	</p>
 	<ul style="display: inline-block; text-align: left; color: #000;">
 		<li>• Chrome</li>
 		<li>• Chromium</li>
-		<li>• Edge (ab 79)</li>
+		<li>• Edge (>= 79)</li>
 		<li>• Firefox</li>
-		<li>• Safari (ab 10)</li>
+		<li>• Safari (=> 10)</li>
 	</ul>
 </div>

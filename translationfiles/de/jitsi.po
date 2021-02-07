@@ -1,0 +1,410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Nextcloud package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud 3.14159\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"POT-Creation-Date: 2021-02-07 19:45+0100\n"
+"PO-Revision-Date: 2021-02-07 19:46+0100\n"
+"Last-Translator: Michael Weimann / weeman <mail@michael-weimann.eu>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:1
+msgid "loading…"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:2
+msgid "Server URL (required)"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+msgid "label"
+msgid_plural "jitsi_server_url"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:3
+msgid "JWT Secret (required)"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:4
+msgid "Help link (optional)"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:5
+msgid "save"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+msgid "primary"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:6
+msgid "saved"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:7
+msgid "saving…"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:8
+msgid "Failed to save settings"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:9
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:10
+msgid "Failed to load settings"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "mounted"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "deactivated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "activated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "updated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeCreate"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "created"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeDestroy"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "destroyed"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeMount"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeUpdate"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "trigger"
+msgid_plural "trigger"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:30
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:162
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:269
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:30
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:162
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:269
+msgid "popover"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:311
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:311
+msgid "actions"
+msgid_plural "force-menu"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:311
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:311
+msgid "crumb"
+msgid_plural "crumb"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:416
+msgid "action"
+msgid_plural "action--disabled"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:553
+msgid "focusable"
+msgid_plural "#"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:553
+msgid "icon-confirm"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "avatardiv__user-status"
+msgid_plural "avatardiv__user-status--"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "#"
+msgid_plural "M3.21 3.043H.494l.679-1.177.68-1.176.678 1.176z"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "http://www.w3.org/2000/svg"
+msgid_plural "12"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "avatardiv__status"
+msgid_plural "avatardiv__status--"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "disable-drop"
+msgid_plural "Home"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "empty-room-list__new__button icon-add"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "room-list-item__icon"
+msgid_plural "display-name"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:11
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:14
+msgid "Link copied"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:12
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:15
+msgid "Cannot copy, please copy the link manually"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:13
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:16
+msgid "Copy to clipboard"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "none"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "preload"
+msgid_plural "/index.php/svg/core/actions/audio?color=#000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-test-section"
+msgid_plural "system-test"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__join-app-toggle-icon"
+msgid_plural "room__join-app-toggle-icon--up"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__join-link-input"
+msgid_plural ""
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room"
+msgid_plural "padding-top"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "conferenceContainer"
+msgid_plural "conference-container"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "linkHelper"
+msgid_plural "link-helper"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-checks-permission-denied__icon"
+msgid_plural "error"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-checks-permission-denied__button button secondary"
+msgid_plural "#permissions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-check-help-button__icon"
+msgid_plural "/index.php/svg/core/actions/info?color=000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "button tol-check-help-button"
+msgid_plural "#browser"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "check-result-icon__img"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "check-result-icon"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-check-title-help"
+msgid_plural "#camera"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "video"
+msgid_plural "tol-check-video"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "meter__icon"
+msgid_plural "/index.php/svg/core/actions/audio?color=cccccc"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "meter"
+msgid_plural "meter"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-play-button__icon"
+msgid_plural "/index.php/svg/core/actions/play?color=000000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-checks-permission-denied__message-container"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__system-test-summary__icon"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__system-test-summary__title"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__system-test-summary__title__row"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "button secondary"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__system-test-summary__actions"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "_blank"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__app-instructions-item"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/lib/Search/Provider.php:70
+msgid "conferences"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Jitsi Integration"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "Conferences"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialAppInfoFakeDummyForL10nScript.php:4
+msgid "Jitsi Integration (unofficial)"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/outdated_browser.php:17
+#, php-format
+msgid "Your browser (%1$s) is outdated and<br>no longer supported"
+msgstr "Ihr Browser (%1$s) ist veraltet und<br>wird nicht mehr unterstützt"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/outdated_browser.php:20
+msgid "It is recommended to use the latest version of one of the following browsers:"
+msgstr "Es wird empfohlen die neuste Version eines dieser Browser zu verwenden:"
