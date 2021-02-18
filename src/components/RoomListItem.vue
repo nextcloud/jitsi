@@ -12,7 +12,7 @@
 				<ActionLink
 					:href="roomUrl"
 					icon="icon-play">
-					Teilnehmen
+					{{ t('jitsi', 'Join') }}
 				</ActionLink>
 			</Actions>
 			<Actions ref="copyLinkActions">
@@ -28,7 +28,7 @@
 				<ActionButton
 					icon="icon-delete"
 					@click="deleteRoom">
-					Raum löschen
+					{{ t('jitsi', 'Delete room') }}
 				</ActionButton>
 			</Actions>
 		</div>
@@ -78,8 +78,8 @@ export default {
 		clipboardTooltip() {
 			if (this.copied) {
 				return this.copySuccess
-					? t('jjitsi', 'Link copied')
-					: t('jjitsi', 'Cannot copy, please copy the link manually')
+					? t('jjitsi', this.t('Link copied'))
+					: t('jjitsi', this.t('Cannot copy, please copy the link manually'))
 			}
 			return t('jjitsi', 'Copy to clipboard')
 		},

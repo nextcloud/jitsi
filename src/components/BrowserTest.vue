@@ -7,9 +7,9 @@
 			<div class="tol-check-right">
 				<div class="tol-check-title-row">
 					<div class="tol-check-title">
-						Browser
-						<span v-if="isNonOptimalBrowser"> nicht optimal</span>
-						<span v-if="isNotWorkingBrowser"> nicht untertützt</span>
+						{{ t('jitsi', 'Browser') }}
+						<span v-if="isNonOptimalBrowser"> {{ t('jitsi', 'non-optimal') }}</span>
+						<span v-if="isNotWorkingBrowser"> {{ t('jitsi', 'not supported') }}</span>
 					</div>
 				</div>
 				<div class="tol-check-text">
@@ -18,8 +18,7 @@
 				<div
 					v-if="isNonOptimalBrowser"
 					class="tol-check-text">
-					Bild- und Tonqualität könnten schlecht sein.<br>
-					Wir empfehlen den neusten Chrome oder Chromium.
+					{{ t('jitsi', 'Audio and video quality could be poor.<br> It is recommended to use a recent <b>Chrome/Chromium</b> version.') }}
 				</div>
 				<a
 					class="button tol-check-help-button"
@@ -28,7 +27,7 @@
 					<img
 						class="tol-check-help-button__icon"
 						src="/index.php/svg/core/actions/info?color=000">
-					<div>Hilfe</div>
+					<div>{{ t('jitsi', 'Help') }}</div>
 				</a>
 			</div>
 		</div>

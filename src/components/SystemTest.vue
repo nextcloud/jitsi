@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="tol-system-check-title">
-			Systemprüfung
+			{{ t('jitsi', 'System check') }}
 		</div>
 		<div class="tol-system-checks-container" v-if="!loading && !permissionDenied">
 			<div class="tol-system-check tol-system-check--first">
@@ -34,11 +34,11 @@
 			<div class="tol-system-checks-permission-denied__message-container">
 				<CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error"></CheckStatusIcon>
 				<div class="tol-system-checks-permission-denied__title">
-					Kein Kamera-/ Mikrofonzugriff
+					{{ t('jitsi', 'No camera / microphone access') }}
 				</div>
 			</div>
 			<div class="tol-system-checks-permission-denied__message-container">
-				Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube den Zugriff:<br>
+				{{ t('jitsi', 'Click on the icon on the left in the browser bar next to the URL and allow access:') }}<br>
 			</div>
 			<div style="text-align: center;">
 				<img
@@ -47,12 +47,12 @@
 			</div>
 			<div v-if="$root.helpLink">
 				<div class="tol-system-checks-permission-denied__title2">
-					Klappt nicht?
+					{{ t('jitsi', 'Doesn\'t work?') }}
 				</div>
 				<a
 					:href="$root.helpLink + '#permissions'"
 					class="tol-system-checks-permission-denied__button button secondary">
-					Hier findest du Hilfe zur Fehlerbehebung
+					{{ t('jitsi', 'Click here for trouhleshooting help') }}
 				</a>
 			</div>
 		</div>

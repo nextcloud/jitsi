@@ -6,12 +6,12 @@
 		<div class="tol-check-right">
 			<div class="tol-check-title-row">
 				<div class="tol-check-title">
-					Kamera
+					{{ t('jitsi', 'Camera') }}
 				</div>
 				<a
 					class="tol-check-title-help"
 					:href="$root.helpLink + '#camera'"
-					v-if="$root.helpLink && status !== 'pending' && status !== 'ok'">Hilfe</a>
+					v-if="$root.helpLink && status !== 'pending' && status !== 'ok'">{{ t('jitsi', 'Help') }}</a>
 			</div>
 			<div>
 				<select

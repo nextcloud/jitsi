@@ -1,11 +1,12 @@
 <template>
 	<div class="empty-room-list">
 		<div class="empty-room-list__text">
-			Noch keine Konferenzräume
+			{{ t('jitsi', 'No conference rooms yet') }}
 		</div>
 		<form @submit.prevent="create">
-			<label class="empty-room-list__new__label">Ersten Raum
-				anlegen:</label>
+			<label class="empty-room-list__new__label">
+				{{ t('jitsi', 'Create the first room:') }}
+			</label>
 			<div class="empty-room-list__new__input-container">
 				<input
 					ref="roomNameInput"

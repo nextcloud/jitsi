@@ -5,7 +5,7 @@
 		</Breadcrumbs>
 		<div class="app-title">
 			<h1 class="h1 app-title__text">
-				Konferenzräume
+				{{ t('jitsi', 'Conference rooms') }}
 			</h1>
 			<button
 				v-if="rooms.length > 0"

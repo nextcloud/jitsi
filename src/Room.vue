@@ -26,14 +26,14 @@
 			:style="{ 'padding-top': user ? '46px' : '80px' }"
 			v-if="room">
 			<div class="room__sub-title">
-				Konferenz
+				{{ t('jitsi', 'Conference') }}
 			</div>
 			<h1 class="room__title">
 				{{ room.name }}
 			</h1>
 			<div class="room__join-browser-section">
 				<div v-if="conferenceDone" class="room__done-info">
-					Konferenz verlassen
+					{{ t('jitsi', 'Conference left') }}
 				</div>
 				<div
 					v-if="!systemOk"
@@ -50,18 +50,19 @@
 						<ul class="tol-ul-icons">
 							<li
 								v-if="browserStatus === 'warning'">
-								<b>Browser nicht optimal:</b><br>
-								Bild- und Tonqualität könnten schlecht sein.<br>
-								Empfohlen wird der neuste <b>Chrome</b>/<b>Chromium</b>.
+								<b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
+								{{ t('jitsi', Audio and video quality could be poor.<br> It is recommended to use a recent <b>Chrome/Chromium</b> version.') }}
 							</li>
-							<li v-if="browserStatus === 'error'">Browser nicht unterstützt</li>
+							<li v-if="browserStatus === 'error'">
+								{{ t('jitsi', 'Browser not supported') }}
+							</li>
 						</ul>
 					</div>
 					<div class="room__system-test-summary__actions">
 						<a
 							class="button secondary"
 							href="#system-test">
-							Systemprüfung anzeigen
+							{{ t('jitsi', 'Show system check') }}
 						</a>
 					</div>
 				</div>
@@ -70,7 +71,7 @@
 					v-if="!user">
 					<label
 						class="room__username-label">
-						Benutzername:
+						{{ t('jitsi', 'Your name:') }}
 					</label><br>
 					<input
 						class="room__username-input"
@@ -82,7 +83,7 @@
 					class="primary room__join-button--browser"
 					@click="joinBrowser"
 					:disabled="joining">
-					Hier geht's rein
+					{{ t('jitsi', 'click here to join') }}
 				</button>
 
 				<div class="room__options">
@@ -90,13 +91,13 @@
 						<input
 							class="room__option__checkbox"
 							type="checkbox"
-							v-model="microphoneInActive"> Stummgeschaltet beginnen
+							v-model="microphoneInActive"> {{ t('jitsi', 'Start muted') }}
 					</label>
 					<label class="room__option">
 						<input
 							class="room__option__checkbox"
 							type="checkbox"
-							v-model="cameraInActive"> Kamera zu Beginn aus
+							v-model="cameraInActive"> {{ t('jitsi', 'Start with camera off') }}
 					</label>
 				</div>
 			</div>
@@ -112,7 +113,7 @@
 			<div
 				class="room__join-app-toggle"
 				@click="showJoinApp = !showJoinApp">
-				Mit der Jitsi-App teilnehmen (Beta)
+				{{ t('jitsi', 'Join using the Jitsi app (beta)') }}
 				<img
 					class="room__join-app-toggle-icon"
 					:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
@@ -126,14 +127,14 @@
 						<a
 							target="_blank"
 							href="https://github.com/jitsi/jitsi-meet-electron#installation">
-							Hier App herunterladen ↗
+							{{ t('jitsi', 'Download the app here ↗') }}
 						</a>
 					</li>
 					<li class="room__app-instructions-item">
 						<button
 							v-if="!joinLink"
 							@click="createJoinLink">
-							Teilnahme-Link erstellen
+							{{ t('jitsi', 'Create participation link') }}
 						</button>
 						<span v-if="joinLink" class="room__join-link-container">
 							<input
@@ -151,8 +152,7 @@
 						</span>
 					</li>
 					<li class="room__app-instructions-item">
-						Innerhalb von 60 Sekunden<br>
-						in die Jitsi-App einfügen
+						{{ t('jitsi', 'Paste the link into the app') }}
 					</li>
 				</ol>
 			</div>
@@ -221,10 +221,10 @@ export default {
 		clipboardTooltip() {
 			if (this.copied) {
 				return this.copySuccess
-					? t('jjitsi', 'Link copied')
-					: t('jjitsi', 'Cannot copy, please copy the link manually')
+					? t('jjitsi', this.t('jitsi', 'Link copied'))
+					: t('jjitsi', this.t('jitsi', 'Cannot copy, please copy the link manually'))
 			}
-			return t('jjitsi', 'Copy to clipboard')
+			return t('jjitsi', this.t('jitsi', 'Copy to clipboard'))
 		},
 		systemOk() {
 			if (this.browserStatus && this.browserStatus !== 'ok') {
