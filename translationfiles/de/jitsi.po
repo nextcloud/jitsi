@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2021-02-18 20:55+0100\n"
-"PO-Revision-Date: 2021-02-18 21:11+0100\n"
+"POT-Creation-Date: 2021-02-24 18:17+0100\n"
+"PO-Revision-Date: 2021-02-24 18:18+0100\n"
 "Last-Translator: Michael Weimann / weeman <mail@michael-weimann.eu>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -17,6 +17,523 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3\n"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:1
+msgid "loading…"
+msgstr "laden…"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:2
+msgid "Server URL (required)"
+msgstr "Server URL (Pflichtfeld)"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+msgid "label"
+msgid_plural "jitsi_server_url"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:3
+msgid "JWT Secret (required)"
+msgstr "JWT Secret (Pflichtfeld)"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:4
+msgid "Help link (optional)"
+msgstr "Hilfe-Link (optional)"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:5
+msgid "save"
+msgstr "speichern"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+msgid "primary"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:6
+msgid "saved"
+msgstr "gespeichert"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:7
+msgid "saving…"
+msgstr "speichere…"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:8
+msgid "Failed to save settings"
+msgstr "Fehler beim Speichern der Einstellungen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/admin.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:9
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:10
+msgid "Failed to load settings"
+msgstr "Fehler beim Laden der Einstellungen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "mounted"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "deactivated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "activated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "updated"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeCreate"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "created"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeDestroy"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "destroyed"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeMount"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "beforeUpdate"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:7
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:7
+msgid "trigger"
+msgid_plural "trigger"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:30
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:162
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:269
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:30
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:162
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:269
+msgid "popover"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:311
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:311
+msgid "actions"
+msgid_plural "force-menu"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:311
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:204
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:311
+msgid "crumb"
+msgid_plural "crumb"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:416
+msgid "action"
+msgid_plural "action--disabled"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:553
+msgid "focusable"
+msgid_plural "#"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:553
+msgid "icon-confirm"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "avatardiv__user-status"
+msgid_plural "avatardiv__user-status--"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "#"
+msgid_plural "M3.21 3.043H.494l.679-1.177.68-1.176.678 1.176z"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "http://www.w3.org/2000/svg"
+msgid_plural "12"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:574
+msgid "avatardiv__status"
+msgid_plural "avatardiv__status--"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "disable-drop"
+msgid_plural "Home"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:11
+msgid "Conference rooms"
+msgstr "Konferenzräume"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:36
+msgid "No conference rooms yet"
+msgstr "Noch keine Konferenzräume"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:37
+msgid "Create the first room:"
+msgstr "Ersten Raum anlegen:"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "empty-room-list__new__button icon-add"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "room-list-item__icon"
+msgid_plural "display-name"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:40
+msgid "Join"
+msgstr "Teilnehmen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:41
+msgid "Delete room"
+msgstr "Raum löschen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:28
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:42
+msgid "Copy to clipboard"
+msgstr "In die Zwischenablage kopieren"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/index.js:602
+msgid "none"
+msgid_plural "submit"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "preload"
+msgid_plural "/index.php/svg/core/actions/audio?color=#000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:12
+msgid "Conference"
+msgstr "Konferenz"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:13
+msgid "Conference left"
+msgstr "Konferenz verlassen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__system-test-summary__icon"
+msgid_plural "/index.php/svg/core/actions/error?color=ea580c"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:14
+msgid "Problems detected"
+msgstr "Probleme erkannt"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:15
+msgid "Your browser is non-optimal:"
+msgstr "Browser nicht optimal:"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:16
+msgid "Browser not supported"
+msgstr "Browser nicht unterstützt"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:17
+msgid "Show system check"
+msgstr "Systemprüfung anzeigen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "button secondary"
+msgid_plural "#system-test"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:18
+msgid "Your name:"
+msgstr "Name:"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:19
+msgid "click here to join"
+msgstr "Hier geht's rein"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:20
+msgid "Start muted"
+msgstr "Stummgeschaltet beginnen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:21
+msgid "Start with camera off"
+msgstr "Kamera zu Beginn aus"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-test-section"
+msgid_plural "system-test"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:22
+msgid "Join using the Jitsi app (beta)"
+msgstr "Mit der Jitsi-App teilnehmen (Beta)"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__join-app-toggle-icon"
+msgid_plural "room__join-app-toggle-icon--up"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:23
+msgid "Download the app here ↗"
+msgstr "Hier App herunterladen ↗"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "_blank"
+msgid_plural "https://github.com/jitsi/jitsi-meet-electron#installation"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:24
+msgid "Create participation link"
+msgstr "Teilnahme-Link erstellen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room__join-link-input"
+msgid_plural ""
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:25
+msgid "Paste the link into the app"
+msgstr "In die Jitsi-App einfügen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "room"
+msgid_plural "padding-top"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#, fuzzy
+#| msgid "conferences"
+msgid "conferenceContainer"
+msgid_plural "conference-container"
+msgstr[0] "Konferenzen"
+msgstr[1] "Konferenzen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "linkHelper"
+msgid_plural "link-helper"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:46
+msgid "System check"
+msgstr "Systemprüfung"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-checks-permission-denied__icon"
+msgid_plural "error"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:47
+msgid "No camera / microphone access"
+msgstr "Kein Kamera-/ Mikrofonzugriff"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:48
+msgid ""
+"Click on the icon on the left in the browser bar next to the URL and allow "
+"access:"
+msgstr ""
+"Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube den "
+"Zugriff:"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:49
+msgid "Doesn't work?"
+msgstr "Klappt nicht?"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:50
+msgid "Click here for trouhleshooting help"
+msgstr "Hier findest du Hilfe zur Fehlerbehebung"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-system-checks-permission-denied__button button secondary"
+msgid_plural "#permissions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:29
+msgid "Browser"
+msgstr "Browser"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:30
+msgid "non-optimal"
+msgstr "nicht optimal"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:31
+msgid "not supported"
+msgstr "nicht untertützt"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-check-help-button__icon"
+msgid_plural "/index.php/svg/core/actions/info?color=000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:33
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:35
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:39
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:44
+msgid "Help"
+msgstr "Hilfe"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "button tol-check-help-button"
+msgid_plural "#browser"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "check-result-icon__img"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "check-result-icon"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:34
+msgid "Camera"
+msgstr "Kamera"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-check-title-help"
+msgid_plural "#camera"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "video"
+msgid_plural "tol-check-video"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:38
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "meter__icon"
+msgid_plural "/index.php/svg/core/actions/audio?color=cccccc"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "meter"
+msgid_plural "meter"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:43
+msgid "Audio output"
+msgstr "Audio Ausgabe"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+msgid "tol-play-button__icon"
+msgid_plural "/index.php/svg/core/actions/play?color=000000"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:45
+msgid "Play test sound"
+msgstr "Ton abspielen"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:26
+msgid "Link copied"
+msgstr "Link kopiert"
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/js/room.js:381
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:27
+msgid "Cannot copy, please copy the link manually"
+msgstr "Fehler, bitte Link manuell kopieren"
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/lib/Search/Provider.php:70
 msgid "conferences"
@@ -34,198 +551,13 @@ msgstr "Konferenzen"
 msgid "Jitsi Integration (unofficial)"
 msgstr "Jitsi Integration (inoffiziell)"
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:1
-msgid "loading…"
-msgstr "laden…"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:2
-msgid "Server URL (required)"
-msgstr "Server URL (Pflichtfeld)"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:3
-msgid "JWT Secret (required)"
-msgstr "JWT Secret (Pflichtfeld)"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:4
-msgid "Help link (optional)"
-msgstr "Hilfe-Link (optional)"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:5
-msgid "save"
-msgstr "speichern"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:6
-msgid "saved"
-msgstr "gespeichert"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:7
-msgid "saving…"
-msgstr "speichere…"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:8
-msgid "Failed to save settings"
-msgstr "Fehler beim Speichern der Einstellungen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:9
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:10
-msgid "Failed to load settings"
-msgstr "Fehler beim Laden der Einstellungen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:11
-msgid "Conference rooms"
-msgstr "Konferenzräume"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:12
-msgid "Conference"
-msgstr "Konferenz"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:13
-msgid "Conference left"
-msgstr "Konferenz verlassen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:14
-msgid "Problems detected"
-msgstr "Probleme erkannt"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:15
-msgid "Your browser is non-optimal:"
-msgstr "Browser nicht optimal:"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:16
-msgid "Browser not supported"
-msgstr "Browser nicht unterstützt"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:17
-msgid "Show system check"
-msgstr "Systemprüfung anzeigen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:18
-msgid "Your name:"
-msgstr "Name:"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:19
-msgid "click here to join"
-msgstr "Hier geht's rein"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:20
-msgid "Start muted"
-msgstr "Stummgeschaltet beginnen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:21
-msgid "Start with camera off"
-msgstr "Kamera zu Beginn aus"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:22
-msgid "Join using the Jitsi app (beta)"
-msgstr "Mit der Jitsi-App teilnehmen (Beta)"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:23
-msgid "Download the app here ↗"
-msgstr "Hier App herunterladen ↗"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:24
-msgid "Create participation link"
-msgstr "Teilnahme-Link erstellen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:25
-msgid "Paste the link into the app"
-msgstr "In die Jitsi-App einfügen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:26
-msgid "Link copied"
-msgstr "Link kopiert"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:27
-msgid "Cannot copy, please copy the link manually"
-msgstr "Fehler, bitte Link manuell kopieren"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:28
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:42
-msgid "Copy to clipboard"
-msgstr "In die Zwischenablage kopieren"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:29
-msgid "Browser"
-msgstr "Browser"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:30
-msgid "non-optimal"
-msgstr "nicht optimal"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:31
-msgid "not supported"
-msgstr "nicht untertützt"
-
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:32
 msgid ""
 "Audio and video quality could be poor.<br> It is recommended to use a recent "
-"<b>Chrome/Chromium</b> version."
+"<b>Firefox/Chrome/Chromium</b> version."
 msgstr ""
 "Bild- und Tonqualität könnten schlecht sein.<br>Empfohlen wird der neuste "
-"<b>Chrome</b>/<b>Chromium</b>."
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:33
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:35
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:39
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:44
-msgid "Help"
-msgstr "Hilfe"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:34
-msgid "Camera"
-msgstr "Kamera"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:36
-msgid "No conference rooms yet"
-msgstr "Noch keine Konferenzräume"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:37
-msgid "Create the first room:"
-msgstr "Ersten Raum anlegen:"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:38
-msgid "Microphone"
-msgstr "Mikrofon"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:40
-msgid "Join"
-msgstr "Teilnehmen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:41
-msgid "Delete room"
-msgstr "Raum löschen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:43
-msgid "Audio output"
-msgstr "Audio Ausgabe"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:45
-msgid "Play test sound"
-msgstr "Ton abspielen"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:46
-msgid "System check"
-msgstr "Systemprüfung"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:47
-msgid "No camera / microphone access"
-msgstr "Kein Kamera-/ Mikrofonzugriff"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:48
-msgid ""
-"Click on the icon on the left in the browser bar next to the URL and allow "
-"access:"
-msgstr ""
-"Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube den "
-"Zugriff:"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:49
-msgid "Doesn't work?"
-msgstr "Klappt nicht?"
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:50
-msgid "Click here for trouhleshooting help"
-msgstr "Hier findest du Hilfe zur Fehlerbehebung"
+"<b>Firefox/Chrome/Chromium</b>."
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/outdated_browser.php:17
 #, php-format

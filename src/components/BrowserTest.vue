@@ -18,7 +18,7 @@
 				<div
 					v-if="isNonOptimalBrowser"
 					class="tol-check-text">
-					{{ t('jitsi', 'Audio and video quality could be poor.<br> It is recommended to use a recent <b>Chrome/Chromium</b> version.') }}
+					{{ t('jitsi', 'Audio and video quality could be poor.<br> It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version.') }}
 				</div>
 				<a
 					class="button tol-check-help-button"
@@ -41,12 +41,11 @@ import CheckStatusIcon from "./CheckStatusIcon";
 const OPTIMAL_BROWSERS = {
 	chrome: '>=78',
 	edge: '>=79',
+	firefox: '>=78',
 	safari: '>=10',
 }
 
-const NON_OPTIMAL_BROWSERS = {
-	firefox: '>=78',
-}
+const NON_OPTIMAL_BROWSERS = {}
 
 const NOT_WORKING_BROWSERS = {
 	'internet explorer': '*',
