@@ -2,7 +2,7 @@
     "name": "weimann.digital/nextcloud-jitsi",
     "description": "Nextcloud Jitsi Integration",
     "type": "project",
-    "license": "AGPL",
+    "license": "AGPL-3.0-or-later",
     "authors": [
         {
             "name": "Michael Weimann"
