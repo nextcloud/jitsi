@@ -4,14 +4,14 @@
 			<fieldset :disabled="saving">
 				<SettingsSection title="Jitsi">
 					<div v-if="loading">
-						{{ t('jitsi_settings', 'loading…') }}
+						{{ t('jitsi', 'loading…') }}
 					</div>
 					<div v-if="!loading">
-						<p>
+						<p class="group">
 							<label
 								for="jitsi_server_url"
 								class="label">
-								{{ t('jitsi_settings', 'Server URL (required)') }}
+								{{ t('jitsi', 'Server URL (required)') }}
 							</label>
 							<input
 								id="jitsi_server_url"
@@ -19,11 +19,11 @@
 								class="input"
 								type="text">
 						</p>
-						<p>
+						<p class="group">
 							<label
 								for="jitsi_jwt_secret"
 								class="label">
-								{{ t('jitsi_settings', 'JWT Secret (required)') }}
+								{{ t('jitsi', 'JWT Secret (required)') }}
 							</label>
 							<input
 								id="jitsi_jwt_secret"
@@ -31,11 +31,11 @@
 								class="input"
 								type="text">
 						</p>
-						<p>
+						<p class="group">
 							<label
 								for="jitsi_help_link"
 								class="label">
-								{{ t('jitsi_settings', 'Help link (optional)') }}
+								{{ t('jitsi', 'Help link (optional)') }}
 							</label>
 							<input
 								id="jitsi_help_link"
@@ -43,22 +43,34 @@
 								class="input"
 								type="text">
 						</p>
-						<p>
+						<p class="group">
+							<label
+								for="display_join_using_the_jitsi_app"
+								class="label">
+								{{ t('jitsi', 'Display "Join using the Jitsi app"') }}
+							</label>
+							<input
+								id="display_join_using_the_jitsi_app"
+								class="admin-checkbox"
+								v-model="displayJoinUsingTheJitsiApp"
+								type="checkbox">
+						</p>
+						<p class="group">
 							<button
 								type="submit"
 								class="primary"
 								:disabled="saving">
-								{{ t('jitsi_settings', 'save') }}
+								{{ t('jitsi', 'save') }}
 							</button>
 							<span
 								v-if="!saving && saved"
 								class="msg success">
-								{{ t('jitsi_settings', 'saved') }}
+								{{ t('jitsi', 'saved') }}
 							</span>
 							<span
 								v-if="saving"
 								class="msg">
-								{{ t('jitsi_settings', 'saving…') }}
+								{{ t('jitsi', 'saving…') }}
 							</span>
 						</p>
 					</div>
@@ -86,12 +98,17 @@ export default {
 			jwtSecret: '',
 			serverUrl: '',
 			helpLink: '',
+			rawDisplayJoinUsingTheJitsiApp: 0,
 		}
 	},
 	async created() {
 		this.jwtSecret = await this.loadSetting('jwt_secret')
 		this.serverUrl = await this.loadSetting('server_url')
 		this.helpLink = await this.loadSetting('help_link')
+
+		const rawDisplayJoinUsingTheJitsiApp = await this.loadSetting('display_join_using_the_jitsi_app', 1)
+		this.rawDisplayJoinUsingTheJitsiApp = parseInt(rawDisplayJoinUsingTheJitsiApp, 10)
+
 		this.loading = false
 	},
 	methods: {
@@ -103,6 +120,7 @@ export default {
 				this.updateSetting('server_url', this.serverUrl),
 				this.updateSetting('jwt_secret', this.jwtSecret),
 				this.updateSetting('help_link', this.helpLink),
+				this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
 			])
 
 			this.saving = false
@@ -121,10 +139,10 @@ export default {
 				throw e
 			}
 		},
-		async loadSetting(name) {
+		async loadSetting(name, defaultValue = null) {
 			try {
 				const resDocument = await new Promise((resolve, reject) =>
-					OCP.AppConfig.getValue('jitsi', name, null, {
+					OCP.AppConfig.getValue('jitsi', name, defaultValue, {
 						success: resolve,
 						error: reject,
 					})
@@ -142,10 +160,25 @@ export default {
 			}
 		},
 	},
+	computed: {
+		displayJoinUsingTheJitsiApp: {
+			get() {
+				return this.rawDisplayJoinUsingTheJitsiApp === 1
+			},
+			set(value) {
+				this.rawDisplayJoinUsingTheJitsiApp = value ? 1: 0
+			}
+		}
+	}
 }
 </script>
 
 <style scoped>
+.group {
+	align-items: center;
+	display: flex;
+}
+
 .label {
 	display: block;
 	width: 100%;
@@ -156,16 +189,15 @@ export default {
 	width: 100%;
 }
 
-.msg {
-	display: inline-block;
-	margin-top: 10px;
+.admin-checkbox {
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
 	.label {
 		display: inline-block;
 		margin-right: 10px;
-		width: 175px;
+		width: 200px;
 	}
 
 	.input {
@@ -174,7 +206,7 @@ export default {
 	}
 
 	button.primary {
-		margin-left: 113px;
+		margin-left: 210px;
 	}
 }
 

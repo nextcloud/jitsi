@@ -110,33 +110,34 @@
 				@speakerSelected="onSpeakerSelected">
 			</SystemTest>
 
-			<div
-				class="room__join-app-toggle"
-				@click="showJoinApp = !showJoinApp">
-				{{ t('jitsi', 'Join using the Jitsi app (beta)') }}
-				<img
-					class="room__join-app-toggle-icon"
-					:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
-					src="/index.php/svg/core/actions/caret?color=000000">
-			</div>
-			<div
-				class="room__join-app-section"
-				v-if="showJoinApp">
-				<ol class="room__app-instructions">
-					<li class="room__app-instructions-item">
-						<a
-							target="_blank"
-							href="https://github.com/jitsi/jitsi-meet-electron#installation">
-							{{ t('jitsi', 'Download the app here ↗') }}
-						</a>
-					</li>
-					<li class="room__app-instructions-item">
-						<button
-							v-if="!joinLink"
-							@click="createJoinLink">
-							{{ t('jitsi', 'Create participation link') }}
-						</button>
-						<span v-if="joinLink" class="room__join-link-container">
+			<template v-if="displayJoinUsingTheJitsiApp">
+				<div
+					class="room__join-app-toggle"
+					@click="showJoinApp = !showJoinApp">
+					{{ t('jitsi', 'Join using the Jitsi app (beta)') }}
+					<img
+						class="room__join-app-toggle-icon"
+						:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
+						src="/index.php/svg/core/actions/caret?color=000000">
+				</div>
+				<div
+					class="room__join-app-section"
+					v-if="showJoinApp">
+					<ol class="room__app-instructions">
+						<li class="room__app-instructions-item">
+							<a
+								target="_blank"
+								href="https://github.com/jitsi/jitsi-meet-electron#installation">
+								{{ t('jitsi', 'Download the app here ↗') }}
+							</a>
+						</li>
+						<li class="room__app-instructions-item">
+							<button
+								v-if="!joinLink"
+								@click="createJoinLink">
+								{{ t('jitsi', 'Create participation link') }}
+							</button>
+							<span v-if="joinLink" class="room__join-link-container">
 							<input
 								class="room__join-link-input"
 								:value="joinLink"
@@ -150,12 +151,13 @@
 								</ActionLink>
 							</Actions>
 						</span>
-					</li>
-					<li class="room__app-instructions-item">
-						{{ t('jitsi', 'Paste the link into the app') }}
-					</li>
-				</ol>
-			</div>
+						</li>
+						<li class="room__app-instructions-item">
+							{{ t('jitsi', 'Paste the link into the app') }}
+						</li>
+					</ol>
+				</div>
+			</template>
 		</div>
 		<div
 			ref="conferenceContainer"
@@ -209,7 +211,8 @@ export default {
 			selectedMicrophone: null,
 			selectedSpeaker: null,
 			permissionDenied: false,
-			browserStatus: null
+			browserStatus: null,
+			displayJoinUsingTheJitsiApp: true
 		}
 	},
 	computed: {
@@ -247,6 +250,7 @@ export default {
 		const jitsiEle = document.getElementById('jitsi')
 		this.serverUrl = jitsiEle.dataset.serverUrl
 		this.$root.helpLink = jitsiEle.dataset.helpLink
+		this.displayJoinUsingTheJitsiApp = jitsiEle.dataset.displayJoinUsingTheJitsiApp === 'true'
 		const url = new URL(this.serverUrl)
 		this.serverHost = url.host
 

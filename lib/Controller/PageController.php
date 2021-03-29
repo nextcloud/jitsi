@@ -2,6 +2,7 @@
 
 namespace OCA\jitsi\Controller;
 
+use OCA\jitsi\AppInfo\Application;
 use OCA\jitsi\Db\RoomMapper;
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\FeaturePolicy;
@@ -68,6 +69,11 @@ class PageController extends AbstractController
 		$room = $this->roomMapper->findOneByPublicId($publicId);
 		$serverUrl = $this->config->getAppValue('jitsi', 'server_url');
 		$helpLink = $this->config->getAppValue('jitsi', 'help_link');
+		$displayJoinUsingTheJitsiApp = $this->config->getAppValue(
+			Application::APP_ID,
+			'display_join_using_the_jitsi_app',
+			true
+		);
 		$loggedIn = $this->userSession->isLoggedIn();
 
 		$renderAs = $loggedIn ? 'user' : 'public';
@@ -76,10 +82,10 @@ class PageController extends AbstractController
 			'jitsi',
 			'room',
 			[
-				'loggedIn'    => $loggedIn,
-				'serverUrl'   => $serverUrl,
-				'helpLink'    => $helpLink,
-				'appUrl'      => $appUrl,
+				'loggedIn' => $loggedIn,
+				'serverUrl' => $serverUrl,
+				'helpLink' => $helpLink,
+				'display_join_using_the_jitsi_app' => $displayJoinUsingTheJitsiApp,
 			],
 			$renderAs
 		);
