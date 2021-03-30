@@ -19,11 +19,6 @@ class PageController extends AbstractController
 	 */
 	private $roomMapper;
 
-	/**
-	 * @var IConfig
-	 */
-	private $config;
-
 	public function __construct(
 		$AppName,
 		IRequest $request,
@@ -31,7 +26,7 @@ class PageController extends AbstractController
 		IUserSession $userSession,
 		IConfig $config
 	) {
-		parent::__construct($AppName, $request, $userSession);
+		parent::__construct($AppName, $request, $userSession, $config);
 		$this->roomMapper = $roomMapper;
 		$this->config = $config;
 	}
@@ -52,6 +47,10 @@ class PageController extends AbstractController
 			return $checkBrowserResult;
 		}
 
+		if (($checkConfiguredResult = $this->checkConfigured()) !== null) {
+			return $checkConfiguredResult;
+		}
+
 		return new TemplateResponse('jitsi', 'index');
 	}
 
@@ -64,6 +63,10 @@ class PageController extends AbstractController
 	{
 		if (($checkBrowserResult = $this->checkBrowser()) !== null) {
 			return $checkBrowserResult;
+		}
+
+		if (($checkConfiguredResult = $this->checkConfigured()) !== null) {
+			return $checkConfiguredResult;
 		}
 
 		$room = $this->roomMapper->findOneByPublicId($publicId);
@@ -115,7 +118,10 @@ class PageController extends AbstractController
 
 	private function determineServiceUrl(): string
 	{
-		return $this->config->getAppValue('jitsi', 'server_url');
+		return $this->config->getAppValue(
+			Application::APP_ID,
+			Application::SETTING_SERVER_URL
+		);
 	}
 
 	private function determineJitsiHost(): string

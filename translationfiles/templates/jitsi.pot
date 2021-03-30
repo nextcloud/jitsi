@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2021-03-29 21:58+0200\n"
+"POT-Creation-Date: 2021-03-30 18:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,6 +224,14 @@ msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:51
 msgid "Click here for trouhleshooting help"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/incomplete_settings.php:17
+msgid "Conferences app not yet configured"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/incomplete_settings.php:20
+msgid "Please contact your administrator to set up the conferences app."
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/templates/outdated_browser.php:17

@@ -6,7 +6,6 @@ use Ahc\Jwt\JWT;
 use OCA\jitsi\AppInfo\Application;
 use OCA\jitsi\Db\Room;
 use OCA\jitsi\Db\RoomMapper;
-use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\IConfig;
 use OCP\IRequest;
@@ -14,7 +13,7 @@ use OCP\IUserSession;
 
 use function uniqid;
 
-class RoomController extends Controller
+class RoomController extends AbstractController
 {
 	/**
 	 * @var RoomMapper
@@ -26,16 +25,6 @@ class RoomController extends Controller
 	 */
 	private $userId;
 
-	/**
-	 * @var IUserSession
-	 */
-	private $userSession;
-
-	/**
-	 * @var IConfig
-	 */
-	private $config;
-
 	public function __construct(
 		string $AppName,
 		IRequest $request,
@@ -44,11 +33,9 @@ class RoomController extends Controller
 		IUserSession $userSession,
 		IConfig $config
 	) {
-		parent::__construct($AppName, $request);
+		parent::__construct($AppName, $request, $userSession, $config);
 		$this->roomMapper = $roomMapper;
 		$this->userId = $UserId;
-		$this->userSession = $userSession;
-		$this->config = $config;
 	}
 
 	/**
@@ -92,7 +79,9 @@ class RoomController extends Controller
 	 */
 	public function get(string $publicId): DataResponse
 	{
-		return new DataResponse($this->roomMapper->findOneByPublicId($publicId));
+		return new DataResponse(
+			$this->roomMapper->findOneByPublicId($publicId)
+		);
 	}
 
 	/**

@@ -2,8 +2,11 @@
 
 namespace OCA\jitsi\Controller;
 
+use Browser;
+use OCA\jitsi\AppInfo\Application;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\TemplateResponse;
+use OCP\IConfig;
 use OCP\IRequest;
 use OCP\IUserSession;
 
@@ -14,13 +17,20 @@ abstract class AbstractController extends Controller
 	 */
 	protected $userSession;
 
+	/**
+	 * @var IConfig
+	 */
+	protected $config;
+
 	public function __construct(
 		string $AppName,
 		IRequest $request,
-		IUserSession $userSession
+		IUserSession $userSession,
+		IConfig $config
 	) {
 		parent::__construct($AppName, $request);
 		$this->userSession = $userSession;
+		$this->config = $config;
 	}
 
 	protected function checkBrowser(): ?TemplateResponse
@@ -44,14 +54,55 @@ abstract class AbstractController extends Controller
 
 	private function gatherBrowserInfo(): array
 	{
-		$browser = new \Browser();
+		$browser = new Browser();
+		$browserName = $browser->getBrowser();
+		$browserVersion = $browser->getVersion();
+
 		return [
-			'name' => sprintf('%s %s', $browser->getBrowser(), $browser->getVersion()),
+			'name' => sprintf(
+				'%s %s',
+				$browserName,
+				$browserVersion
+			),
 			'supported' => !(
-				$browser->getBrowser() === \Browser::BROWSER_IE ||
-				($browser->getBrowser() === \Browser::BROWSER_EDGE && $browser->getVersion() < 79) ||
-				($browser->getBrowser() === \Browser::BROWSER_SAFARI && $browser->getVersion() < 10)
+				$browserName === Browser::BROWSER_IE ||
+				($browserName === Browser::BROWSER_EDGE && $browserVersion < 79) ||
+				($browserName === Browser::BROWSER_SAFARI && $browserVersion < 10)
 			)
 		];
+	}
+
+	protected function checkConfigured(): ?TemplateResponse
+	{
+		if ($this->isConfigured()) {
+			return null;
+		}
+
+		$loggedIn = $this->userSession->isLoggedIn();
+		$renderAs = $loggedIn ? 'user' : 'public';
+
+		return new TemplateResponse(
+			'jitsi',
+			'incomplete_settings',
+			[],
+			$renderAs
+		);
+	}
+
+	private function isConfigured(): bool
+	{
+		$serverUrl = $this->config->getAppValue(
+			Application::APP_ID,
+			Application::SETTING_SERVER_URL,
+			null
+		);
+
+		$jwtSecret = $this->config->getAppValue(
+			Application::APP_ID,
+			Application::SETTING_JWT_SECRET,
+			null
+		);
+
+		return !empty($serverUrl) && !empty($jwtSecret);
 	}
 }
