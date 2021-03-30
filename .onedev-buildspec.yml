@@ -1,0 +1,70 @@
+version: 2
+jobs:
+- name: Frontend build
+  image: node:14-buster-slim
+  commands:
+  - npm ci
+  - npm run build
+  - rm -Rf node_modules
+  retrieveSource: true
+  cloneCredential: !DefaultCredential {}
+  artifacts: js/*
+  cpuRequirement: 250m
+  memoryRequirement: 128m
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  caches:
+  - key: npm
+    path: /root/.npm
+  timeout: 3600
+  postBuildActions:
+  - !RunJobAction
+    condition: successful
+    jobName: Composer dependencies
+- name: Composer dependencies
+  image: composer/composer:2
+  commands:
+  - composer i --no-dev --ignore-platform-reqs
+  retrieveSource: true
+  cloneCredential: !DefaultCredential {}
+  jobDependencies:
+  - jobName: Frontend build
+    requireSuccessful: true
+    artifacts: js/*
+  artifacts: js/* vendor/**
+  cpuRequirement: 250m
+  memoryRequirement: 128m
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  caches:
+  - key: composer
+    path: /root/.cache/composer
+  timeout: 3600
+  postBuildActions:
+  - !RunJobAction
+    condition: successful
+    jobName: Pack
+- name: Pack
+  image: debian:buster-slim
+  commands:
+  - rm -Rf translationfiles
+  - rm -Rf tests
+  - rm .eslintrc .composer.* Makefile package* phpunit.* webpack.config.js
+  - mkdir jitsi
+  - mv * jitsi
+  - tar cfz nextcloud-jitsi.tar.gz jitsi
+  retrieveSource: true
+  cloneCredential: !DefaultCredential {}
+  jobDependencies:
+  - jobName: Composer dependencies
+    requireSuccessful: true
+    artifacts: js/* vendor/**
+  artifacts: nextcloud-jitsi.tar.gz
+  cpuRequirement: 250m
+  memoryRequirement: 128m
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 3600
