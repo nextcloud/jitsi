@@ -5,7 +5,7 @@
     <name>Jitsi Integration</name>
     <summary>Jitsi Integration (unofficial)</summary>
     <description><![CDATA[Jitsi Integration]]></description>
-    <version>0.5.2</version>
+    <version>0.9.0</version>
     <licence>agpl</licence>
     <author mail="mail@michael-weimann.eu" homepage="https://weimann.digital/">Michael Weimann</author>
     <namespace>jitsi</namespace>
@@ -18,7 +18,7 @@
 	</settings>
 
     <dependencies>
-        <nextcloud min-version="20" max-version="20"/>
+        <nextcloud min-version="20" max-version="21"/>
     </dependencies>
     <navigations>
         <navigation>
