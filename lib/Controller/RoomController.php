@@ -6,6 +6,7 @@ use Ahc\Jwt\JWT;
 use OCA\jitsi\AppInfo\Application;
 use OCA\jitsi\Db\Room;
 use OCA\jitsi\Db\RoomMapper;
+use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\IConfig;
 use OCP\IRequest;
@@ -79,6 +80,12 @@ class RoomController extends AbstractController
 	 */
 	public function get(string $publicId): DataResponse
 	{
+		$room = $this->roomMapper->findOneByPublicId($publicId);
+
+		if ($room === null) {
+			return new DataResponse([], Http::STATUS_NOT_FOUND);
+		}
+
 		return new DataResponse(
 			$this->roomMapper->findOneByPublicId($publicId)
 		);

@@ -119,7 +119,7 @@ export default {
 					audio: {deviceId: this.selectedMicrophone.deviceId}
 				})
 			} catch (err) {
-				console.log(err)
+				// console.log(err)
 
 				if (err.name === 'NotAllowedError') {
 					this.status = 'error'

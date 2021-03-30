@@ -19,125 +19,127 @@
 
 		<Breadcrumbs v-if="user">
 			<Breadcrumb :disable-drop="true" title="Home" :href="appHomeUrl"/>
-			<Breadcrumb :disable-drop="true" :title="room.name"/>
+			<Breadcrumb :disable-drop="true" :title="room ? room.name : '?'"/>
 		</Breadcrumbs>
-		<div
-			class="room"
-			:style="{ 'padding-top': user ? '46px' : '80px' }"
-			v-if="room">
-			<div class="room__sub-title">
-				{{ t('jitsi', 'Conference') }}
-			</div>
-			<h1 class="room__title">
-				{{ room.name }}
-			</h1>
-			<div class="room__join-browser-section">
-				<div v-if="conferenceDone" class="room__done-info">
-					{{ t('jitsi', 'Conference left') }}
+
+		<div v-if="ready">
+			<div
+				class="room"
+				:style="{ 'padding-top': user ? '46px' : '80px' }"
+				v-if="room">
+				<div class="room__sub-title">
+					{{ t('jitsi', 'Conference') }}
 				</div>
-				<div
-					v-if="!systemOk"
-					class="room__system-test-summary room__system-test-summary--warning">
-					<div class="room__system-test-summary__title__row">
-						<img
-							class="room__system-test-summary__icon"
-							src="/index.php/svg/core/actions/error?color=ea580c">
-						<div class="room__system-test-summary__title">
-							{{ t('jitsi', 'Problems detected') }}
+				<h1 class="room__title">
+					{{ room.name }}
+				</h1>
+				<div class="room__join-browser-section">
+					<div v-if="conferenceDone" class="room__done-info">
+						{{ t('jitsi', 'Conference left') }}
+					</div>
+					<div
+						v-if="!systemOk"
+						class="room__system-test-summary room__system-test-summary--warning">
+						<div class="room__system-test-summary__title__row">
+							<img
+								class="room__system-test-summary__icon"
+								src="/index.php/svg/core/actions/error?color=ea580c">
+							<div class="room__system-test-summary__title">
+								{{ t('jitsi', 'Problems detected') }}
+							</div>
+						</div>
+						<div class="room__system-test-summary__text">
+							<ul class="tol-ul-icons">
+								<li
+									v-if="browserStatus === 'warning'">
+									<b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
+									<span v-html="t('jitsi', 'Audio and video quality could be poor. It is recommended to use a recent <b>Firefox / Chrome / Chromium</b> version.')"></span>
+								</li>
+								<li v-if="browserStatus === 'error'">
+									{{ t('jitsi', 'Browser not supported') }}
+								</li>
+							</ul>
+						</div>
+						<div class="room__system-test-summary__actions">
+							<a
+								class="button secondary"
+								href="#system-test">
+								{{ t('jitsi', 'Show system check') }}
+							</a>
 						</div>
 					</div>
-					<div class="room__system-test-summary__text">
-						<ul class="tol-ul-icons">
-							<li
-								v-if="browserStatus === 'warning'">
-								<b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
-								{{ t('jitsi', Audio and video quality could be poor.<br> It is recommended to use a recent <b>Chrome/Chromium</b> version.') }}
-							</li>
-							<li v-if="browserStatus === 'error'">
-								{{ t('jitsi', 'Browser not supported') }}
-							</li>
-						</ul>
-					</div>
-					<div class="room__system-test-summary__actions">
-						<a
-							class="button secondary"
-							href="#system-test">
-							{{ t('jitsi', 'Show system check') }}
-						</a>
-					</div>
-				</div>
-				<div
-					class="room__username"
-					v-if="!user">
-					<label
-						class="room__username-label">
-						{{ t('jitsi', 'Your name:') }}
-					</label><br>
-					<input
-						class="room__username-input"
-						type="text"
-						maxlength="20"
-						v-model="userName">
-				</div>
-				<button
-					class="primary room__join-button--browser"
-					@click="joinBrowser"
-					:disabled="joining">
-					{{ t('jitsi', 'click here to join') }}
-				</button>
-
-				<div class="room__options">
-					<label class="room__option">
+					<div
+						class="room__username"
+						v-if="!user">
+						<label
+							class="room__username-label">
+							{{ t('jitsi', 'Your name:') }}
+						</label><br>
 						<input
-							class="room__option__checkbox"
-							type="checkbox"
-							v-model="microphoneInActive"> {{ t('jitsi', 'Start muted') }}
-					</label>
-					<label class="room__option">
-						<input
-							class="room__option__checkbox"
-							type="checkbox"
-							v-model="cameraInActive"> {{ t('jitsi', 'Start with camera off') }}
-					</label>
-				</div>
-			</div>
+							class="room__username-input"
+							type="text"
+							maxlength="20"
+							v-model="userName">
+					</div>
+					<button
+						class="primary room__join-button--browser"
+						@click="joinBrowser"
+						:disabled="joining">
+						{{ t('jitsi', 'click here to join') }}
+					</button>
 
-			<SystemTest
-				id="system-test"
-				class="tol-system-test-section"
-				@microphoneSelected="onMicrophoneSelected"
-				@cameraSelected="onCameraSelected"
-				@speakerSelected="onSpeakerSelected">
-			</SystemTest>
-
-			<template v-if="displayJoinUsingTheJitsiApp">
-				<div
-					class="room__join-app-toggle"
-					@click="showJoinApp = !showJoinApp">
-					{{ t('jitsi', 'Join using the Jitsi app (beta)') }}
-					<img
-						class="room__join-app-toggle-icon"
-						:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
-						src="/index.php/svg/core/actions/caret?color=000000">
+					<div class="room__options">
+						<label class="room__option">
+							<input
+								class="room__option__checkbox"
+								type="checkbox"
+								v-model="microphoneInActive"> {{ t('jitsi', 'Start muted') }}
+						</label>
+						<label class="room__option">
+							<input
+								class="room__option__checkbox"
+								type="checkbox"
+								v-model="cameraInActive"> {{ t('jitsi', 'Start with camera off') }}
+						</label>
+					</div>
 				</div>
-				<div
-					class="room__join-app-section"
-					v-if="showJoinApp">
-					<ol class="room__app-instructions">
-						<li class="room__app-instructions-item">
-							<a
-								target="_blank"
-								href="https://github.com/jitsi/jitsi-meet-electron#installation">
-								{{ t('jitsi', 'Download the app here ↗') }}
-							</a>
-						</li>
-						<li class="room__app-instructions-item">
-							<button
-								v-if="!joinLink"
-								@click="createJoinLink">
-								{{ t('jitsi', 'Create participation link') }}
-							</button>
-							<span v-if="joinLink" class="room__join-link-container">
+
+				<SystemTest
+					id="system-test"
+					class="tol-system-test-section"
+					@microphoneSelected="onMicrophoneSelected"
+					@cameraSelected="onCameraSelected"
+					@speakerSelected="onSpeakerSelected">
+				</SystemTest>
+
+				<template v-if="displayJoinUsingTheJitsiApp">
+					<div
+						class="room__join-app-toggle"
+						@click="showJoinApp = !showJoinApp">
+						{{ t('jitsi', 'Join using the Jitsi app (beta)') }}
+						<img
+							class="room__join-app-toggle-icon"
+							:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
+							src="/index.php/svg/core/actions/caret?color=000000">
+					</div>
+					<div
+						class="room__join-app-section"
+						v-if="showJoinApp">
+						<ol class="room__app-instructions">
+							<li class="room__app-instructions-item">
+								<a
+									target="_blank"
+									href="https://github.com/jitsi/jitsi-meet-electron#installation">
+									{{ t('jitsi', 'Download the app here ↗') }}
+								</a>
+							</li>
+							<li class="room__app-instructions-item">
+								<button
+									v-if="!joinLink"
+									@click="createJoinLink">
+									{{ t('jitsi', 'Create participation link') }}
+								</button>
+								<span v-if="joinLink" class="room__join-link-container">
 							<input
 								class="room__join-link-input"
 								:value="joinLink"
@@ -151,22 +153,24 @@
 								</ActionLink>
 							</Actions>
 						</span>
-						</li>
-						<li class="room__app-instructions-item">
-							{{ t('jitsi', 'Paste the link into the app') }}
-						</li>
-					</ol>
-				</div>
-			</template>
+							</li>
+							<li class="room__app-instructions-item">
+								{{ t('jitsi', 'Paste the link into the app') }}
+							</li>
+						</ol>
+					</div>
+				</template>
+			</div>
+			<div
+				ref="conferenceContainer"
+				class="conference-container"
+				:class="{ 'conference-container--running': conferenceRunning }"/>
+			<a
+				ref="linkHelper"
+				class="link-helper"
+				:href="linkHelperUrl"></a>
 		</div>
-		<div
-			ref="conferenceContainer"
-			class="conference-container"
-			:class="{ 'conference-container--running': conferenceRunning }"/>
-		<a
-			ref="linkHelper"
-			class="link-helper"
-			:href="linkHelperUrl"></a>
+		<room-not-found v-else-if="roomNotFound"></room-not-found>
 	</div>
 </template>
 
@@ -180,17 +184,21 @@ import Actions from '@nextcloud/vue/dist/Components/Actions'
 import Breadcrumb from '@nextcloud/vue/dist/Components/Breadcrumb'
 import Breadcrumbs from '@nextcloud/vue/dist/Components/Breadcrumbs'
 import SystemTest from './components/SystemTest'
+import RoomNotFound from "./components/RoomNotFound"
+
+import '../css/styles.css'
 
 export default {
 	name: 'Room',
 	components: {
+		RoomNotFound,
 		ActionLink,
 		Actions,
 		Breadcrumb,
 		Breadcrumbs,
 		SystemTest,
 	},
-	data() {
+	data () {
 		return {
 			joining: false,
 			conferenceRunning: false,
@@ -212,16 +220,19 @@ export default {
 			selectedSpeaker: null,
 			permissionDenied: false,
 			browserStatus: null,
-			displayJoinUsingTheJitsiApp: true
+			displayJoinUsingTheJitsiApp: true,
+			ready: false,
+			error: false,
+			roomNotFound: false
 		}
 	},
 	computed: {
-		appHomeUrl() {
+		appHomeUrl () {
 			return window.location.protocol + '//'
 				+ window.location.host
 				+ generateUrl('/apps/jitsi')
 		},
-		clipboardTooltip() {
+		clipboardTooltip () {
 			if (this.copied) {
 				return this.copySuccess
 					? t('jjitsi', this.t('jitsi', 'Link copied'))
@@ -229,7 +240,7 @@ export default {
 			}
 			return t('jjitsi', this.t('jitsi', 'Copy to clipboard'))
 		},
-		systemOk() {
+		systemOk () {
 			if (this.browserStatus && this.browserStatus !== 'ok') {
 				return false
 			}
@@ -237,7 +248,7 @@ export default {
 			return true
 		}
 	},
-	async created() {
+	async created () {
 		this.$root.$on('tol-permission-denied', () => {
 			this.permissionDenied = true
 		})
@@ -254,23 +265,34 @@ export default {
 		const url = new URL(this.serverUrl)
 		this.serverHost = url.host
 
-		const roomResponse = await axios.get(generateUrl(`/apps/jitsi/api/rooms/${this.extractRoomId()}`))
 		const userResponse = await axios.get(generateUrl('/apps/jitsi/api/user'))
-
 		this.user = userResponse.data.user
-		this.room = roomResponse.data
+
+		try {
+			const roomResponse = await axios.get(generateUrl(`/apps/jitsi/api/rooms/${this.extractRoomId()}`))
+			this.room = roomResponse.data
+		} catch (e) {
+			if (e?.response?.status === 404) {
+				this.roomNotFound = true
+			} else {
+				this.error = true
+			}
+			return
+		}
+
+		this.ready = true
 	},
 	methods: {
-		onCameraSelected(camera) {
+		onCameraSelected (camera) {
 			this.selectedCamera = camera
 		},
-		onMicrophoneSelected(microphone) {
+		onMicrophoneSelected (microphone) {
 			this.selectedMicrophone = microphone
 		},
-		onSpeakerSelected(speaker) {
+		onSpeakerSelected (speaker) {
 			this.selectedSpeaker = speaker
 		},
-		async createJoinLink() {
+		async createJoinLink () {
 			const token = await this.issueToken()
 			this.joinLink = `${this.serverUrl}${this.room.publicId}?jwt=${token}`
 			await this.copyLink()
@@ -278,7 +300,7 @@ export default {
 				this.joinLink = ''
 			}, 60 * 1000)
 		},
-		async copyLink() {
+		async copyLink () {
 			try {
 				await this.$copyText(this.joinLink)
 				// focus and show the tooltip
@@ -295,14 +317,14 @@ export default {
 				}, 4000)
 			}
 		},
-		async joinApp() {
+		async joinApp () {
 			const token = await this.issueToken()
 			this.linkHelperUrl = `jitsi-meet://${this.serverHost}/${this.room.publicId}?jwt=${token}`
 			setTimeout(() => {
 				this.$refs.linkHelper.click()
 			}, 0)
 		},
-		async joinBrowser() {
+		async joinBrowser () {
 			if (this.joining) {
 				return;
 			}
@@ -359,7 +381,7 @@ export default {
 				this.$root.$emit('resume-preview')
 			})
 		},
-		async stopStreams() {
+		async stopStreams () {
 			return new Promise((resolve) => {
 				let micStopped = false
 				let camStopped = false
@@ -381,7 +403,7 @@ export default {
 				this.$root.$emit('stop-streams');
 			})
 		},
-		async issueToken() {
+		async issueToken () {
 			const data = {
 				displayName: this.user ? this.user.displayName : this.userName,
 			}
@@ -389,8 +411,14 @@ export default {
 			const response = await axios.post(url, data)
 			return response.data.token
 		},
-		extractRoomId() {
-			return window.location.href.split('/').slice(-2)[0]
+		extractRoomId () {
+			const urlParts = window.location.href.split('/').slice(-3)
+
+			if (urlParts[0] === 'rooms') {
+				return urlParts[1]
+			}
+
+			return urlParts[2]
 		},
 	},
 }

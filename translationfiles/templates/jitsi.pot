@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2021-03-30 18:12+0200\n"
+"POT-Creation-Date: 2021-03-30 18:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,134 +95,148 @@ msgid "Your browser is non-optimal:"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:17
-msgid "Browser not supported"
+msgid ""
+"Audio and video quality could be poor. It is recommended to use a recent "
+"<b>Firefox / Chrome / Chromium</b> version."
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:18
-msgid "Show system check"
+msgid "Browser not supported"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:19
-msgid "Your name:"
+msgid "Show system check"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:20
-msgid "click here to join"
+msgid "Your name:"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:21
-msgid "Start muted"
+msgid "click here to join"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:22
-msgid "Start with camera off"
+msgid "Start muted"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:23
-msgid "Join using the Jitsi app (beta)"
+msgid "Start with camera off"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:24
-msgid "Download the app here ↗"
+msgid "Join using the Jitsi app (beta)"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:25
-msgid "Create participation link"
+msgid "Download the app here ↗"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:26
-msgid "Paste the link into the app"
+msgid "Create participation link"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:27
-msgid "Link copied"
+msgid "Paste the link into the app"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:28
-msgid "Cannot copy, please copy the link manually"
+msgid "Link copied"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:29
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:43
-msgid "Copy to clipboard"
+msgid "Cannot copy, please copy the link manually"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:30
-msgid "Browser"
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:44
+msgid "Copy to clipboard"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:31
-msgid "non-optimal"
+msgid "Browser"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:32
-msgid "not supported"
+msgid "non-optimal"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:33
+msgid "not supported"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:34
 msgid ""
 "Audio and video quality could be poor.<br> It is recommended to use a recent "
 "<b>Firefox/Chrome/Chromium</b> version."
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:34
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:36
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:40
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:45
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:35
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:37
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:41
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:48
 msgid "Help"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:35
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:36
 msgid "Camera"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:37
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:38
 msgid "No conference rooms yet"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:38
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:39
 msgid "Create the first room:"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:39
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:40
 msgid "Microphone"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:41
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:42
 msgid "Join"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:42
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:43
 msgid "Delete room"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:44
-msgid "Audio output"
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:45
+msgid "Room not found"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:46
-msgid "Play test sound"
+msgid "Please check the link/URL and ask your host"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:47
-msgid "System check"
-msgstr ""
-
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:48
-msgid "No camera / microphone access"
+msgid "Audio output"
 msgstr ""
 
 #: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:49
+msgid "Play test sound"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:50
+msgid "System check"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:51
+msgid "No camera / microphone access"
+msgstr ""
+
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:52
 msgid ""
 "Click on the icon on the left in the browser bar next to the URL and allow "
 "access:"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:50
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:53
 msgid "Doesn't work?"
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:51
+#: /home/mweimann/git/nextcloud/server/apps/jitsi/specialVueFakeDummyForL10nScript.js:54
 msgid "Click here for trouhleshooting help"
 msgstr ""
 

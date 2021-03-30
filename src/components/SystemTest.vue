@@ -103,7 +103,7 @@ export default {
 					track.stop()
 				})
 			} catch (err) {
-				console.log(`[tol] getUserMedia() error: ${err.message}`)
+				// console.log(`[jitsi] getUserMedia() error: ${err.message}`)
 
 				if (err.name === 'NotAllowedError') {
 					this.permissionDenied = true
@@ -118,8 +118,8 @@ export default {
 			const speakers = []
 
 			devices.forEach((device) => {
-				console.log(`[tol] device`)
-				console.log(device)
+				// console.log(`[jitsi] device`)
+				// console.log(device)
 
 				if (device.kind === 'videoinput') {
 					cameras.push(device)
@@ -146,7 +146,7 @@ export default {
 		this.loading = false
 
 		this.$root.$on('tol-refresh-devices', () => {
-			console.log('[tol] tol-refresh-devices')
+			// console.log('[jitsi] tol-refresh-devices')
 			this.queryDevices()
 		})
 	},
