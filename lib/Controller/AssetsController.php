@@ -7,14 +7,14 @@ use OCP\AppFramework\Http\StreamResponse;
 
 class AssetsController extends Controller
 {
-	/**
-	 * @NoAdminRequired
-	 * @NoCSRFRequired
-	 * @PublicPage
-	 */
-	public function soundsTest(): StreamResponse
-	{
-		return (new StreamResponse(__DIR__ . '/../../sounds/coin.wav'))
-			->cacheFor(24 * 60 * 60);
-	}
+    /**
+     * @NoAdminRequired
+     * @NoCSRFRequired
+     * @PublicPage
+     */
+    public function soundsTest(): StreamResponse
+    {
+        return (new StreamResponse(__DIR__ . '/../../sounds/coin.wav'))
+            ->cacheFor(24 * 60 * 60);
+    }
 }

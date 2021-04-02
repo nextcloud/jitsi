@@ -15,32 +15,32 @@ use OCP\AppFramework\Db\Entity;
  */
 class Room extends Entity implements JsonSerializable
 {
-	/**
-	 * @var string
-	 */
-	protected $name;
+    /**
+     * @var string
+     */
+    protected $name;
 
-	/**
-	 * @var string
-	 */
-	protected $creatorId;
+    /**
+     * @var string
+     */
+    protected $creatorId;
 
-	/**
-	 * @var string
-	 */
-	protected $publicId;
+    /**
+     * @var string
+     */
+    protected $publicId;
 
-	public function __construct()
-	{
-		$this->addType('id', 'integer');
-	}
+    public function __construct()
+    {
+        $this->addType('id', 'integer');
+    }
 
-	public function jsonSerialize(): array
-	{
-		return [
-			'id' => $this->getId(),
-			'name' => $this->getName(),
-			'publicId' => $this->getPublicId(),
-		];
-	}
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getName(),
+            'publicId' => $this->getPublicId(),
+        ];
+    }
 }

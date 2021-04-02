@@ -9,39 +9,39 @@ use OCP\IUserSession;
 
 class UserController extends Controller
 {
-	/**
-	 * @var IUserSession
-	 */
-	private $userSession;
+    /**
+     * @var IUserSession
+     */
+    private $userSession;
 
-	public function __construct(
-		string $AppName,
-		IRequest $request,
-		IUserSession $userSession
-	) {
-		parent::__construct($AppName, $request);
-		$this->userSession = $userSession;
-	}
+    public function __construct(
+        string $AppName,
+        IRequest $request,
+        IUserSession $userSession
+    ) {
+        parent::__construct($AppName, $request);
+        $this->userSession = $userSession;
+    }
 
-	/**
-	 * @NoAdminRequired
-	 * @PublicPage
-	 */
-	public function get(): DataResponse
-	{
-		if ($this->userSession->isLoggedIn() === false) {
-			$userData = null;
-		} else {
-			$user = $this->userSession->getUser();
-			$userData = [
-				'displayName' => $user->getDisplayName(),
-			];
-		}
+    /**
+     * @NoAdminRequired
+     * @PublicPage
+     */
+    public function get(): DataResponse
+    {
+        if ($this->userSession->isLoggedIn() === false) {
+            $userData = null;
+        } else {
+            $user = $this->userSession->getUser();
+            $userData = [
+                'displayName' => $user->getDisplayName(),
+            ];
+        }
 
-		return new DataResponse(
-			[
-				'user' => $userData,
-			]
-		);
-	}
+        return new DataResponse(
+            [
+                'user' => $userData,
+            ]
+        );
+    }
 }
