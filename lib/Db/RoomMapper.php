@@ -8,6 +8,9 @@ use OCP\IUser;
 
 use function reset;
 
+/**
+ * @extends QBMapper<Room>
+ */
 class RoomMapper extends QBMapper
 {
     public function __construct(IDbConnection $db)
@@ -15,6 +18,9 @@ class RoomMapper extends QBMapper
         parent::__construct($db, 'jitsi_rooms', Room::class);
     }
 
+    /**
+     * @return array<Room>
+     */
     public function findAll(): array
     {
         $qb = $this->db->getQueryBuilder();
@@ -78,6 +84,11 @@ class RoomMapper extends QBMapper
         return $this->findOneBy('public_id', $publicId);
     }
 
+    /**
+     * @param string $column
+     * @param mixed $value
+     * @return Room|null
+     */
     private function findOneBy(string $column, $value): ?Room
     {
         $qb = $this->db->getQueryBuilder();

@@ -35,6 +35,9 @@ class Room extends Entity implements JsonSerializable
         $this->addType('id', 'integer');
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function jsonSerialize(): array
     {
         return [

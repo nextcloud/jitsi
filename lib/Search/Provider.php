@@ -70,6 +70,11 @@ class Provider implements IProvider
         return $this->l->t('conferences');
     }
 
+    /**
+     * @param string $route
+     * @param array<mixed> $routeParameters
+     * @return int
+     */
     public function getOrder(
         string $route,
         array $routeParameters
@@ -116,13 +121,18 @@ class Provider implements IProvider
         );
     }
 
+    /**
+     * @param ISearchQuery $query
+     * @return array<Room>
+     */
     private function retrieveRooms(ISearchQuery $query): array
     {
-        if ($this->userSession->isLoggedIn() === false) {
+        $user = $this->userSession->getUser();
+
+        if ($user === null) {
             return [];
         }
 
-        $user = $this->userSession->getUser();
         return $this->roomMapper->findAllByCreatorAndName($user, $query->getTerm());
     }
 }

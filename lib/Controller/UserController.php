@@ -29,10 +29,11 @@ class UserController extends Controller
      */
     public function get(): DataResponse
     {
-        if ($this->userSession->isLoggedIn() === false) {
+        $user = $this->userSession->getUser();
+
+        if ($user === null) {
             $userData = null;
         } else {
-            $user = $this->userSession->getUser();
             $userData = [
                 'displayName' => $user->getDisplayName(),
             ];

@@ -14,9 +14,6 @@ class Application extends App implements IBootstrap
     public const APP_ID = 'jitsi';
     public const APP_NAME = 'Jitsi Integration';
 
-    public const SETTING_SERVER_URL = 'server_url';
-    public const SETTING_JWT_SECRET = 'jwt_secret';
-
     public function __construct()
     {
         parent::__construct(self::APP_ID);
@@ -30,6 +27,5 @@ class Application extends App implements IBootstrap
 
     public function boot(IBootContext $context): void
     {
-        // TODO: Implement boot() method.
     }
 }

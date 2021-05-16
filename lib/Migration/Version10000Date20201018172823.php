@@ -3,12 +3,20 @@
 namespace OCA\jitsi\Migration;
 
 use Closure;
+use Doctrine\DBAL\Schema\SchemaException;
 use OCP\DB\ISchemaWrapper;
 use OCP\Migration\IOutput;
 use OCP\Migration\SimpleMigrationStep;
 
 class Version10000Date20201018172823 extends SimpleMigrationStep
 {
+    /**
+     * @param IOutput $output
+     * @param Closure $schemaClosure
+     * @param array<mixed> $options
+     * @return ISchemaWrapper
+     * @throws SchemaException
+     */
     public function changeSchema(
         IOutput $output,
         Closure $schemaClosure,
@@ -23,7 +31,7 @@ class Version10000Date20201018172823 extends SimpleMigrationStep
             'integer',
             [
                 'autoincrement' => true,
-                'notnull' => true,
+                'notnull'       => true,
             ]
         );
         $table->addColumn(
@@ -31,7 +39,7 @@ class Version10000Date20201018172823 extends SimpleMigrationStep
             'string',
             [
                 'notnull' => true,
-                'length' => 255,
+                'length'  => 255,
             ]
         );
         $table->addColumn(
@@ -39,7 +47,7 @@ class Version10000Date20201018172823 extends SimpleMigrationStep
             'string',
             [
                 'notnull' => true,
-                'length' => 255,
+                'length'  => 255,
             ]
         );
         $table->addColumn(
@@ -47,7 +55,7 @@ class Version10000Date20201018172823 extends SimpleMigrationStep
             'string',
             [
                 'notnull' => true,
-                'length' => 64,
+                'length'  => 64,
             ]
         );
 

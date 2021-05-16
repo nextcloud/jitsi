@@ -3,12 +3,11 @@
 namespace OCA\jitsi\Controller;
 
 use Ahc\Jwt\JWT;
-use OCA\jitsi\AppInfo\Application;
+use OCA\jitsi\Config\Config;
 use OCA\jitsi\Db\Room;
 use OCA\jitsi\Db\RoomMapper;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
-use OCP\IConfig;
 use OCP\IRequest;
 use OCP\IUserSession;
 
@@ -32,9 +31,9 @@ class RoomController extends AbstractController
         RoomMapper $roomMapper,
         ?string $UserId,
         IUserSession $userSession,
-        IConfig $config
+        Config $appConfig
     ) {
-        parent::__construct($AppName, $request, $userSession, $config);
+        parent::__construct($AppName, $request, $userSession, $appConfig);
         $this->roomMapper = $roomMapper;
         $this->userId = $UserId;
     }
@@ -49,7 +48,14 @@ class RoomController extends AbstractController
         }
 
         $user = $this->userSession->getUser();
-        return new DataResponse($this->roomMapper->findAllByCreator($user));
+
+        if ($user === null) {
+            $rooms = [];
+        } else {
+            $rooms = $this->roomMapper->findAllByCreator($user);
+        }
+
+        return new DataResponse($rooms);
     }
 
     /**
@@ -57,6 +63,10 @@ class RoomController extends AbstractController
      */
     public function create(string $name): DataResponse
     {
+        if ($this->userId === null) {
+            return new DataResponse([]);
+        }
+
         $room = new Room();
         $room->setName($name);
         $room->setCreatorId($this->userId);
@@ -70,6 +80,11 @@ class RoomController extends AbstractController
     public function delete(int $id): DataResponse
     {
         $room = $this->roomMapper->findOneById($id);
+
+        if ($room === null) {
+            return new DataResponse([], Http::STATUS_NOT_FOUND);
+        }
+
         $this->roomMapper->delete($room);
         return new DataResponse($room);
     }
@@ -86,9 +101,7 @@ class RoomController extends AbstractController
             return new DataResponse([], Http::STATUS_NOT_FOUND);
         }
 
-        return new DataResponse(
-            $this->roomMapper->findOneByPublicId($publicId)
-        );
+        return new DataResponse($room);
     }
 
     /**
@@ -97,29 +110,37 @@ class RoomController extends AbstractController
      */
     public function token(string $publicId, ?string $displayName): DataResponse
     {
-        if ($this->userSession->isLoggedIn()) {
-            $displayName = $this->userSession->getUser()->getDisplayName();
+        $user = $this->userSession->getUser();
+
+        if ($user !== null) {
+            $displayName = $user->getDisplayName();
         }
 
-        $jwtSecret = $this->config->getAppValue(
-            Application::APP_ID,
-            'jwt_secret'
-        );
         $room = $this->roomMapper->findOneByPublicId($publicId);
+
+        if ($room === null) {
+            return new DataResponse([], Http::STATUS_NOT_FOUND);
+        }
+
+        $jwtSecret = $this->appConfig->jwtSecret();
+
+        if ($jwtSecret === null) {
+            return new DataResponse([], Http::STATUS_INTERNAL_SERVER_ERROR);
+        }
 
         $jwt = new JWT($jwtSecret, 'HS256');
         $token = $jwt->encode(
             [
-                "context" => [
-                    "user" => [
-                        "name" => $displayName,
+                'context' => [
+                    'user' => [
+                        'name' => $displayName,
                     ],
                 ],
-                "aud" => "jitsi",
-                "iss" => "jitsi",
-                "sub" => '*',
-                "room" => $room->getPublicId(),
-                "exp" => time() + 12 * 60 * 60,
+                'aud'     => 'jitsi',
+                'iss'     => 'jitsi',
+                'sub'     => '*',
+                'room'    => $room->getPublicId(),
+                'exp'     => time() + 12 * 60 * 60,
             ]
         );
 

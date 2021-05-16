@@ -8,7 +8,6 @@ use OCP\Settings\IIconSection;
 
 class AdminSection implements IIconSection
 {
-
     /** @var IL10N */
     private $l;
 
@@ -21,22 +20,22 @@ class AdminSection implements IIconSection
         $this->urlgen = $urlgen;
     }
 
-    public function getIcon()
+    public function getIcon(): string
     {
         return $this->urlgen->imagePath('jitsi', 'settings.svg');
     }
 
-    public function getID()
+    public function getID(): string
     {
         return 'jitsi';
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'Jitsi';
     }
 
-    public function getPriority()
+    public function getPriority(): int
     {
         return 80;
     }

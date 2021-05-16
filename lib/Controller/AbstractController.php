@@ -3,10 +3,9 @@
 namespace OCA\jitsi\Controller;
 
 use Browser;
-use OCA\jitsi\AppInfo\Application;
+use OCA\jitsi\Config\Config;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\TemplateResponse;
-use OCP\IConfig;
 use OCP\IRequest;
 use OCP\IUserSession;
 
@@ -18,19 +17,19 @@ abstract class AbstractController extends Controller
     protected $userSession;
 
     /**
-     * @var IConfig
+     * @var Config
      */
-    protected $config;
+    protected $appConfig;
 
     public function __construct(
         string $AppName,
         IRequest $request,
         IUserSession $userSession,
-        IConfig $config
+        Config $appConfig
     ) {
         parent::__construct($AppName, $request);
         $this->userSession = $userSession;
-        $this->config = $config;
+        $this->appConfig = $appConfig;
     }
 
     protected function checkBrowser(): ?TemplateResponse
@@ -52,6 +51,9 @@ abstract class AbstractController extends Controller
         );
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     private function gatherBrowserInfo(): array
     {
         $browser = new Browser();
@@ -59,7 +61,7 @@ abstract class AbstractController extends Controller
         $browserVersion = $browser->getVersion();
 
         return [
-            'name' => sprintf(
+            'name'      => sprintf(
                 '%s %s',
                 $browserName,
                 $browserVersion
@@ -91,18 +93,7 @@ abstract class AbstractController extends Controller
 
     private function isConfigured(): bool
     {
-        $serverUrl = $this->config->getAppValue(
-            Application::APP_ID,
-            Application::SETTING_SERVER_URL,
-            null
-        );
-
-        $jwtSecret = $this->config->getAppValue(
-            Application::APP_ID,
-            Application::SETTING_JWT_SECRET,
-            null
-        );
-
-        return !empty($serverUrl) && !empty($jwtSecret);
+        return !empty($this->appConfig->jitsiServerUrl())
+            && !empty($this->appConfig->jwtSecret());
     }
 }

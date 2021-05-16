@@ -1,0 +1,8 @@
+parameters:
+    phpVersion: 70200
+    level: 8
+    paths:
+        - lib
+        - tests
+    scanDirectories:
+        - ../..
