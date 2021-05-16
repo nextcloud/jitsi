@@ -103,7 +103,7 @@ export default {
     },
     async created () {
         this.jwtSecret = await this.loadSetting('jwt_secret')
-        this.serverUrl = await this.loadSetting('server_url')
+        this.serverUrl = await this.loadSetting('jitsi_server_url')
         this.helpLink = await this.loadSetting('help_link')
 
         const rawDisplayJoinUsingTheJitsiApp = await this.loadSetting('display_join_using_the_jitsi_app', '1')
@@ -117,7 +117,7 @@ export default {
             this.saved = false
 
             await Promise.all([
-                this.updateSetting('server_url', this.serverUrl),
+                this.updateSetting('jitsi_server_url', this.serverUrl),
                 this.updateSetting('jwt_secret', this.jwtSecret),
                 this.updateSetting('help_link', this.helpLink),
                 this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
