@@ -4,13 +4,24 @@
     <id>jitsi</id>
     <name>Jitsi Integration</name>
     <summary>Jitsi Integration (unofficial)</summary>
-    <description><![CDATA[Jitsi Integration]]></description>
+    <description>This app integrates Jitsi conferences into Nextcloud.
+
+Features:
+- 🎥 Easy online conferences in Nextcloud utilising Jitsi
+- 🔗 Sharable conference room links
+- 🔎 Shows conference rooms in the global search
+- ✅ System test before joining a conference
+
+This app requires a Jitsi instance with JSON Web Token authentication.
+Please read the documentation.
+    </description>
     <version>0.9.0</version>
     <licence>agpl</licence>
     <author mail="mail@michael-weimann.eu" homepage="https://weimann.digital/">Michael Weimann</author>
     <namespace>jitsi</namespace>
     <category>social</category>
-    <bugs>https://git.weimann.digital/projects/nextcloud-jitsi/issues/list</bugs>
+    <bugs>https://pubcode.weimann.digital/projects/nextcloud-jitsi/issues/list</bugs>
+    <website>https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md</website>
 
 	<settings>
 		<admin>OCA\jitsi\Settings\AdminSettings</admin>
