@@ -154,8 +154,9 @@
 							</Actions>
 						</span>
 							</li>
-							<li class="room__app-instructions-item">
-								{{ t('jitsi', 'Paste the link into the app') }}
+							<li
+                                class="room__app-instructions-item"
+                                v-html="t('jitsi', 'Paste the link from above into the<br>input field on the App start screen')">
 							</li>
 						</ol>
 					</div>

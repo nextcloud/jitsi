@@ -12,8 +12,7 @@ Features:
 - 🔎 Shows conference rooms in the global search
 - ✅ System test before joining a conference
 
-This app requires a Jitsi instance with JSON Web Token authentication.
-Please read the documentation.
+Please read the [documentation](https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md).
     </description>
     <version>0.9.0</version>
     <licence>agpl</licence>
