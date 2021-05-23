@@ -137,10 +137,10 @@ export default {
             this.saved = false
 
             await Promise.all([
-                this.updateSetting('jitsi_server_url', this.serverUrl),
-                this.updateSetting('jwt_secret', this.jwtSecret),
-                this.updateSetting('help_link', this.helpLink),
-                this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
+                await this.updateSetting('jitsi_server_url', this.serverUrl),
+                await this.updateSetting('jwt_secret', this.jwtSecret),
+                await this.updateSetting('help_link', this.helpLink),
+                await this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
             ])
 
             this.saving = false
