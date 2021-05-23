@@ -39,10 +39,6 @@ class PageController extends AbstractController
             return $checkBrowserResult;
         }
 
-        if (($checkConfiguredResult = $this->checkConfigured()) !== null) {
-            return $checkConfiguredResult;
-        }
-
         return new TemplateResponse('jitsi', 'index');
     }
 
@@ -55,10 +51,6 @@ class PageController extends AbstractController
     {
         if (($checkBrowserResult = $this->checkBrowser()) !== null) {
             return $checkBrowserResult;
-        }
-
-        if (($checkConfiguredResult = $this->checkConfigured()) !== null) {
-            return $checkConfiguredResult;
         }
 
         $loggedIn = $this->userSession->isLoggedIn();

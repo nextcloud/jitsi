@@ -7,55 +7,66 @@
                         {{ t('jitsi', 'loading…') }}
                     </div>
                     <div v-if="!loading">
-                        <p class="group">
+                        <div class="group">
                             <label
                                 for="jitsi_server_url"
                                 class="label">
                                 {{ t('jitsi', 'Server URL (required)') }}
                             </label>
-                            <input
-                                id="jitsi_server_url"
-                                v-model="serverUrl"
-                                class="input"
-                                type="text">
-                        </p>
-                        <p class="group">
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_server_url"
+                                    v-model="serverUrl"
+                                    class="input"
+                                    type="text">
+                                <div v-if="serverUrlStatus" :class="`${serverUrlStatus}-text`">
+                                    {{ serverUrlMessage }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
                             <label
                                 for="jitsi_jwt_secret"
                                 class="label">
-                                {{ t('jitsi', 'JWT Secret (required)') }}
+                                {{ t('jitsi', 'JWT Secret (optional)') }}
                             </label>
-                            <input
-                                id="jitsi_jwt_secret"
-                                v-model="jwtSecret"
-                                class="input"
-                                type="text">
-                        </p>
-                        <p class="group">
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_jwt_secret"
+                                    v-model="jwtSecret"
+                                    class="input"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="group">
                             <label
                                 for="jitsi_help_link"
                                 class="label">
                                 {{ t('jitsi', 'Help link (optional)') }}
                             </label>
-                            <input
-                                id="jitsi_help_link"
-                                v-model="helpLink"
-                                class="input"
-                                type="text">
-                        </p>
-                        <p class="group">
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_help_link"
+                                    v-model="helpLink"
+                                    class="input"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="group">
                             <label
                                 for="display_join_using_the_jitsi_app"
                                 class="label">
                                 {{ t('jitsi', 'Display "Join using the Jitsi app"') }}
                             </label>
-                            <input
-                                id="display_join_using_the_jitsi_app"
-                                class="admin-checkbox"
-                                v-model="displayJoinUsingTheJitsiApp"
-                                type="checkbox">
-                        </p>
-                        <p class="group">
+                            <div class="input-group">
+                                <input
+                                    id="display_join_using_the_jitsi_app"
+                                    class="admin-checkbox"
+                                    v-model="displayJoinUsingTheJitsiApp"
+                                    type="checkbox">
+                            </div>
+                        </div>
+                        <div class="group group--centered">
                             <button
                                 type="submit"
                                 class="primary"
@@ -72,7 +83,7 @@
                                 class="msg">
 								{{ t('jitsi', 'saving…') }}
 							</span>
-                        </p>
+                        </div>
                     </div>
                 </SettingsSection>
             </fieldset>
@@ -97,8 +108,10 @@ export default {
             errorMessage: '',
             jwtSecret: '',
             serverUrl: '',
+            serverUrlStatus: false,
+            serverUrlMessage: '',
             helpLink: '',
-            rawDisplayJoinUsingTheJitsiApp: 0,
+            rawDisplayJoinUsingTheJitsiApp: 0
         }
     },
     async created () {
@@ -113,6 +126,13 @@ export default {
     },
     methods: {
         async submit () {
+            this.sanitise()
+            this.validate()
+
+            if (this.hasError) {
+                return
+            }
+
             this.saving = true
             this.saved = false
 
@@ -125,6 +145,25 @@ export default {
 
             this.saving = false
             this.saved = true
+        },
+        sanitise() {
+            if (this.serverUrl && !this.serverUrl.endsWith('/')) {
+                this.serverUrl += '/'
+            }
+        },
+        validate() {
+            this.serverUrlStatus = false
+            this.serverUrlMessage = ''
+
+            if (!this.serverUrl) {
+                this.serverUrlStatus = 'error'
+                this.serverUrlMessage = this.t('jitsi', 'Please provide a Jitsi instance URL')
+            }
+
+            if (this.serverUrl === 'https://meet.jit.si/') {
+                this.serverUrlStatus = 'warning'
+                this.serverUrlMessage = this.t('jitsi', 'It is highly recommended to set up a dedicated Jitsi instance')
+            }
         },
         async updateSetting (name, value) {
             try {
@@ -168,6 +207,9 @@ export default {
             set (value) {
                 this.rawDisplayJoinUsingTheJitsiApp = value ? '1' : '0'
             }
+        },
+        hasError() {
+            return this.serverUrlStatus === 'error'
         }
     }
 }
@@ -175,8 +217,12 @@ export default {
 
 <style scoped>
 .group {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+}
+
+.group--centered {
+    align-items: center;
 }
 
 .label {
@@ -187,6 +233,35 @@ export default {
 .input {
     display: block;
     width: 100%;
+}
+
+.input-group {
+    margin-bottom: 8px;
+    position: relative;
+    top: -7px;
+    width: 100%;
+}
+
+.input {
+    margin-bottom: 0;
+}
+
+.input--has-warning {
+    border-color: var(--color-warning);
+}
+
+.input--has-error {
+    border-color: var(--color-error);
+}
+
+.warning-text {
+    color: var(--color-warning);
+    font-size: .9em;
+}
+
+.error-text {
+    color: var(--color-error);
+    font-size: .9em;
 }
 
 .admin-checkbox {
@@ -200,7 +275,7 @@ export default {
         width: 200px;
     }
 
-    .input {
+    .input-group {
         display: inline-block;
         width: 400px;
     }

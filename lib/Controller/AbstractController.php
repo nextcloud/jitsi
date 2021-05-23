@@ -73,27 +73,4 @@ abstract class AbstractController extends Controller
             )
         ];
     }
-
-    protected function checkConfigured(): ?TemplateResponse
-    {
-        if ($this->isConfigured()) {
-            return null;
-        }
-
-        $loggedIn = $this->userSession->isLoggedIn();
-        $renderAs = $loggedIn ? 'user' : 'public';
-
-        return new TemplateResponse(
-            'jitsi',
-            'incomplete_settings',
-            [],
-            $renderAs
-        );
-    }
-
-    private function isConfigured(): bool
-    {
-        return !empty($this->appConfig->jitsiServerUrl())
-            && !empty($this->appConfig->jwtSecret());
-    }
 }

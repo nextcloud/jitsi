@@ -246,7 +246,10 @@ export default {
 			}
 
 			return true
-		}
+		},
+        displayName() {
+            return this.user ? this.user.displayName : this.userName
+        }
 	},
 	async created () {
 		this.$root.$on('tol-permission-denied', () => {
@@ -293,8 +296,14 @@ export default {
 			this.selectedSpeaker = speaker
 		},
 		async createJoinLink () {
-			const token = await this.issueToken()
-			this.joinLink = `${this.serverUrl}${this.room.publicId}?jwt=${token}`
+            const token = await this.issueToken()
+            let joinLink = `${this.serverUrl}${this.room.publicId}`
+
+            if (token !== null) {
+                joinLink += `?jwt=${token}`
+            }
+
+			this.joinLink = joinLink
 			await this.copyLink()
 			setTimeout(() => {
 				this.joinLink = ''
@@ -317,13 +326,6 @@ export default {
 				}, 4000)
 			}
 		},
-		async joinApp () {
-			const token = await this.issueToken()
-			this.linkHelperUrl = `jitsi-meet://${this.serverHost}/${this.room.publicId}?jwt=${token}`
-			setTimeout(() => {
-				this.$refs.linkHelper.click()
-			}, 0)
-		},
 		async joinBrowser () {
 			if (this.joining) {
 				return;
@@ -334,16 +336,27 @@ export default {
 			await this.stopStreams()
 
 			const token = await this.issueToken()
+
 			const options = {
 				parentNode: this.$refs.conferenceContainer,
 				width: '100%',
 				height: '100%',
 				roomName: this.room.publicId,
-				jwt: token,
-				devices: {}
+				devices: {},
+                userInfo: {
+                    displayName: this.displayName
+                }
 			}
 
-			const configOverwrite = {}
+			if (token !== null) {
+			    options.jwt = token
+            }
+
+			const configOverwrite = {
+                disableDeepLinking: true,
+                prejoinPageEnabled: false,
+                disableInviteFunctions: false
+            }
 
 			if (this.microphoneInActive) {
 				configOverwrite.startWithAudioMuted = true
@@ -408,8 +421,12 @@ export default {
 				displayName: this.user ? this.user.displayName : this.userName,
 			}
 			const url = generateUrl(`/apps/jitsi/api/rooms/${this.room.publicId}/tokens`)
-			const response = await axios.post(url, data)
-			return response.data.token
+            try {
+                const response = await axios.post(url, data)
+                return response.data.token
+            } catch (err) {
+			    return null
+            }
 		},
 		extractRoomId () {
 			const urlParts = window.location.href.split('/').slice(-3)

@@ -30,6 +30,11 @@ class Config
         return $this->readString(self::KEY_JITSI_SERVER_URL);
     }
 
+    public function updateJitsiServerUrl(string $serverUrl): void
+    {
+        $this->config->setAppValue(Application::APP_ID, self::KEY_JITSI_SERVER_URL, $serverUrl);
+    }
+
     public function jwtSecret(): ?string
     {
         return $this->readString(self::KEY_JWT_SECRET);

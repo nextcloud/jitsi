@@ -11,7 +11,7 @@ use OCP\AppFramework\Http\DataResponse;
 use OCP\IRequest;
 use OCP\IUserSession;
 
-use function uniqid;
+use Ramsey\Uuid\Uuid;
 
 class RoomController extends AbstractController
 {
@@ -70,7 +70,10 @@ class RoomController extends AbstractController
         $room = new Room();
         $room->setName($name);
         $room->setCreatorId($this->userId);
-        $room->setPublicId(uniqid());
+
+        $uuid = Uuid::uuid4();
+        $room->setPublicId($uuid->toString());
+
         return new DataResponse($this->roomMapper->insert($room));
     }
 
@@ -124,8 +127,8 @@ class RoomController extends AbstractController
 
         $jwtSecret = $this->appConfig->jwtSecret();
 
-        if ($jwtSecret === null) {
-            return new DataResponse([], Http::STATUS_INTERNAL_SERVER_ERROR);
+        if (empty($jwtSecret)) {
+            return new DataResponse([], Http::STATUS_NOT_FOUND);
         }
 
         $jwt = new JWT($jwtSecret, 'HS256');
