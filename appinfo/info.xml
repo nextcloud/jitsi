@@ -21,6 +21,7 @@ Please read the [documentation](https://pubcode.weimann.digital/projects/nextclo
     <category>social</category>
     <bugs>https://pubcode.weimann.digital/projects/nextcloud-jitsi/issues/list</bugs>
     <website>https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md</website>
+    <screenshot>https://pubcode.weimann.digital/projects/nextcloud-jitsi/raw/master/screenshots/join.png</screenshot>
 
 	<settings>
 		<admin>OCA\jitsi\Settings\AdminSettings</admin>
