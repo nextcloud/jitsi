@@ -160,6 +160,11 @@ export default {
                 this.serverUrlMessage = this.t('jitsi', 'Please provide a Jitsi instance URL')
             }
 
+            if (!this.serverUrl.startsWith('https://')) {
+                this.serverUrlStatus = 'error'
+                this.serverUrlMessage = this.t('jitsi', 'The server URL must start with https://')
+            }
+
             if (this.serverUrl === 'https://meet.jit.si/') {
                 this.serverUrlStatus = 'warning'
                 this.serverUrlMessage = this.t('jitsi', 'It is highly recommended to set up a dedicated Jitsi instance')
