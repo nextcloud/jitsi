@@ -11,6 +11,10 @@
 - 🔎 Shows conference rooms in the global search
 - ✅ System test before joining a conference
 
+## Changelog
+
+[See milestones](https://pubcode.weimann.digital/projects/nextcloud-jitsi/milestones)
+
 ## Setup
 
 ⚠ It is highly recommended to set up a dedicated Jitsi instance.
