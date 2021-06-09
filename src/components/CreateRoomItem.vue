@@ -6,7 +6,7 @@
 					ref="roomNameInput"
 					v-model="name"
 					class="create-room__name"
-					placeholder="Name des neuen Raums"
+					:placeholder="t('jitsi', 'Name of the new room')"
 					maxlength="100">
 				<div class="create-room__actions">
 					<Actions>

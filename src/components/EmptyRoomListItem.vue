@@ -12,7 +12,7 @@
 					ref="roomNameInput"
 					v-model="name"
 					class="empty-room-list__new__input"
-					placeholder="Name des neuen Raums"
+                    :placeholder="t('jitsi', 'Name of the new room')"
 					maxlength="100"
 					type="text">
 				<button
