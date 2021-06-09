@@ -29,6 +29,16 @@ Nextcloud setup and configuration:
 
 Report issues and feature requests [here](https://pubcode.weimann.digital/projects/nextcloud-jitsi/issues/list).
 
+
+## Translations
+
+```
+wget https://github.com/nextcloud/docker-ci/raw/master/translations/translationtool/translationtool.phar
+chmod u+x translationtool.phar
+./translationtool.phar create-pot-files
+./translationtool.phar convert-po-files
+```
+
 ## Licence
 
 See [LICENCE](./LICENCE)

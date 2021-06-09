@@ -26,20 +26,6 @@
                         </div>
                         <div class="group">
                             <label
-                                for="jitsi_jwt_secret"
-                                class="label">
-                                {{ t('jitsi', 'JWT Secret (optional)') }}
-                            </label>
-                            <div class="input-group">
-                                <input
-                                    id="jitsi_jwt_secret"
-                                    v-model="jwtSecret"
-                                    class="input"
-                                    type="text">
-                            </div>
-                        </div>
-                        <div class="group">
-                            <label
                                 for="jitsi_help_link"
                                 class="label">
                                 {{ t('jitsi', 'Help link (optional)') }}
@@ -66,6 +52,68 @@
                                     type="checkbox">
                             </div>
                         </div>
+
+                        <strong class="group-label">JSON Web Token</strong>
+                        <div class="group">
+                            <label
+                                for="jitsi_jwt_secret"
+                                class="label">
+                                {{ t('jitsi', 'JWT Secret (optional)') }}
+                            </label>
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_jwt_secret"
+                                    v-model="jwtSecret"
+                                    class="input"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="group" v-if="jwtSecret">
+                            <label
+                                for="jitsi_jwt_app_id"
+                                class="label">
+                                {{ t('jitsi', 'JWT App Id') }}
+                            </label>
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_jwt_app_id"
+                                    v-model="jwtAppId"
+                                    class="input"
+                                    type="text">
+                                <div v-if="jwtAppIdMessage" :class="`error-text`">
+                                    {{ jwtAppIdMessage }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group" v-if="jwtSecret">
+                            <label
+                                for="jitsi_jwt_audience"
+                                class="label">
+                                {{ t('jitsi', 'JWT Audience (optional)') }}
+                            </label>
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_jwt_audience"
+                                    v-model="jwtAudience"
+                                    class="input"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="group" v-if="jwtSecret">
+                            <label
+                                for="jitsi_jwt_issuer"
+                                class="label">
+                                {{ t('jitsi', 'JWT Issuer (optional)') }}
+                            </label>
+                            <div class="input-group">
+                                <input
+                                    id="jitsi_jwt_issuer"
+                                    v-model="jwtIssuer"
+                                    class="input"
+                                    type="text">
+                            </div>
+                        </div>
+
                         <div class="group group--centered">
                             <button
                                 type="submit"
@@ -107,6 +155,10 @@ export default {
             saved: false,
             errorMessage: '',
             jwtSecret: '',
+            jwtAppId: '',
+            jwtAppIdMessage: '',
+            jwtAudience: '',
+            jwtIssuer: '',
             serverUrl: '',
             serverUrlStatus: false,
             serverUrlMessage: '',
@@ -116,6 +168,9 @@ export default {
     },
     async created () {
         this.jwtSecret = await this.loadSetting('jwt_secret')
+        this.jwtAppId = await this.loadSetting('jwt_app_id')
+        this.jwtAudience = await this.loadSetting('jwt_audience')
+        this.jwtIssuer = await this.loadSetting('jwt_issuer')
         this.serverUrl = await this.loadSetting('jitsi_server_url')
         this.helpLink = await this.loadSetting('help_link')
 
@@ -139,6 +194,9 @@ export default {
             await Promise.all([
                 await this.updateSetting('jitsi_server_url', this.serverUrl),
                 await this.updateSetting('jwt_secret', this.jwtSecret),
+                await this.updateSetting('jwt_app_id', this.jwtAppId),
+                await this.updateSetting('jwt_audience', this.jwtAudience),
+                await this.updateSetting('jwt_issuer', this.jwtIssuer),
                 await this.updateSetting('help_link', this.helpLink),
                 await this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
             ])
@@ -168,6 +226,12 @@ export default {
             if (this.serverUrl === 'https://meet.jit.si/') {
                 this.serverUrlStatus = 'warning'
                 this.serverUrlMessage = this.t('jitsi', 'It is highly recommended to set up a dedicated Jitsi instance')
+            }
+
+            this.jwtAppIdMessage = ''
+
+            if (this.jwtSecret && !this.jwtAppId) {
+                this.jwtAppIdMessage = this.t('jitsi', 'Please provide the App Id')
             }
         },
         async updateSetting (name, value) {
@@ -214,7 +278,7 @@ export default {
             }
         },
         hasError() {
-            return this.serverUrlStatus === 'error'
+            return this.serverUrlStatus === 'error' || this.jwtAppIdMessage
         }
     }
 }
@@ -228,6 +292,12 @@ export default {
 
 .group--centered {
     align-items: center;
+}
+
+.group-label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 16px;
 }
 
 .label {

@@ -9,6 +9,9 @@ class Config
 {
     public const KEY_JITSI_SERVER_URL = 'jitsi_server_url';
     public const KEY_JWT_SECRET = 'jwt_secret';
+    public const KEY_JWT_APP_ID = 'jwt_app_id';
+    public const KEY_JWT_AUDIENCE = 'jwt_audience';
+    public const KEY_JWT_ISSUER = 'jwt_issuer';
     public const KEY_HELP_LINK = 'help_link';
     public const KEY_DISPLAY_JOIN_USING_THE_JITSI_APP = 'display_join_using_the_jitsi_app';
 
@@ -38,6 +41,23 @@ class Config
     public function jwtSecret(): ?string
     {
         return $this->readString(self::KEY_JWT_SECRET);
+    }
+
+    public function jwtAppId(): ?string
+    {
+        return $this->readString(self::KEY_JWT_APP_ID);
+    }
+
+    public function jwtAudience(): ?string
+    {
+        $jwtAudience = $this->readString(self::KEY_JWT_AUDIENCE);
+        return empty($jwtAudience) ? $this->jwtAppId() : $jwtAudience;
+    }
+
+    public function jwtIssuer(): ?string
+    {
+        $jwtIssuer = $this->readString(self::KEY_JWT_ISSUER);
+        return empty($jwtIssuer) ? $this->jwtAppId() : $jwtIssuer;
     }
 
     public function helpLink(): ?string
