@@ -272,6 +272,10 @@ export default {
 		const userResponse = await axios.get(generateUrl('/apps/jitsi/api/user'))
 		this.user = userResponse.data.user
 
+        if (!this.user) {
+            this.userName = localStorage.getItem('jitsi.userName')
+        }
+
 		try {
 			const roomResponse = await axios.get(generateUrl(`/apps/jitsi/api/rooms/${this.extractRoomId()}`))
 			this.room = roomResponse.data
@@ -333,6 +337,10 @@ export default {
 			}
 
 			this.joining = true
+
+            if (!this.user && this.userName) {
+                localStorage.setItem('jitsi.userName', this.userName)
+            }
 
 			await this.stopStreams()
 
