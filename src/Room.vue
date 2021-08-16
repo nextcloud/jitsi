@@ -2,19 +2,19 @@
 	<div class="app-content">
 		<link
 			rel="preload"
-			href="/index.php/svg/core/actions/audio?color=#000"
+			:href="link('/svg/core/actions/audio?color=#000')"
 			as="image">
 		<link
 			rel="preload"
-			href="/index.php/svg/core/actions/audio-off?color=#000"
+			:href="link('/svg/core/actions/audio-off?color=#000')"
 			as="image">
 		<link
 			rel="preload"
-			href="/index.php/svg/core/actions/video?color=#000"
+			:href="link('/svg/core/actions/video?color=#000')"
 			as="image">
 		<link
 			rel="preload"
-			href="/index.php/svg/core/actions/video-off?color=#000"
+			:href="'/svg/core/actions/video-off?color=#000'"
 			as="image">
 
 		<Breadcrumbs v-if="user">
@@ -43,7 +43,7 @@
 						<div class="room__system-test-summary__title__row">
 							<img
 								class="room__system-test-summary__icon"
-								src="/index.php/svg/core/actions/error?color=ea580c">
+								:src="errorSrc">
 							<div class="room__system-test-summary__title">
 								{{ t('jitsi', 'Problems detected') }}
 							</div>
@@ -120,7 +120,7 @@
 						<img
 							class="room__join-app-toggle-icon"
 							:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
-							src="/index.php/svg/core/actions/caret?color=000000">
+							:src="caretSrc">
 					</div>
 					<div
 						class="room__join-app-section"
@@ -247,6 +247,12 @@ export default {
 			}
 
 			return true
+		},
+		caretSrc() {
+			return this.link('/svg/core/actions/caret?color=000000')
+		},
+		errorSrc() {
+			return this.link('/svg/core/actions/error?color=ea580c')
 		},
         displayName() {
             return this.user ? this.user.displayName : this.userName

@@ -26,7 +26,7 @@
 					v-if="$root.helpLink && status !== 'pending' && status !== 'ok'">
 					<img
 						class="tol-check-help-button__icon"
-						src="/index.php/svg/core/actions/info?color=000">
+						:src="infoSrc">
 					<div>{{ t('jitsi', 'Help') }}</div>
 				</a>
 			</div>
@@ -68,7 +68,11 @@ export default {
 			status: 'pending',
 		}
 	},
-	computed: {},
+	computed: {
+		infoSrc() {
+			return this.link('/svg/core/actions/info?color=000')
+		}
+	},
 	async created() {
 		const deviceType = this.browser.getPlatformType()
 		this.deviceType = deviceType.charAt(0).toUpperCase() + deviceType.slice(1)

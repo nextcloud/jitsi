@@ -31,7 +31,7 @@
 					class="meter">
 					<img
 						class="meter__icon"
-						src="/index.php/svg/core/actions/audio?color=cccccc">
+						:src="audioSrc">
 				</div>
 			</div>
 		</div>
@@ -41,6 +41,7 @@
 <script>
 
 import CheckStatusIcon from './CheckStatusIcon'
+import { getRootUrl } from '@nextcloud/router'
 
 export default {
 	name: 'MicTest',
@@ -108,6 +109,9 @@ export default {
 
 				await this.startPreview()
 			}
+		},
+		audioSrc() {
+			return this.link('/svg/core/actions/audio?color=cccccc')
 		}
 	},
 	methods: {

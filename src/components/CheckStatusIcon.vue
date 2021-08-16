@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 export default {
 	name: "CheckStatusIcon",
 	props: [
@@ -18,15 +19,15 @@ export default {
 		statusIconSrc() {
 			switch (this.status) {
 				case 'pending':
-					return '/index.php/svg/core/actions/more?color=ffffff'
+					return this.link('/svg/core/actions/more?color=ffffff')
 				case 'error':
-					return '/index.php/svg/core/actions/close?color=ffffff'
+					return this.link('/svg/core/actions/close?color=ffffff')
 				case 'warning':
-					return '/index.php/svg/core/actions/details?color=ffffff'
+					return this.link('/svg/core/actions/details?color=ffffff')
 				case 'ok':
-					return '/index.php/svg/core/actions/checkmark?color=ffffff'
+					return this.link('/svg/core/actions/checkmark?color=ffffff')
 				case 'sound':
-					return '/index.php/svg/core/actions/sound?color=ffffff'
+					return this.link('/svg/core/actions/sound?color=ffffff')
 			}
 		},
 		statusIconClass() {

@@ -31,7 +31,7 @@
 					@click="playTestSound">
 					<img
 						class="tol-play-button__icon"
-						src="/index.php/svg/core/actions/play?color=000000"> {{ t('jitsi', 'Play test sound') }}
+						:src="playSrc"> {{ t('jitsi', 'Play test sound') }}
 				</div>
 			</div>
 		</div>
@@ -105,6 +105,9 @@ export default {
 				this.$emit('speakerSelected', this.selectedSpeaker)
 				localStorage.setItem('tol-preferred-speaker', this.selectedSpeaker.deviceId)
 			}
+		},
+		playSrc() {
+			return this.link('/svg/core/actions/play?color=000000')
 		}
 	},
 	methods: {
