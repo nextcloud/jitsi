@@ -1,8 +1,10 @@
+import { generateUrl } from '@nextcloud/router'
+
 export default {
-	methods: {
-		t,
+    methods: {
+        t,
         link(path) {
-            return OC.generateUrl(path);
-        }
-	},
+            return generateUrl(path)
+        },
+    },
 }

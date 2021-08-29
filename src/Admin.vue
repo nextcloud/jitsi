@@ -47,8 +47,8 @@
                             <div class="input-group">
                                 <input
                                     id="display_join_using_the_jitsi_app"
-                                    class="admin-checkbox"
                                     v-model="displayJoinUsingTheJitsiApp"
+                                    class="admin-checkbox"
                                     type="checkbox">
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     type="text">
                             </div>
                         </div>
-                        <div class="group" v-if="jwtSecret">
+                        <div v-if="jwtSecret" class="group">
                             <label
                                 for="jitsi_jwt_app_id"
                                 class="label">
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="group" v-if="jwtSecret">
+                        <div v-if="jwtSecret" class="group">
                             <label
                                 for="jitsi_jwt_audience"
                                 class="label">
@@ -99,7 +99,7 @@
                                     type="text">
                             </div>
                         </div>
-                        <div class="group" v-if="jwtSecret">
+                        <div v-if="jwtSecret" class="group">
                             <label
                                 for="jitsi_jwt_issuer"
                                 class="label">
@@ -124,13 +124,13 @@
                             <span
                                 v-if="!saving && saved"
                                 class="msg success">
-								{{ t('jitsi', 'saved') }}
-							</span>
+                                {{ t('jitsi', 'saved') }}
+                            </span>
                             <span
                                 v-if="saving"
                                 class="msg">
-								{{ t('jitsi', 'saving…') }}
-							</span>
+                                {{ t('jitsi', 'saving…') }}
+                            </span>
                         </div>
                     </div>
                 </SettingsSection>
@@ -148,7 +148,7 @@ export default {
     components: {
         SettingsSection,
     },
-    data () {
+    data() {
         return {
             loading: true,
             saving: false,
@@ -163,10 +163,23 @@ export default {
             serverUrlStatus: false,
             serverUrlMessage: '',
             helpLink: '',
-            rawDisplayJoinUsingTheJitsiApp: 0
+            rawDisplayJoinUsingTheJitsiApp: 0,
         }
     },
-    async created () {
+    computed: {
+        displayJoinUsingTheJitsiApp: {
+            get() {
+                return this.rawDisplayJoinUsingTheJitsiApp === '1'
+            },
+            set(value) {
+                this.rawDisplayJoinUsingTheJitsiApp = value ? '1' : '0'
+            },
+        },
+        hasError() {
+            return this.serverUrlStatus === 'error' || this.jwtAppIdMessage
+        },
+    },
+    async created() {
         this.jwtSecret = await this.loadSetting('jwt_secret')
         this.jwtAppId = await this.loadSetting('jwt_app_id')
         this.jwtAudience = await this.loadSetting('jwt_audience')
@@ -180,7 +193,7 @@ export default {
         this.loading = false
     },
     methods: {
-        async submit () {
+        async submit() {
             this.sanitise()
             this.validate()
 
@@ -234,7 +247,7 @@ export default {
                 this.jwtAppIdMessage = this.t('jitsi', 'Please provide the App Id')
             }
         },
-        async updateSetting (name, value) {
+        async updateSetting(name, value) {
             try {
                 await new Promise((resolve, reject) =>
                     OCP.AppConfig.setValue('jitsi', name, value, {
@@ -247,7 +260,7 @@ export default {
                 throw e
             }
         },
-        async loadSetting (name, defaultValue = null) {
+        async loadSetting(name, defaultValue = null) {
             try {
                 const resDocument = await new Promise((resolve, reject) =>
                     OCP.AppConfig.getValue('jitsi', name, defaultValue, {
@@ -268,19 +281,6 @@ export default {
             }
         },
     },
-    computed: {
-        displayJoinUsingTheJitsiApp: {
-            get () {
-                return this.rawDisplayJoinUsingTheJitsiApp === '1'
-            },
-            set (value) {
-                this.rawDisplayJoinUsingTheJitsiApp = value ? '1' : '0'
-            }
-        },
-        hasError() {
-            return this.serverUrlStatus === 'error' || this.jwtAppIdMessage
-        }
-    }
 }
 </script>
 

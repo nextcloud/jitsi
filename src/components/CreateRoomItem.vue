@@ -1,29 +1,29 @@
 <template>
-	<div>
-		<form @submit.prevent="create">
-			<div class="create-room">
-				<input
-					ref="roomNameInput"
-					v-model="name"
-					class="create-room__name"
-					:placeholder="t('jitsi', 'Name of the new room')"
-					maxlength="100">
-				<div class="create-room__actions">
-					<Actions>
-						<ActionButton icon="icon-checkmark" />
-					</Actions>
-					<Actions>
-						<ActionButton
-							icon="icon-close"
-							@click.prevent="cancel" />
-					</Actions>
-				</div>
-			</div>
-			<button
-				type="submit"
-				style="display: none;" />
-		</form>
-	</div>
+    <div>
+        <form @submit.prevent="create">
+            <div class="create-room">
+                <input
+                    ref="roomNameInput"
+                    v-model="name"
+                    class="create-room__name"
+                    :placeholder="t('jitsi', 'Name of the new room')"
+                    maxlength="100">
+                <div class="create-room__actions">
+                    <Actions>
+                        <ActionButton icon="icon-checkmark" />
+                    </Actions>
+                    <Actions>
+                        <ActionButton
+                            icon="icon-close"
+                            @click.prevent="cancel" />
+                    </Actions>
+                </div>
+            </div>
+            <button
+                type="submit"
+                style="display: none;" />
+        </form>
+    </div>
 </template>
 
 <script>
@@ -34,31 +34,31 @@ import ActionButton from '@nextcloud/vue/dist/Components/ActionButton'
 import Actions from '@nextcloud/vue/dist/Components/Actions'
 
 export default {
-	name: 'CreateRoomItem',
-	components: {
-		ActionButton,
-		Actions,
-	},
-	data() {
-		return {
-			name: '',
-		}
-	},
-	mounted() {
-		this.$refs.roomNameInput.focus()
-	},
-	methods: {
-		cancel() {
-			this.$emit('cancelled')
-		},
-		async create() {
-			const data = {
-				name: this.name,
-			}
-			await axios.post(generateUrl('/apps/jitsi/rooms'), data)
-			this.$emit('created')
-		},
-	},
+    name: 'CreateRoomItem',
+    components: {
+        ActionButton,
+        Actions,
+    },
+    data() {
+        return {
+            name: '',
+        }
+    },
+    mounted() {
+        this.$refs.roomNameInput.focus()
+    },
+    methods: {
+        cancel() {
+            this.$emit('cancelled')
+        },
+        async create() {
+            const data = {
+                name: this.name,
+            }
+            await axios.post(generateUrl('/apps/jitsi/rooms'), data)
+            this.$emit('created')
+        },
+    },
 }
 </script>
 

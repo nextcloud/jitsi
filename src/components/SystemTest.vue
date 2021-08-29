@@ -1,155 +1,152 @@
 <template>
-	<div>
-		<div class="tol-system-check-title">
-			{{ t('jitsi', 'System check') }}
-		</div>
-		<div class="tol-system-checks-container" v-if="!loading && !permissionDenied">
-			<div class="tol-system-check tol-system-check--first">
-				<CameraTest
-					:permission-denied="permissionDenied"
-					:cameras="cameras"
-					v-on="$listeners">
-				</CameraTest>
-			</div>
-			<div class="tol-system-check">
-				<MicTest
-					:permission-denied="permissionDenied"
-					:microphones="microphones"
-					v-on="$listeners">
-				</MicTest>
-				<hr class="tol-check-divider">
-				<SpeakerTest
-					:permission-denied="permissionDenied"
-					:browser="browser"
-					:speakers="speakers"
-					v-on="$listeners">
-				</SpeakerTest>
-				<hr class="tol-check-divider">
-				<BrowserTest :browser="browser"></BrowserTest>
-			</div>
-		</div>
-		<div
-			class="tol-system-checks-permission-denied"
-			v-if="!loading && permissionDenied">
-			<div class="tol-system-checks-permission-denied__message-container">
-				<CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error"></CheckStatusIcon>
-				<div class="tol-system-checks-permission-denied__title">
-					{{ t('jitsi', 'No camera / microphone access') }}
-				</div>
-			</div>
-			<div class="tol-system-checks-permission-denied__message-container">
-				{{ t('jitsi', 'Click on the icon on the left in the browser bar next to the URL and allow access:') }}<br>
-			</div>
-			<div style="text-align: center;">
-				<img
-					class="tol-system-checks-permission-denied__allow-img"
-					:src="allowSrc">
-			</div>
-			<div v-if="$root.helpLink">
-				<div class="tol-system-checks-permission-denied__title2">
-					{{ t('jitsi', 'Doesn\'t work?') }}
-				</div>
-				<a
-					:href="$root.helpLink + '#permissions'"
-					class="tol-system-checks-permission-denied__button button secondary">
-					{{ t('jitsi', 'Click here for trouhleshooting help') }}
-				</a>
-			</div>
-		</div>
-	</div>
+    <div>
+        <div class="tol-system-check-title">
+            {{ t('jitsi', 'System check') }}
+        </div>
+        <div v-if="!loading && !permissionDenied" class="tol-system-checks-container">
+            <div class="tol-system-check tol-system-check--first">
+                <CameraTest
+                    :permission-denied="permissionDenied"
+                    :cameras="cameras"
+                    v-on="$listeners" />
+            </div>
+            <div class="tol-system-check">
+                <MicTest
+                    :permission-denied="permissionDenied"
+                    :microphones="microphones"
+                    v-on="$listeners" />
+                <hr class="tol-check-divider">
+                <SpeakerTest
+                    :permission-denied="permissionDenied"
+                    :browser="browser"
+                    :speakers="speakers"
+                    v-on="$listeners" />
+                <hr class="tol-check-divider">
+                <BrowserTest :browser="browser" />
+            </div>
+        </div>
+        <div
+            v-if="!loading && permissionDenied"
+            class="tol-system-checks-permission-denied">
+            <div class="tol-system-checks-permission-denied__message-container">
+                <CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error" />
+                <div class="tol-system-checks-permission-denied__title">
+                    {{ t('jitsi', 'No camera / microphone access') }}
+                </div>
+            </div>
+            <div class="tol-system-checks-permission-denied__message-container">
+                {{ t('jitsi', 'Click on the icon on the left in the browser bar next to the URL and allow access:') }}<br>
+            </div>
+            <div style="text-align: center;">
+                <img
+                    class="tol-system-checks-permission-denied__allow-img"
+                    :src="allowSrc">
+            </div>
+            <div v-if="$root.helpLink">
+                <div class="tol-system-checks-permission-denied__title2">
+                    {{ t('jitsi', 'Doesn\'t work?') }}
+                </div>
+                <a
+                    :href="$root.helpLink + '#permissions'"
+                    class="tol-system-checks-permission-denied__button button secondary">
+                    {{ t('jitsi', 'Click here for trouhleshooting help') }}
+                </a>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 
 import Bowser from 'bowser'
-import BrowserTest from "./BrowserTest"
-import CameraTest from "./CameraTest";
-import MicTest from "./MicTest";
-import SpeakerTest from "./SpeakerTest";
-import CheckStatusIcon from "./CheckStatusIcon";
-import {generateFilePath} from "@nextcloud/router";
+import BrowserTest from './BrowserTest'
+import CameraTest from './CameraTest'
+import MicTest from './MicTest'
+import SpeakerTest from './SpeakerTest'
+import CheckStatusIcon from './CheckStatusIcon'
+import { generateFilePath } from '@nextcloud/router'
 
 export default {
-	name: 'SystemTest',
-	components: {
-		CheckStatusIcon,
-		SpeakerTest,
-		MicTest,
-		CameraTest,
-		BrowserTest
-	},
-	data() {
-		return {
-			browser: undefined,
-			selectedCamera: '',
-			selectedMicrophone: '',
-			cameras: [],
-			microphones: [],
-			speakers: [],
-			loading: true,
-			permissionDenied: false,
-		}
-	},
-	computed: {
-		allowSrc() {
-			return generateFilePath('jitsi', 'img', 'allow.png')
-		}
-	},
-	methods: {
-		async askPermissions() {
-			try {
-				const stream = await navigator.mediaDevices.getUserMedia({audio: true, video: true})
-				stream.getTracks().forEach((track) => {
-					track.stop()
-				})
-			} catch (err) {
-				// console.log(`[jitsi] getUserMedia() error: ${err.message}`)
+    name: 'SystemTest',
+    components: {
+        CheckStatusIcon,
+        SpeakerTest,
+        MicTest,
+        CameraTest,
+        BrowserTest,
+    },
+    data() {
+        return {
+            browser: undefined,
+            selectedCamera: '',
+            selectedMicrophone: '',
+            cameras: [],
+            microphones: [],
+            speakers: [],
+            loading: true,
+            permissionDenied: false,
+        }
+    },
+    computed: {
+        allowSrc() {
+            return generateFilePath('jitsi', 'img', 'allow.png')
+        },
+    },
+    async created() {
+        this.browser = Bowser.getParser(window.navigator.userAgent)
+        await this.askPermissions()
+        await this.queryDevices()
+        this.loading = false
 
-				if (err.name === 'NotAllowedError') {
-					this.permissionDenied = true
-					this.$root.$emit('tol-permission-denied')
-				}
-			}
-		},
-		async queryDevices() {
-			const devices = await navigator.mediaDevices.enumerateDevices()
-			const cameras = []
-			const microphones = []
-			const speakers = []
+        this.$root.$on('tol-refresh-devices', () => {
+            // console.log('[jitsi] tol-refresh-devices')
+            this.queryDevices()
+        })
+    },
+    methods: {
+        async askPermissions() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+                stream.getTracks().forEach((track) => {
+                    track.stop()
+                })
+            } catch (err) {
+                // console.log(`[jitsi] getUserMedia() error: ${err.message}`)
 
-			devices.forEach((device) => {
-				// console.log(`[jitsi] device`)
-				// console.log(device)
+                if (err.name === 'NotAllowedError') {
+                    this.permissionDenied = true
+                    this.$root.$emit('tol-permission-denied')
+                }
+            }
+        },
+        async queryDevices() {
+            const devices = await navigator.mediaDevices.enumerateDevices()
+            const cameras = []
+            const microphones = []
+            const speakers = []
 
-				if (device.kind === 'videoinput') {
-					cameras.push(device)
-				}
+            devices.forEach((device) => {
+                // console.log(`[jitsi] device`)
+                // console.log(device)
 
-				if (device.kind === 'audioinput' && device.label.toLocaleLowerCase().includes('monitor of') === false) {
-					microphones.push(device)
-				}
+                if (device.kind === 'videoinput') {
+                    cameras.push(device)
+                }
 
-				if (device.kind === 'audiooutput') {
-					speakers.push(device)
-				}
-			})
+                if (device.kind === 'audioinput' && device.label.toLocaleLowerCase().includes('monitor of') === false) {
+                    microphones.push(device)
+                }
 
-			this.cameras = cameras
-			this.microphones = microphones
-			this.speakers = speakers
-		}
-	},
-	async created() {
-		this.browser = Bowser.getParser(window.navigator.userAgent)
-		await this.askPermissions()
-		await this.queryDevices()
-		this.loading = false
+                if (device.kind === 'audiooutput') {
+                    speakers.push(device)
+                }
+            })
 
-		this.$root.$on('tol-refresh-devices', () => {
-			// console.log('[jitsi] tol-refresh-devices')
-			this.queryDevices()
-		})
-	},
+            this.cameras = cameras
+            this.microphones = microphones
+            this.speakers = speakers
+        },
+    },
 }
 </script>
 
