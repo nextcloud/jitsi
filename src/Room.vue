@@ -91,13 +91,13 @@
                     <div class="room__options">
                         <label class="room__option">
                             <input
-                                v-model="microphoneInActive"
+                                v-model="startMuted"
                                 class="room__option__checkbox"
                                 type="checkbox"> {{ t('jitsi', 'Start muted') }}
                         </label>
                         <label class="room__option">
                             <input
-                                v-model="cameraInActive"
+                                v-model="startCameraOff"
                                 class="room__option__checkbox"
                                 type="checkbox"> {{ t('jitsi', 'Start with camera off') }}
                         </label>
@@ -210,8 +210,8 @@ export default {
             copied: false,
             copySuccess: false,
             showJoinApp: false,
-            cameraInActive: false,
-            microphoneInActive: false,
+            _startCameraOff: false,
+            _startMuted: false,
             serverUrl: null,
             serverHost: null,
             selectedCamera: null,
@@ -246,6 +246,24 @@ export default {
 
             return true
         },
+        startMuted: {
+            get() {
+                return this._startMuted
+            },
+            set(startMuted) {
+                this._startMuted = startMuted
+                localStorage.setItem('jitsi.startMuted', startMuted)
+            }
+        },
+        startCameraOff: {
+            get() {
+                return this._startCameraOff
+            },
+            set(startCameraOff) {
+                this._startCameraOff = startCameraOff
+                localStorage.setItem('jitsi.startCameraOff', startCameraOff)
+            }
+        },
         caretSrc() {
             return this.link('/svg/core/actions/caret?color=000000')
         },
@@ -257,6 +275,9 @@ export default {
         },
     },
     async created() {
+        this.startMuted = localStorage.getItem('jitsi.startMuted') === 'true'
+        this.startCameraOff = localStorage.getItem('jitsi.startCameraOff') === 'true'
+
         this.$root.$on('tol-permission-denied', () => {
             this.permissionDenied = true
         })
@@ -370,11 +391,13 @@ export default {
                 disableInviteFunctions: false,
             }
 
-            if (this.microphoneInActive) {
+            if (this._startMuted) {
+                console.log('audio aus')
                 configOverwrite.startWithAudioMuted = true
             }
 
-            if (this.cameraInActive) {
+            if (this._startCameraOff) {
+                console.log('Kamera aus')
                 configOverwrite.startWithVideoMuted = true
             }
 
