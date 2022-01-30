@@ -65,6 +65,8 @@ OC.L10N.register(
     "Conferences app not yet configured" : "Konferenzen-App noch nicht konfiguriert",
     "Please contact your administrator to set up the conferences app." : "Bitte kontaktieren Sie Ihren Administrator, damit er die Konferenzen-App einrichtet.",
     "Your browser (%1$s) is outdated and<br>no longer supported" : "Ihr Browser (%1$s) ist veraltet und<br>wird nicht mehr unterstützt",
-    "It is recommended to use the latest version of one of the following browsers:" : "Es wird empfohlen die neuste Version eines dieser Browser zu verwenden:"
+    "It is recommended to use the latest version of one of the following browsers:" : "Es wird empfohlen die neuste Version eines dieser Browser zu verwenden:",
+    "Paste the link into the app" : "In die Jitsi-App einfügen",
+    "_conferenceContainer_::_conference-container_" : ["Konferenzen","Konferenzen"]
 },
 "nplurals=2; plural=(n != 1);");
