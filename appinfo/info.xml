@@ -14,7 +14,7 @@ Features:
 
 Please read the [documentation](https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md).
     </description>
-    <version>0.12.0</version>
+    <version>0.13.0</version>
     <licence>agpl</licence>
     <author mail="mail@michael-weimann.eu" homepage="https://weimann.digital/">Michael Weimann</author>
     <namespace>jitsi</namespace>
@@ -30,7 +30,7 @@ Please read the [documentation](https://pubcode.weimann.digital/projects/nextclo
 	</settings>
 
     <dependencies>
-        <nextcloud min-version="21" max-version="22"/>
+        <nextcloud min-version="21" max-version="23"/>
     </dependencies>
     <navigations>
         <navigation>

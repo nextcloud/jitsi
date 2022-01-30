@@ -6,9 +6,19 @@
     <file>appinfo</file>
     <file>lib</file>
     <file>templates</file>
-    <file>tests</file>
 
     <exclude-pattern>tests/bootstrap.php</exclude-pattern>
 
     <rule ref="PSR12"/>
+
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
 </ruleset>

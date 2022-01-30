@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OCA\jitsi\Controller;
 
 use OCA\jitsi\Config\Config;
-use OCA\jitsi\Db\RoomMapper;
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\FeaturePolicy;
 use OCP\AppFramework\Http\Response;
@@ -13,20 +14,13 @@ use OCP\IUserSession;
 
 class PageController extends AbstractController
 {
-    /**
-     * @var RoomMapper
-     */
-    private $roomMapper;
-
     public function __construct(
         string $AppName,
         IRequest $request,
-        RoomMapper $roomMapper,
         IUserSession $userSession,
         Config $appConfig
     ) {
         parent::__construct($AppName, $request, $userSession, $appConfig);
-        $this->roomMapper = $roomMapper;
     }
 
     /**

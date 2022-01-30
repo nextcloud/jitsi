@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OCA\jitsi\Db;
 
 use OCP\AppFramework\Db\QBMapper;
@@ -13,7 +15,7 @@ use function reset;
  */
 class RoomMapper extends QBMapper
 {
-    public function __construct(IDbConnection $db)
+    public function __construct(IDBConnection $db)
     {
         parent::__construct($db, 'jitsi_rooms', Room::class);
     }

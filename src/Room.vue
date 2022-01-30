@@ -388,16 +388,14 @@ export default {
             const configOverwrite = {
                 disableDeepLinking: true,
                 prejoinPageEnabled: false,
-                disableInviteFunctions: false,
+                disableInviteFunctions: true,
             }
 
             if (this._startMuted) {
-                console.log('audio aus')
                 configOverwrite.startWithAudioMuted = true
             }
 
             if (this._startCameraOff) {
-                console.log('Kamera aus')
                 configOverwrite.startWithVideoMuted = true
             }
 
@@ -418,6 +416,11 @@ export default {
             this.conferenceRunning = true
             const api = new JitsiMeetExternalAPI(this.serverHost, options)
             api.executeCommand('subject', this.room.name)
+
+            if (this.user) {
+                api.executeCommand('avatarUrl', this.user.avatarURL)
+            }
+
             api.addEventListener('readyToClose', () => {
                 this.joining = false
                 api.dispose()

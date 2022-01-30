@@ -1,22 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OCA\jitsi\Settings;
 
-use OCP\IL10N;
 use OCP\IURLGenerator;
 use OCP\Settings\IIconSection;
 
 class AdminSection implements IIconSection
 {
-    /** @var IL10N */
-    private $l;
-
     /** @var IURLGenerator */
     private $urlgen;
 
-    public function __construct(IL10N $l, IURLGenerator $urlgen)
+    public function __construct(IURLGenerator $urlgen)
     {
-        $this->l = $l;
         $this->urlgen = $urlgen;
     }
 

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use OCA\jitsi\AppInfo\Application;
 use OCP\IL10N;
 

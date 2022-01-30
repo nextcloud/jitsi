@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OCA\jitsi\Controller;
 
 use Ahc\Jwt\JWT;
@@ -10,7 +12,6 @@ use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\IRequest;
 use OCP\IUserSession;
-
 use Ramsey\Uuid\Uuid;
 
 class RoomController extends AbstractController
@@ -131,14 +132,16 @@ class RoomController extends AbstractController
             return new DataResponse([], Http::STATUS_NOT_FOUND);
         }
 
+        $context = [
+            'user' => [
+                'name' => $displayName,
+            ],
+        ];
+
         $jwt = new JWT($jwtSecret, 'HS256');
         $token = $jwt->encode(
             [
-                'context' => [
-                    'user' => [
-                        'name' => $displayName,
-                    ],
-                ],
+                'context' => $context,
                 'aud'     => $this->appConfig->jwtAudience(),
                 'iss'     => $this->appConfig->jwtIssuer(),
                 'sub'     => '*',

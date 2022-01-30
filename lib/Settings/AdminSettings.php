@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace OCA\jitsi\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
