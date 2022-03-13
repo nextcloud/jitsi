@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Nextcloud package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud 3.14159\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"POT-Creation-Date: 2021-06-09 19:48+0200\n"
+"PO-Revision-Date: 2022-02-10 11:05+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/lib/Search/Provider.php:70
+msgid "conferences"
+msgstr "réunions"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Jitsi Integration"
+msgstr "Intégration de Jitsi"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "Conferences"
+msgstr "Réunions"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialAppInfoFakeDummyForL10nScript.php:4
+msgid "Jitsi Integration (unofficial)"
+msgstr "Intégration de Jitsi (non officiel)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialAppInfoFakeDummyForL10nScript.php:5
+msgid ""
+"This app integrates Jitsi conferences into Nextcloud.\n"
+"\n"
+"Features:\n"
+"- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n"
+"- 🔗 Sharable conference room links\n"
+"- 🔎 Shows conference rooms in the global search\n"
+"- ✅ System test before joining a conference\n"
+"\n"
+"Please read the [documentation](https://pubcode.weimann.digital/projects/"
+"nextcloud-jitsi/blob/master/README.md)."
+msgstr ""
+"Cette application intègre les réunions Jitsi à Nextcloud.\n"
+"\n"
+"Caractéristiques:\n"
+"- 🎥 Conférences online faciles dans Nextcloud en utilisant Jitsi\n"
+"- 🔗 Partage des liens vers les salles de réunion\n"
+"- 🔎 Affiche les salles de réunion dans la recherche globale\n"
+"- ✅ Test système avant de rejoindre une réunion\n"
+"\n"
+"Lisez la [documentation](https://pubcode.weimann.digital/projects/nextcloud-"
+"jitsi/blob/master/README.md)."
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:1
+msgid "loading…"
+msgstr "chargement…"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:2
+msgid "Server URL (required)"
+msgstr "URL du serveur (requis)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:3
+msgid "Help link (optional)"
+msgstr "Lien d’aide (facultatif)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:4
+msgid "Display \"Join using the Jitsi app\""
+msgstr "Afficher « Rejoindre via l’application Jitsi »"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:5
+msgid "JWT Secret (optional)"
+msgstr "Secret JWT (facultatif)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:6
+msgid "JWT App Id"
+msgstr "App Id JWT"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:7
+msgid "JWT Audience (optional)"
+msgstr "Audience JWT (facultatif)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:8
+msgid "JWT Issuer (optional)"
+msgstr "Émetteur JWT (facultatif)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:9
+msgid "save"
+msgstr "enregistrer"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:10
+msgid "saved"
+msgstr "enregistré"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:11
+msgid "saving…"
+msgstr "enregistrement…"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:12
+msgid "Please provide a Jitsi instance URL"
+msgstr "Indiquez l’URL d’une instance Jitsi"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:13
+msgid "The server URL must start with https://"
+msgstr "L’URL du serveur doit commencer par https://"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:14
+msgid "It is highly recommended to set up a dedicated Jitsi instance"
+msgstr "Il est hautement recommandé de configurer une instance Jitsi dédiée"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:15
+msgid "Please provide the App Id"
+msgstr "Indiquez l’App Id"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:16
+msgid "Failed to save settings"
+msgstr "Échec d’enregistrement des paramètres"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:17
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:18
+msgid "Failed to load settings"
+msgstr "Échec de chargement des paramètres"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:19
+msgid "Conference rooms"
+msgstr "Salles de réunion"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:20
+msgid "Conference"
+msgstr "Réunion"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:21
+msgid "Conference left"
+msgstr "Réunion quittée"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:22
+msgid "Problems detected"
+msgstr "Problèmes détectés"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:23
+msgid "Your browser is non-optimal:"
+msgstr "Votre navigateur n’est pas optimal:"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:24
+msgid ""
+"Audio and video quality could be poor. It is recommended to use a recent "
+"<b>Firefox / Chrome / Chromium</b> version."
+msgstr ""
+"La qualité du son et de l’image pourraient être faibles. Il est recommandé "
+"d’utiliser une version récente de <b>Firefox / Chrome / Chromium</b>."
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:25
+msgid "Browser not supported"
+msgstr "Navigateur non-supporté"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:26
+msgid "Show system check"
+msgstr "Afficher la vérification du système"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:27
+msgid "Your name:"
+msgstr "Votre nom :"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:28
+msgid "click here to join"
+msgstr "cliquez ici pour rejoindre"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:29
+msgid "Start muted"
+msgstr "Démarrer en mode muet"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:30
+msgid "Start with camera off"
+msgstr "Démarrer sans caméra"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:31
+msgid "Join using the Jitsi app (beta)"
+msgstr "Rejoindre en utilisant l’appli Jitsi (beta)"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:32
+msgid "Download the app here ↗"
+msgstr "Télécharger l’appli ici ↗"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:33
+msgid "Create participation link"
+msgstr "Créer un lien de participation"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:34
+msgid ""
+"Paste the link from above into the<br>input field on the App start screen"
+msgstr ""
+"Collez le lien ci-dessus dans le<br>champ sur l’écran de démarrage de l’App"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:35
+msgid "Link copied"
+msgstr "Lien copié"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:36
+msgid "Cannot copy, please copy the link manually"
+msgstr "Copie impossible, copiez le lien manuellement"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:37
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:53
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse-papier"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:38
+msgid "Browser"
+msgstr "Navigateur"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:39
+msgid "non-optimal"
+msgstr "non-optimal"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:40
+msgid "not supported"
+msgstr "non supporté"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:41
+msgid ""
+"Audio and video quality could be poor.<br> It is recommended to use a recent "
+"<b>Firefox/Chrome/Chromium</b> version."
+msgstr ""
+"La qualité du son et de l’image pourraient être faibles.<br> Il est "
+"recommandé d’utiliser une version récente de <b>Firefox / Chrome / Chromium</"
+"b>."
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:42
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:44
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:50
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:57
+msgid "Help"
+msgstr "Aide"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:43
+msgid "Camera"
+msgstr "Caméra"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:45
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:48
+msgid "Name of the new room"
+msgstr "Nom de la nouvelle salle"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:46
+msgid "No conference rooms yet"
+msgstr "Pas encore de salles de réunion"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:47
+msgid "Create the first room:"
+msgstr "Créer la première salle :"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:49
+msgid "Microphone"
+msgstr "Micro"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:51
+msgid "Join"
+msgstr "Rejoindre"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:52
+msgid "Delete room"
+msgstr "Supprimer la salle"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:54
+msgid "Room not found"
+msgstr "Salle non trouvée"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:55
+msgid "Please check the link/URL and ask your host"
+msgstr "Vérifiez le lien/URL et demandez au serveur"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:56
+msgid "Audio output"
+msgstr "Sortie audio"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:58
+msgid "Play test sound"
+msgstr "Jouer un son test"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:59
+msgid "System check"
+msgstr "Vérification du système"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:60
+msgid "No camera / microphone access"
+msgstr "Pas d’accès caméra / micro"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:61
+msgid ""
+"Click on the icon on the left in the browser bar next to the URL and allow "
+"access:"
+msgstr ""
+"Cliquez sur l’icône à gauche dans la barre du navigateur, à côté de l’URL, "
+"et autorisez l’accès :"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:62
+msgid "Doesn't work?"
+msgstr "Ça ne fonctionne pas ?"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:63
+msgid "Click here for trouhleshooting help"
+msgstr "Cliquez ici pour une aide de dépannage"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:17
+msgid "Conferences app not yet configured"
+msgstr "Appli de réunions pas encore configurée"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:20
+msgid "Please contact your administrator to set up the conferences app."
+msgstr "Contactez votre administrateur pour configurer l’appli de réunions."
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:17
+#, php-format
+msgid "Your browser (%1$s) is outdated and<br>no longer supported"
+msgstr "Votre navigateur (%1$s) est dépassé et<br>n’est plus supporté"
+
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:20
+msgid ""
+"It is recommended to use the latest version of one of the following browsers:"
+msgstr ""
+"Il est recommandé d’utiliser la dernière version des navigateurs suivants :"
