@@ -17,6 +17,7 @@ class AssetsController extends Controller
     public function soundsTest(): StreamResponse
     {
         return (new StreamResponse(__DIR__ . '/../../sounds/coin.wav'))
+            ->addHeader('Content-Type', 'audio/wav')
             ->cacheFor(24 * 60 * 60);
     }
 }

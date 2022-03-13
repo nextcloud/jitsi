@@ -31,6 +31,6 @@ return [
         ['name' => 'user#get', 'url' => '/api/user', 'verb' => 'GET'],
 
         // assets
-        ['name' => 'assets#soundsTest', 'url' => '/assets/sounds/test', 'verb' => 'GET'],
+        ['name' => 'assets#soundsTest', 'url' => '/assets/sounds/test.wav', 'verb' => 'GET'],
     ],
 ];

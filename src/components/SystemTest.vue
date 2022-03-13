@@ -95,7 +95,14 @@ export default {
     async created() {
         this.browser = Bowser.getParser(window.navigator.userAgent)
         await this.askPermissions()
-        await this.queryDevices()
+
+        try {
+            await this.queryDevices()
+        } catch (err) {
+            console.log('Error detecting devices')
+            console.log(err)
+        }
+
         this.loading = false
 
         this.$root.$on('tol-refresh-devices', () => {

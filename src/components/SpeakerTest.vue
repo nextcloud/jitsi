@@ -112,7 +112,7 @@ export default {
     },
     methods: {
         playTestSound() {
-            const testFileUrl = generateUrl('/apps/jitsi/assets/sounds/test')
+            const testFileUrl = generateUrl('/apps/jitsi/assets/sounds/test.wav')
             const audio = new Audio(testFileUrl)
 
             if (this.browser.getBrowserName(true) !== 'firefox') {
