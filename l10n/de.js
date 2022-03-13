@@ -34,7 +34,7 @@ OC.L10N.register(
     "click here to join" : "Hier geht's rein",
     "Start muted" : "Stummgeschaltet beginnen",
     "Start with camera off" : "Kamera zu Beginn aus",
-    "Join using the Jitsi app (beta)" : "Mit der Jitsi-App teilnehmen (Beta)",
+    "Join using the Jitsi app" : "Mit der Jitsi-App teilnehmen",
     "Download the app here ↗" : "Hier App herunterladen ↗",
     "Create participation link" : "Teilnahme-Link erstellen",
     "Paste the link from above into the<br>input field on the App start screen" : "Den Link von oben in das Eingabefeld<br>in der App Startansicht einfügen",

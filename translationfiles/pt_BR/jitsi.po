@@ -161,8 +161,8 @@ msgid "Start with camera off"
 msgstr "Comece com a câmera desligada"
 
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:31
-msgid "Join using the Jitsi app (beta)"
-msgstr "Junte-se usando o aplicativo Jitsi (beta)"
+msgid "Join using the Jitsi app"
+msgstr "Junte-se usando o aplicativo Jitsi"
 
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:32
 msgid "Download the app here â†—"

@@ -115,7 +115,7 @@
                     <div
                         class="room__join-app-toggle"
                         @click="showJoinApp = !showJoinApp">
-                        {{ t('jitsi', 'Join using the Jitsi app (beta)') }}
+                        {{ t('jitsi', 'Join using the Jitsi app') }}
                         <img
                             class="room__join-app-toggle-icon"
                             :class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
