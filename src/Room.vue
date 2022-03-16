@@ -278,7 +278,7 @@ export default {
         this.startMuted = localStorage.getItem('jitsi.startMuted') === 'true'
         this.startCameraOff = localStorage.getItem('jitsi.startCameraOff') === 'true'
 
-        this.$root.$on('tol-permission-denied', () => {
+        this.$root.$on('jitsi.device_permission_denied', () => {
             this.permissionDenied = true
         })
 

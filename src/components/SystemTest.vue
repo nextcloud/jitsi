@@ -66,6 +66,28 @@ import SpeakerTest from './SpeakerTest'
 import CheckStatusIcon from './CheckStatusIcon'
 import { generateFilePath } from '@nextcloud/router'
 
+async function askPermissions(constraints, vm, notFoundCallback) {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia(constraints)
+        stream.getTracks().forEach((track) => {
+            track.stop()
+        })
+    } catch (err) {
+        console.log(`[jitsi] getUserMedia() error.name: ${err.name}`)
+        console.log(`[jitsi] getUserMedia() error.message: ${err.message}`)
+
+        if (err.name === 'NotFoundError' && notFoundCallback) {
+            await notFoundCallback()
+        }
+
+        if (err.name === 'NotAllowedError') {
+            vm.permissionDenied = true
+            vm.$root.$emit('jitsi.device_permission_denied')
+        }
+    }
+
+}
+
 export default {
     name: 'SystemTest',
     components: {
@@ -94,7 +116,12 @@ export default {
     },
     async created() {
         this.browser = Bowser.getParser(window.navigator.userAgent)
-        await this.askPermissions()
+
+        await Promise.race([
+            // safeguard because some browsers do not return
+            new Promise(resolve => setTimeout(resolve, 500)),
+            this.askPermissions(),
+        ])
 
         try {
             await this.queryDevices()
@@ -112,19 +139,11 @@ export default {
     },
     methods: {
         async askPermissions() {
-            try {
-                const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-                stream.getTracks().forEach((track) => {
-                    track.stop()
-                })
-            } catch (err) {
-                // console.log(`[jitsi] getUserMedia() error: ${err.message}`)
-
-                if (err.name === 'NotAllowedError') {
-                    this.permissionDenied = true
-                    this.$root.$emit('tol-permission-denied')
-                }
-            }
+            await askPermissions(
+                { audio: true, video: true},
+                this,
+                async () => askPermissions({ audio: true }, this)
+            )
         },
         async queryDevices() {
             const devices = await navigator.mediaDevices.enumerateDevices()
