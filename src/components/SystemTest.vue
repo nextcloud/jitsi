@@ -25,6 +25,31 @@
                 <BrowserTest :browser="browser" />
             </div>
         </div>
+
+        <div
+            v-if="timeout"
+            class="tol-system-checks-permission-denied">
+            <div class="tol-system-checks-permission-denied__message-container">
+                <CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error" />
+                <div class="tol-system-checks-permission-denied__title">
+                    {{ t('jitsi', 'Unknown error occurred') }}
+                </div>
+            </div>
+            <div class="tol-system-checks-timeout__message-container">
+                <div class="mb">
+                    {{ t('jitsi', 'Known issues / what you can try') }}
+                </div>
+                <ul>
+                    <li>
+                        {{ t('jitsi', '• If you have DroidCam: Connect to the mobile camera, then reload the page') }}
+                    </li>
+                    <li>
+                        {{ t('jitsi', '• Try join using the Jitsi app (follow the instructions at the bottom of the page)') }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div
             v-if="!loading && permissionDenied"
             class="tol-system-checks-permission-denied">
@@ -107,6 +132,7 @@ export default {
             speakers: [],
             loading: true,
             permissionDenied: false,
+            timeout: false,
         }
     },
     computed: {
@@ -119,9 +145,20 @@ export default {
 
         await Promise.race([
             // safeguard because some browsers do not return
-            new Promise(resolve => setTimeout(resolve, 500)),
+            new Promise((resolve) => {
+                setTimeout(() => {
+                    this.timeout = true
+                    resolve()
+                }, 2500)
+            }),
             this.askPermissions(),
         ])
+
+        if (this.timeout) {
+            console.log('Timeout reached')
+            this.$root.$emit('jitsi.system_test_error')
+            return
+        }
 
         try {
             await this.queryDevices()
@@ -217,6 +254,12 @@ export default {
 	margin-right: auto;
 }
 
+.tol-system-checks-timeout__message-container {
+	align-items: center;
+	display: flex;
+    flex-direction: column;
+}
+
 .tol-system-checks-permission-denied__title {
 	font-size: 18px;
 	font-weight: bold;
@@ -261,6 +304,11 @@ export default {
 		margin-bottom: 0;
 		margin-right: 16px;
 	}
+}
+
+
+.mb {
+    margin-bottom: 8px;
 }
 
 </style>

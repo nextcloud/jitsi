@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2021-06-09 19:48+0200\n"
-"PO-Revision-Date: 2021-06-09 19:49+0200\n"
+"POT-Creation-Date: 2022-03-26 20:13+0100\n"
+"PO-Revision-Date: 2022-03-26 20:16+0100\n"
 "Last-Translator: Michael Weimann / weeman <mail@michael-weimann.eu>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3\n"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/lib/Search/Provider.php:70
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/lib/Search/Provider.php:72
 msgid "conferences"
 msgstr "Konferenzen"
 
@@ -48,96 +48,119 @@ msgid ""
 "nextcloud-jitsi/blob/master/README.md)."
 msgstr ""
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:1
+#. TRANSLATORS src/Admin.vue:7
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:2
 msgid "loading…"
 msgstr "lade…"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:2
+#. TRANSLATORS src/Admin.vue:14
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:4
 msgid "Server URL (required)"
 msgstr "Server URL (Pflichtfeld)"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:3
+#. TRANSLATORS src/Admin.vue:31
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:6
 msgid "Help link (optional)"
 msgstr "Hilfe-Link (optional)"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:4
+#. TRANSLATORS src/Admin.vue:45
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:8
 msgid "Display \"Join using the Jitsi app\""
 msgstr "\"Mit der Jitsi-App teilnehmen\" anzeigen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:5
+#. TRANSLATORS src/Admin.vue:61
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:10
 msgid "JWT Secret (optional)"
 msgstr "JWT Secret (optional)"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:6
+#. TRANSLATORS src/Admin.vue:75
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:12
 msgid "JWT App Id"
 msgstr "JWT App Id"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:7
+#. TRANSLATORS src/Admin.vue:92
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:14
 msgid "JWT Audience (optional)"
 msgstr "JWT Audience (optional)"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:8
+#. TRANSLATORS src/Admin.vue:106
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:16
 msgid "JWT Issuer (optional)"
 msgstr "JWT Issuer (optional)"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:9
+#. TRANSLATORS src/Admin.vue:122
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:18
 msgid "save"
 msgstr "speichern"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:10
+#. TRANSLATORS src/Admin.vue:127
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:20
 msgid "saved"
 msgstr "gespeichert"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:11
+#. TRANSLATORS src/Admin.vue:132
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:22
 msgid "saving…"
 msgstr "speichere…"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:12
+#. TRANSLATORS src/Admin.vue:231
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:24
 msgid "Please provide a Jitsi instance URL"
 msgstr "Bitte eine Jitsi Server URL eingeben"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:13
+#. TRANSLATORS src/Admin.vue:236
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:26
 msgid "The server URL must start with https://"
 msgstr "Die Server URL muss mit https:// anfangen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:14
+#. TRANSLATORS src/Admin.vue:241
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:28
 msgid "It is highly recommended to set up a dedicated Jitsi instance"
 msgstr "Es wird dringend empfohlen eine eigene Jitsi Instanz einzurichten"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:15
+#. TRANSLATORS src/Admin.vue:247
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:30
 msgid "Please provide the App Id"
 msgstr "Bitte die App Id eingeben"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:16
+#. TRANSLATORS src/Admin.vue:259
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:32
 msgid "Failed to save settings"
 msgstr "Fehler beim Speichern der Einstellungen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:17
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:18
+#. TRANSLATORS src/Admin.vue:272
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:34
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:36
 msgid "Failed to load settings"
 msgstr "Fehler beim Laden der Einstellungen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:19
+#. TRANSLATORS src/Index.vue:8
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:38
 msgid "Conference rooms"
 msgstr "Konferenzräume"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:20
+#. TRANSLATORS src/Room.vue:31
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:40
 msgid "Conference"
 msgstr "Konferenz"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:21
+#. TRANSLATORS src/Room.vue:38
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:42
 msgid "Conference left"
 msgstr "Konferenz verlassen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:22
+#. TRANSLATORS src/Room.vue:48
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:44
 msgid "Problems detected"
 msgstr "Probleme erkannt"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:23
+#. TRANSLATORS src/Room.vue:55
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:46
 msgid "Your browser is non-optimal:"
 msgstr "Browser nicht optimal:"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:24
+#. TRANSLATORS src/Room.vue:56
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:48
 msgid ""
 "Audio and video quality could be poor. It is recommended to use a recent "
 "<b>Firefox / Chrome / Chromium</b> version."
@@ -145,74 +168,92 @@ msgstr ""
 "Bild- und Tonqualität können schlecht sein. Empfohlen wird die neuste "
 "Version von <b>Firefox / Chrome / Chromium</b>."
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:25
+#. TRANSLATORS src/Room.vue:59
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:50
 msgid "Browser not supported"
 msgstr "Browser nicht unterstützt"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:26
+#. TRANSLATORS src/Room.vue:67
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:52
 msgid "Show system check"
 msgstr "Systemprüfung anzeigen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:27
+#. TRANSLATORS src/Room.vue:76
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:54
 msgid "Your name:"
 msgstr "Name:"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:28
+#. TRANSLATORS src/Room.vue:88
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:56
 msgid "click here to join"
-msgstr "Hier geht's rein"
+msgstr "Hier gehts rein"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:29
+#. TRANSLATORS src/Room.vue:96
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:58
 msgid "Start muted"
 msgstr "Stummgeschaltet beginnen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:30
+#. TRANSLATORS src/Room.vue:102
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:60
 msgid "Start with camera off"
 msgstr "Kamera zu Beginn aus"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:31
+#. TRANSLATORS src/Room.vue:118
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:62
 msgid "Join using the Jitsi app"
 msgstr "Mit der Jitsi-App teilnehmen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:32
+#. TRANSLATORS src/Room.vue:132
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:64
 msgid "Download the app here ↗"
 msgstr "Hier App herunterladen ↗"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:33
+#. TRANSLATORS src/Room.vue:139
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:66
 msgid "Create participation link"
 msgstr "Teilnahme-Link erstellen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:34
+#. TRANSLATORS src/Room.vue:158
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:68
 msgid ""
 "Paste the link from above into the<br>input field on the App start screen"
 msgstr ""
 "Den Link von oben in das Eingabefeld<br>in der App Startansicht einfügen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:35
+#. TRANSLATORS src/Room.vue:237
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:70
 msgid "Link copied"
 msgstr "Link kopiert"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:36
+#. TRANSLATORS src/Room.vue:238
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:72
 msgid "Cannot copy, please copy the link manually"
 msgstr "Fehler, bitte Link manuell kopieren"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:37
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:53
+#. TRANSLATORS src/Room.vue:240
+#. TRANSLATORS src/components/RoomListItem.vue:84
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:74
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:106
 msgid "Copy to clipboard"
 msgstr "In die Zwischenablage kopieren"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:38
+#. TRANSLATORS src/components/BrowserTest.vue:10
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:76
 msgid "Browser"
 msgstr "Browser"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:39
+#. TRANSLATORS src/components/BrowserTest.vue:11
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:78
 msgid "non-optimal"
 msgstr "nicht optimal"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:40
+#. TRANSLATORS src/components/BrowserTest.vue:12
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:80
 msgid "not supported"
 msgstr "nicht untertützt"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:41
+#. TRANSLATORS src/components/BrowserTest.vue:21
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:82
 msgid ""
 "Audio and video quality could be poor.<br> It is recommended to use a recent "
 "<b>Firefox/Chrome/Chromium</b> version."
@@ -220,67 +261,112 @@ msgstr ""
 "Bild- und Tonqualität könnten schlecht sein.<br>Empfohlen wird der neuste "
 "<b>Firefox/Chrome/Chromium</b>."
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:42
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:44
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:50
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:57
+#. TRANSLATORS src/components/BrowserTest.vue:30
+#. TRANSLATORS src/components/CameraTest.vue:14
+#. TRANSLATORS src/components/MicTest.vue:14
+#. TRANSLATORS src/components/SpeakerTest.vue:14
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:84
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:88
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:100
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:114
 msgid "Help"
 msgstr "Hilfe"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:43
+#. TRANSLATORS src/components/CameraTest.vue:9
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:86
 msgid "Camera"
 msgstr "Kamera"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:45
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:48
+#. TRANSLATORS src/components/CreateRoomItem.vue:9
+#. TRANSLATORS src/components/EmptyRoomListItem.vue:15
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:90
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:96
 msgid "Name of the new room"
 msgstr "Name des neuen Raums"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:46
+#. TRANSLATORS src/components/EmptyRoomListItem.vue:4
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:92
 msgid "No conference rooms yet"
 msgstr "Noch keine Konferenzräume"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:47
+#. TRANSLATORS src/components/EmptyRoomListItem.vue:8
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:94
 msgid "Create the first room:"
 msgstr "Ersten Raum anlegen:"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:49
+#. TRANSLATORS src/components/MicTest.vue:9
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:98
 msgid "Microphone"
 msgstr "Mikrofon"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:51
+#. TRANSLATORS src/components/RoomListItem.vue:15
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:102
 msgid "Join"
 msgstr "Teilnehmen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:52
+#. TRANSLATORS src/components/RoomListItem.vue:31
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:104
 msgid "Delete room"
 msgstr "Raum löschen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:54
+#. TRANSLATORS src/components/RoomNotFound.vue:4
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:108
 msgid "Room not found"
 msgstr "Raum nicht gefunden"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:55
+#. TRANSLATORS src/components/RoomNotFound.vue:7
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:110
 msgid "Please check the link/URL and ask your host"
 msgstr "Bitte prüfen Sie den Link / die URL und fragen Sie ihren Gastgeber"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:56
+#. TRANSLATORS src/components/SpeakerTest.vue:9
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:112
 msgid "Audio output"
 msgstr "Audio Ausgabe"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:58
+#. TRANSLATORS src/components/SpeakerTest.vue:34
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:116
 msgid "Play test sound"
 msgstr "Ton abspielen"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:59
+#. TRANSLATORS src/components/SystemTest.vue:4
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:118
 msgid "System check"
 msgstr "Systemprüfung"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:60
+#. TRANSLATORS src/components/SystemTest.vue:35
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:120
+msgid "Unknown error occurred"
+msgstr "Unbekannter Fehler"
+
+#. TRANSLATORS src/components/SystemTest.vue:40
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:122
+msgid "Known issues / what you can try"
+msgstr "Bekannte Probleme / was du probieren kannst"
+
+#. TRANSLATORS src/components/SystemTest.vue:44
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:124
+msgid ""
+"• If you have DroidCam: Connect to the mobile camera, then reload the page"
+msgstr ""
+"• Wenn du DroidCam benutzt: Stelle die Kameraverbindung her und lade die "
+"Seite neu"
+
+#. TRANSLATORS src/components/SystemTest.vue:47
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:126
+msgid ""
+"• Try join using the Jitsi app (follow the instructions at the bottom of the "
+"page)"
+msgstr ""
+"• Versuche mit der Jitsi App teilzunehmen (Anleitung unten auf der Seite)"
+
+#. TRANSLATORS src/components/SystemTest.vue:59
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:128
 msgid "No camera / microphone access"
 msgstr "Kein Kamera-/ Mikrofonzugriff"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:61
+#. TRANSLATORS src/components/SystemTest.vue:63
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:130
 msgid ""
 "Click on the icon on the left in the browser bar next to the URL and allow "
 "access:"
@@ -288,30 +374,32 @@ msgstr ""
 "Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube den "
 "Zugriff:"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:62
+#. TRANSLATORS src/components/SystemTest.vue:72
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:132
 msgid "Doesn't work?"
 msgstr "Klappt nicht?"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:63
+#. TRANSLATORS src/components/SystemTest.vue:77
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:134
 msgid "Click here for trouhleshooting help"
 msgstr "Hier findest du Hilfe zur Fehlerbehebung"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:17
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:19
 msgid "Conferences app not yet configured"
 msgstr "Konferenzen-App noch nicht konfiguriert"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:20
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/incomplete_settings.php:22
 msgid "Please contact your administrator to set up the conferences app."
 msgstr ""
 "Bitte kontaktieren Sie Ihren Administrator, damit er die Konferenzen-App "
 "einrichtet."
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:17
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:19
 #, php-format
 msgid "Your browser (%1$s) is outdated and<br>no longer supported"
 msgstr "Ihr Browser (%1$s) ist veraltet und<br>wird nicht mehr unterstützt"
 
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:20
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/templates/outdated_browser.php:22
 msgid ""
 "It is recommended to use the latest version of one of the following browsers:"
 msgstr ""

@@ -83,7 +83,7 @@
                     </div>
                     <button
                         class="primary room__join-button--browser"
-                        :disabled="joining"
+                        :disabled="!ready || error || joining"
                         @click="joinBrowser">
                         {{ t('jitsi', 'click here to join') }}
                     </button>
@@ -280,6 +280,10 @@ export default {
 
         this.$root.$on('jitsi.device_permission_denied', () => {
             this.permissionDenied = true
+        })
+
+        this.$root.$on('jitsi.system_test_error', () => {
+            this.error = true
         })
 
         this.$root.$on('tol-browser-status', (status) => {
