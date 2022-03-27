@@ -177,6 +177,7 @@
 
 import { generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
+import Bowser from 'bowser'
 import JitsiMeetExternalAPI from './external_api'
 import ActionLink from '@nextcloud/vue/dist/Components/ActionLink'
 import Actions from '@nextcloud/vue/dist/Components/Actions'
@@ -223,6 +224,8 @@ export default {
             ready: false,
             error: false,
             roomNotFound: false,
+            browser: null,
+            blinkBasedBrowser: false,
         }
     },
     computed: {
@@ -275,6 +278,13 @@ export default {
         },
     },
     async created() {
+        this.browser = Bowser.getParser(window.navigator.userAgent)
+        const engineName = this?.browser?.parsedResult?.engine?.name
+
+        if (engineName && engineName.toLowerCase() === 'blink') {
+            this.blinkBasedBrowser = true
+        }
+
         this.startMuted = localStorage.getItem('jitsi.startMuted') === 'true'
         this.startCameraOff = localStorage.getItem('jitsi.startCameraOff') === 'true'
 
@@ -416,6 +426,26 @@ export default {
             }
 
             options.configOverwrite = configOverwrite
+
+            // workaround
+            // https://community.jitsi.org/t/error-after-update-google-chrome-on-jitsi-with-iframe/109972/8
+            if (this.blinkBasedBrowser) {
+                let frameUrl = null
+
+                options.onload = (e) => {
+                    const frame = e.target
+
+                    if (frameUrl === null) {
+                        frameUrl = frame.src
+
+                        frame.src = generateUrl('/apps/jitsi/blank')
+                        setTimeout(() => {
+                            console.log('[jitsi] reloading frame')
+                            frame.src = frameUrl
+                        }, 1000)
+                    }
+                }
+            }
 
             this.conferenceRunning = true
             const api = new JitsiMeetExternalAPI(this.serverHost, options)

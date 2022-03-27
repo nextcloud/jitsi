@@ -13,6 +13,7 @@ return [
             'postfix' => 'shortroom'
         ],
         ['name' => 'page#room', 'url' => '/rooms/{publicId}/{roomName}', 'verb' => 'GET'],
+        ['name' => 'page#blank', 'url' => '/blank', 'verb' => 'GET'],
 
         // API
         ['name' => 'room#index', 'url' => '/rooms', 'verb' => 'GET'],

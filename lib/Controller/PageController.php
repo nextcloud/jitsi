@@ -41,6 +41,16 @@ class PageController extends AbstractController
      * @NoCSRFRequired
      * @PublicPage
      */
+    public function blank(): TemplateResponse
+    {
+        return new TemplateResponse('jitsi', 'blank');
+    }
+
+    /**
+     * @NoAdminRequired
+     * @NoCSRFRequired
+     * @PublicPage
+     */
     public function room(string $publicId): TemplateResponse
     {
         if (($checkBrowserResult = $this->checkBrowser()) !== null) {
