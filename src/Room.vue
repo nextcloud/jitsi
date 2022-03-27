@@ -83,7 +83,7 @@
                     </div>
                     <button
                         class="primary room__join-button--browser"
-                        :disabled="!ready || error || joining"
+                        :disabled="!systemTestDone || !ready || error || joining"
                         @click="joinBrowser">
                         {{ t('jitsi', 'click here to join') }}
                     </button>
@@ -226,6 +226,7 @@ export default {
             roomNotFound: false,
             browser: null,
             blinkBasedBrowser: false,
+            systemTestDone: false,
         }
     },
     computed: {
@@ -292,8 +293,8 @@ export default {
             this.permissionDenied = true
         })
 
-        this.$root.$on('jitsi.system_test_error', () => {
-            this.error = true
+        this.$root.$on('jitsi.system_test_done', () => {
+            this.systemTestDone = true
         })
 
         this.$root.$on('tol-browser-status', (status) => {

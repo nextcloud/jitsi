@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2022-03-26 20:13+0100\n"
-"PO-Revision-Date: 2022-03-26 20:16+0100\n"
+"POT-Creation-Date: 2022-03-27 19:39+0200\n"
+"PO-Revision-Date: 2022-03-27 19:43+0200\n"
 "Last-Translator: Michael Weimann / weeman <mail@michael-weimann.eu>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -220,17 +220,17 @@ msgid ""
 msgstr ""
 "Den Link von oben in das Eingabefeld<br>in der App Startansicht einfügen"
 
-#. TRANSLATORS src/Room.vue:237
+#. TRANSLATORS src/Room.vue:241
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:70
 msgid "Link copied"
 msgstr "Link kopiert"
 
-#. TRANSLATORS src/Room.vue:238
+#. TRANSLATORS src/Room.vue:242
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:72
 msgid "Cannot copy, please copy the link manually"
 msgstr "Fehler, bitte Link manuell kopieren"
 
-#. TRANSLATORS src/Room.vue:240
+#. TRANSLATORS src/Room.vue:244
 #. TRANSLATORS src/components/RoomListItem.vue:84
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:74
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:106
@@ -334,53 +334,75 @@ msgstr "Ton abspielen"
 msgid "System check"
 msgstr "Systemprüfung"
 
-#. TRANSLATORS src/components/SystemTest.vue:35
+#. TRANSLATORS src/components/SystemTest.vue:13
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:120
-msgid "Unknown error occurred"
-msgstr "Unbekannter Fehler"
+msgid "Got issues?"
+msgstr "Probleme?"
 
-#. TRANSLATORS src/components/SystemTest.vue:40
+#. TRANSLATORS src/components/SystemTest.vue:18
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:122
-msgid "Known issues / what you can try"
+msgid "Known problems / what you can try"
 msgstr "Bekannte Probleme / was du probieren kannst"
 
-#. TRANSLATORS src/components/SystemTest.vue:44
+#. TRANSLATORS src/components/SystemTest.vue:22
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:124
+msgid ""
+"• Accept the microphone / camera access permissions at the top of the screen"
+msgstr "• Erlaube Mikro-/Kamerazugriff oben am Bildschirm"
+
+#. TRANSLATORS src/components/SystemTest.vue:25
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:126
+msgid ""
+"• Check the microphone / camera access permissions by clicking the icon next "
+"to the address bar. Then reload the page."
+msgstr ""
+"• Prüfe die Mirko-/Kameraberechtigungen über das Icon in der Adresszeile und "
+"lade danach die Seite neu."
+
+#. TRANSLATORS src/components/SystemTest.vue:28
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:128
 msgid ""
 "• If you have DroidCam: Connect to the mobile camera, then reload the page"
 msgstr ""
 "• Wenn du DroidCam benutzt: Stelle die Kameraverbindung her und lade die "
 "Seite neu"
 
-#. TRANSLATORS src/components/SystemTest.vue:47
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:126
+#. TRANSLATORS src/components/SystemTest.vue:31
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:130
 msgid ""
 "• Try join using the Jitsi app (follow the instructions at the bottom of the "
 "page)"
 msgstr ""
 "• Versuche mit der Jitsi App teilzunehmen (Anleitung unten auf der Seite)"
 
-#. TRANSLATORS src/components/SystemTest.vue:59
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:128
+#. TRANSLATORS src/components/SystemTest.vue:66
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:132
 msgid "No camera / microphone access"
 msgstr "Kein Kamera-/ Mikrofonzugriff"
 
-#. TRANSLATORS src/components/SystemTest.vue:63
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:130
-msgid ""
-"Click on the icon on the left in the browser bar next to the URL and allow "
-"access:"
-msgstr ""
-"Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube den "
-"Zugriff:"
+#. TRANSLATORS src/components/SystemTest.vue:70
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:134
+msgid "Review your browser camera and microphone access settings"
+msgstr "Prüfe deine Browser Kamera- und Mikroberechtigungen"
 
-#. TRANSLATORS src/components/SystemTest.vue:72
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:132
+#. TRANSLATORS src/components/SystemTest.vue:76
+#. TRANSLATORS src/components/SystemTest.vue:81
+#. TRANSLATORS src/components/SystemTest.vue:86
+#. TRANSLATORS src/components/SystemTest.vue:91
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:136
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:138
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:140
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:142
+msgid "Click here for {browser} instructions"
+msgstr "Hier klicken für {browser} Anleitung"
+
+#. TRANSLATORS src/components/SystemTest.vue:98
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:144
 msgid "Doesn't work?"
 msgstr "Klappt nicht?"
 
-#. TRANSLATORS src/components/SystemTest.vue:77
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:134
+#. TRANSLATORS src/components/SystemTest.vue:103
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:146
 msgid "Click here for trouhleshooting help"
 msgstr "Hier findest du Hilfe zur Fehlerbehebung"
 
@@ -404,6 +426,16 @@ msgid ""
 "It is recommended to use the latest version of one of the following browsers:"
 msgstr ""
 "Es wird empfohlen die neuste Version eines dieser Browser zu verwenden:"
+
+#~ msgid "Unknown error occurred"
+#~ msgstr "Unbekannter Fehler"
+
+#~ msgid ""
+#~ "Click on the icon on the left in the browser bar next to the URL and "
+#~ "allow access:"
+#~ msgstr ""
+#~ "Klicke in der Browser-Zeile auf das Icon links neben der URL und erlaube "
+#~ "den Zugriff:"
 
 #~ msgid "Paste the link into the app"
 #~ msgstr "In die Jitsi-App einfügen"

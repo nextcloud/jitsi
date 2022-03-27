@@ -3,6 +3,37 @@
         <div class="tol-system-check-title">
             {{ t('jitsi', 'System check') }}
         </div>
+
+        <div
+            v-if="!permissionDenied && showProblems"
+            class="tol-system-checks-permission-denied problems">
+            <div class="tol-system-checks-permission-denied__message-container">
+                <CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="warning" />
+                <div class="tol-system-checks-permission-denied__title">
+                    {{ t('jitsi', 'Got issues?') }}
+                </div>
+            </div>
+            <div class="tol-system-checks-timeout__message-container">
+                <div class="mb">
+                    {{ t('jitsi', 'Known problems / what you can try') }}
+                </div>
+                <ul>
+                    <li>
+                        {{ t('jitsi', '• Accept the microphone / camera access permissions at the top of the screen') }}
+                    </li>
+                    <li>
+                        {{ t('jitsi', '• Check the microphone / camera access permissions by clicking the icon next to the address bar. Then reload the page.') }}
+                    </li>
+                    <li>
+                        {{ t('jitsi', '• If you have DroidCam: Connect to the mobile camera, then reload the page') }}
+                    </li>
+                    <li>
+                        {{ t('jitsi', '• Try join using the Jitsi app (follow the instructions at the bottom of the page)') }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div v-if="!loading && !permissionDenied" class="tol-system-checks-container">
             <div class="tol-system-check tol-system-check--first">
                 <CameraTest
@@ -27,30 +58,6 @@
         </div>
 
         <div
-            v-if="timeout"
-            class="tol-system-checks-permission-denied">
-            <div class="tol-system-checks-permission-denied__message-container">
-                <CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error" />
-                <div class="tol-system-checks-permission-denied__title">
-                    {{ t('jitsi', 'Unknown error occurred') }}
-                </div>
-            </div>
-            <div class="tol-system-checks-timeout__message-container">
-                <div class="mb">
-                    {{ t('jitsi', 'Known issues / what you can try') }}
-                </div>
-                <ul>
-                    <li>
-                        {{ t('jitsi', '• If you have DroidCam: Connect to the mobile camera, then reload the page') }}
-                    </li>
-                    <li>
-                        {{ t('jitsi', '• Try join using the Jitsi app (follow the instructions at the bottom of the page)') }}
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div
             v-if="!loading && permissionDenied"
             class="tol-system-checks-permission-denied">
             <div class="tol-system-checks-permission-denied__message-container">
@@ -60,12 +67,31 @@
                 </div>
             </div>
             <div class="tol-system-checks-permission-denied__message-container">
-                {{ t('jitsi', 'Click on the icon on the left in the browser bar next to the URL and allow access:') }}<br>
+                {{ t('jitsi', 'Review your browser camera and microphone access settings') }}<br>
             </div>
             <div style="text-align: center;">
-                <img
-                    class="tol-system-checks-permission-denied__allow-img"
-                    :src="allowSrc">
+                <ul style="display: inline-block; text-align: left;">
+                    <li>
+                        <a href="https://support.mozilla.org/kb/how-manage-your-camera-and-microphone-permissions" target="_blank">
+                            • {{ t('jitsi', 'Click here for {browser} instructions', { browser: 'Firefox' }) }} ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://support.google.com/chrome/answer/2693767" target="_blank">
+                            • {{ t('jitsi', 'Click here for {browser} instructions', { browser: 'Chromium/Chrome' }) }} ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://support.microsoft.com/windows/windows-camera-microphone-and-privacy-a83257bc-e990-d54a-d212-b5e41beba857" target="_blank">
+                            • {{ t('jitsi', 'Click here for {browser} instructions', { browser: 'Edge' }) }} ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://support.apple.com/guide/safari/ibrwe2159f50/mac" target="_blank">
+                            • {{ t('jitsi', 'Click here for {browser} instructions', { browser: 'Safari' }) }} ↗
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div v-if="$root.helpLink">
                 <div class="tol-system-checks-permission-denied__title2">
@@ -133,41 +159,56 @@ export default {
             loading: true,
             permissionDenied: false,
             timeout: false,
+            deviceWithoutLabel: false,
+            showProblems: false,
+            showProblemsTimeoutHandle: null
+        }
+    },
+    watch: {
+        problems(val) {
+            this.clearTimeout(this.showProblemsTimeoutHandle)
+
+            if (val) {
+                this.showProblemsTimeoutHandle = setTimeout(() => { this.showProblems = true }, 1000)
+            } else {
+                this.showProblems = false
+            }
         }
     },
     computed: {
         allowSrc() {
             return generateFilePath('jitsi', 'img', 'allow.png')
         },
+        problems() {
+            return this.timeout || this.deviceWithoutLabel
+        }
     },
     async created() {
         this.browser = Bowser.getParser(window.navigator.userAgent)
 
-        await Promise.race([
-            // safeguard because some browsers do not return
-            new Promise((resolve) => {
-                setTimeout(() => {
-                    this.timeout = true
-                    resolve()
-                }, 2500)
-            }),
-            this.askPermissions(),
-        ])
+        let permissionsTimeoutHandle = setTimeout(() => {
+            console.log('[jitsi] system test timeout reached')
+            this.problems = true
+        }, 2500)
 
-        if (this.timeout) {
-            console.log('Timeout reached')
-            this.$root.$emit('jitsi.system_test_error')
-            return
-        }
+        console.log('[jitsi] before askPermissions')
+        this.askPermissions()
+        console.log('[jitsi] after askPermissions')
+
+        this.clearTimeout(permissionsTimeoutHandle)
 
         try {
+            console.log('[jitsi] before queryDevices')
             await this.queryDevices()
+            console.log('[jitsi] after queryDevices')
         } catch (err) {
             console.log('Error detecting devices')
             console.log(err)
         }
 
+        this.$root.$emit('jitsi.system_test_done')
         this.loading = false
+        this.timeout = false
 
         this.$root.$on('tol-refresh-devices', () => {
             // console.log('[jitsi] tol-refresh-devices')
@@ -175,6 +216,12 @@ export default {
         })
     },
     methods: {
+        clearTimeout(handle) {
+            try {
+                clearTimeout(handle)
+            } catch (ignore) {
+            }
+        },
         async askPermissions() {
             await askPermissions(
                 { audio: true, video: true},
@@ -187,10 +234,15 @@ export default {
             const cameras = []
             const microphones = []
             const speakers = []
+            let deviceWithoutLabel = false
 
             devices.forEach((device) => {
-                // console.log(`[jitsi] device`)
-                // console.log(device)
+                console.log(`[jitsi] device`)
+                console.log(device)
+
+                if (!device.label) {
+                    deviceWithoutLabel = true
+                }
 
                 if (device.kind === 'videoinput') {
                     cameras.push(device)
@@ -205,6 +257,7 @@ export default {
                 }
             })
 
+            this.deviceWithoutLabel = deviceWithoutLabel
             this.cameras = cameras
             this.microphones = microphones
             this.speakers = speakers
@@ -309,6 +362,10 @@ export default {
 
 .mb {
     margin-bottom: 8px;
+}
+
+.problems {
+    margin-bottom: 32px;
 }
 
 </style>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2022-03-26 20:13+0100\n"
+"POT-Creation-Date: 2022-03-27 19:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,17 +216,17 @@ msgid ""
 "Paste the link from above into the<br>input field on the App start screen"
 msgstr ""
 
-#. TRANSLATORS src/Room.vue:237
+#. TRANSLATORS src/Room.vue:241
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:70
 msgid "Link copied"
 msgstr ""
 
-#. TRANSLATORS src/Room.vue:238
+#. TRANSLATORS src/Room.vue:242
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:72
 msgid "Cannot copy, please copy the link manually"
 msgstr ""
 
-#. TRANSLATORS src/Room.vue:240
+#. TRANSLATORS src/Room.vue:244
 #. TRANSLATORS src/components/RoomListItem.vue:84
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:74
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:106
@@ -328,48 +328,70 @@ msgstr ""
 msgid "System check"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:35
+#. TRANSLATORS src/components/SystemTest.vue:13
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:120
-msgid "Unknown error occurred"
+msgid "Got issues?"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:40
+#. TRANSLATORS src/components/SystemTest.vue:18
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:122
-msgid "Known issues / what you can try"
+msgid "Known problems / what you can try"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:44
+#. TRANSLATORS src/components/SystemTest.vue:22
 #: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:124
+msgid ""
+"• Accept the microphone / camera access permissions at the top of the screen"
+msgstr ""
+
+#. TRANSLATORS src/components/SystemTest.vue:25
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:126
+msgid ""
+"• Check the microphone / camera access permissions by clicking the icon next "
+"to the address bar. Then reload the page."
+msgstr ""
+
+#. TRANSLATORS src/components/SystemTest.vue:28
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:128
 msgid ""
 "• If you have DroidCam: Connect to the mobile camera, then reload the page"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:47
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:126
+#. TRANSLATORS src/components/SystemTest.vue:31
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:130
 msgid ""
 "• Try join using the Jitsi app (follow the instructions at the bottom of the "
 "page)"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:59
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:128
+#. TRANSLATORS src/components/SystemTest.vue:66
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:132
 msgid "No camera / microphone access"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:63
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:130
-msgid ""
-"Click on the icon on the left in the browser bar next to the URL and allow "
-"access:"
+#. TRANSLATORS src/components/SystemTest.vue:70
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:134
+msgid "Review your browser camera and microphone access settings"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:72
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:132
+#. TRANSLATORS src/components/SystemTest.vue:76
+#. TRANSLATORS src/components/SystemTest.vue:81
+#. TRANSLATORS src/components/SystemTest.vue:86
+#. TRANSLATORS src/components/SystemTest.vue:91
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:136
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:138
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:140
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:142
+msgid "Click here for {browser} instructions"
+msgstr ""
+
+#. TRANSLATORS src/components/SystemTest.vue:98
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:144
 msgid "Doesn't work?"
 msgstr ""
 
-#. TRANSLATORS src/components/SystemTest.vue:77
-#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:134
+#. TRANSLATORS src/components/SystemTest.vue:103
+#: /home/mweimann/git/nextcloud/server/apps-extra/jitsi/specialVueFakeDummyForL10nScript.js:146
 msgid "Click here for trouhleshooting help"
 msgstr ""
 
