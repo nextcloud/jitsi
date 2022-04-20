@@ -7,17 +7,15 @@ namespace OCA\jitsi\Controller;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\StreamResponse;
 
-class AssetsController extends Controller
-{
-    /**
-     * @NoAdminRequired
-     * @NoCSRFRequired
-     * @PublicPage
-     */
-    public function soundsTest(): StreamResponse
-    {
-        return (new StreamResponse(__DIR__ . '/../../sounds/coin.wav'))
-            ->addHeader('Content-Type', 'audio/wav')
-            ->cacheFor(24 * 60 * 60);
-    }
+class AssetsController extends Controller {
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 * @PublicPage
+	 */
+	public function soundsTest(): StreamResponse {
+		return (new StreamResponse(__DIR__ . '/../../sounds/coin.wav'))
+			->addHeader('Content-Type', 'audio/wav')
+			->cacheFor(24 * 60 * 60);
+	}
 }

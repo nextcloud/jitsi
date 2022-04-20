@@ -7,20 +7,16 @@ namespace OCA\jitsi\Settings;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\Settings\ISettings;
 
-class AdminSettings implements ISettings
-{
-    public function getForm()
-    {
-        return new TemplateResponse('jitsi', 'admin', []);
-    }
+class AdminSettings implements ISettings {
+	public function getForm() {
+		return new TemplateResponse('jitsi', 'admin', []);
+	}
 
-    public function getSection()
-    {
-        return 'jitsi';
-    }
+	public function getSection() {
+		return 'jitsi';
+	}
 
-    public function getPriority()
-    {
-        return 50;
-    }
+	public function getPriority() {
+		return 50;
+	}
 }

@@ -15,37 +15,34 @@ use OCP\AppFramework\Db\Entity;
  * @method string getPublicId()
  * @method void setPublicId(string $publicId)
  */
-class Room extends Entity implements JsonSerializable
-{
-    /**
-     * @var string
-     */
-    protected $name;
+class Room extends Entity implements JsonSerializable {
+	/**
+	 * @var string
+	 */
+	protected $name;
 
-    /**
-     * @var string
-     */
-    protected $creatorId;
+	/**
+	 * @var string
+	 */
+	protected $creatorId;
 
-    /**
-     * @var string
-     */
-    protected $publicId;
+	/**
+	 * @var string
+	 */
+	protected $publicId;
 
-    public function __construct()
-    {
-        $this->addType('id', 'integer');
-    }
+	public function __construct() {
+		$this->addType('id', 'integer');
+	}
 
-    /**
-     * @return array<string, mixed>
-     */
-    public function jsonSerialize(): array
-    {
-        return [
-            'id' => $this->getId(),
-            'name' => $this->getName(),
-            'publicId' => $this->getPublicId(),
-        ];
-    }
+	/**
+	 * @return array<string, mixed>
+	 */
+	public function jsonSerialize(): array {
+		return [
+			'id' => $this->getId(),
+			'name' => $this->getName(),
+			'publicId' => $this->getPublicId(),
+		];
+	}
 }

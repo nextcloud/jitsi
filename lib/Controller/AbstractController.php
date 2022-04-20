@@ -11,68 +11,65 @@ use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IRequest;
 use OCP\IUserSession;
 
-abstract class AbstractController extends Controller
-{
-    /**
-     * @var IUserSession
-     */
-    protected $userSession;
+abstract class AbstractController extends Controller {
+	/**
+	 * @var IUserSession
+	 */
+	protected $userSession;
 
-    /**
-     * @var Config
-     */
-    protected $appConfig;
+	/**
+	 * @var Config
+	 */
+	protected $appConfig;
 
-    public function __construct(
-        string $AppName,
-        IRequest $request,
-        IUserSession $userSession,
-        Config $appConfig
-    ) {
-        parent::__construct($AppName, $request);
-        $this->userSession = $userSession;
-        $this->appConfig = $appConfig;
-    }
+	public function __construct(
+		string $AppName,
+		IRequest $request,
+		IUserSession $userSession,
+		Config $appConfig
+	) {
+		parent::__construct($AppName, $request);
+		$this->userSession = $userSession;
+		$this->appConfig = $appConfig;
+	}
 
-    protected function checkBrowser(): ?TemplateResponse
-    {
-        $browserInfo = $this->gatherBrowserInfo();
+	protected function checkBrowser(): ?TemplateResponse {
+		$browserInfo = $this->gatherBrowserInfo();
 
-        if ($browserInfo['supported']) {
-            return null;
-        }
+		if ($browserInfo['supported']) {
+			return null;
+		}
 
-        $loggedIn = $this->userSession->isLoggedIn();
-        $renderAs = $loggedIn ? 'user' : 'public';
+		$loggedIn = $this->userSession->isLoggedIn();
+		$renderAs = $loggedIn ? 'user' : 'public';
 
-        return new TemplateResponse(
-            'jitsi',
-            'outdated_browser',
-            ['browserName' => $browserInfo['name'],],
-            $renderAs
-        );
-    }
+		return new TemplateResponse(
+			'jitsi',
+			'outdated_browser',
+			['browserName' => $browserInfo['name'],],
+			$renderAs
+		);
+	}
 
-    /**
-     * @return array<string, mixed>
-     */
-    private function gatherBrowserInfo(): array
-    {
-        $browser = new Browser();
-        $browserName = $browser->getBrowser();
-        $browserVersion = $browser->getVersion();
+	/**
+	 * @return array<string, mixed>
+	 */
+	private function gatherBrowserInfo(): array {
+		$browser = new Browser();
+		$browserName = $browser->getBrowser();
+		$browserVersion = $browser->getVersion();
 
-        return [
-            'name'      => sprintf(
-                '%s %s',
-                $browserName,
-                $browserVersion
-            ),
-            'supported' => !(
-                $browserName === Browser::BROWSER_IE ||
-                ($browserName === Browser::BROWSER_EDGE && $browserVersion < 79) ||
-                ($browserName === Browser::BROWSER_SAFARI && $browserVersion < 10)
-            )
-        ];
-    }
+		return [
+			'name' => sprintf(
+				'%s %s',
+				$browserName,
+				$browserVersion
+			),
+			'supported' => !(
+				$browserName === Browser::BROWSER_IE ||
+				($browserName === Browser::BROWSER_EDGE && $browserVersion < 79) ||
+				($browserName === Browser::BROWSER_SAFARI && $browserVersion < 10)
+			)
+		];
+	}
 }
