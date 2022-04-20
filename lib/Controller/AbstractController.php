@@ -57,7 +57,7 @@ abstract class AbstractController extends Controller {
 	private function gatherBrowserInfo(): array {
 		$browser = new Browser();
 		$browserName = $browser->getBrowser();
-		$browserVersion = $browser->getVersion();
+		$browserVersion = (int) $browser->getVersion();
 
 		return [
 			'name' => sprintf(
