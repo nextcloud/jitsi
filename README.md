@@ -1,8 +1,4 @@
-> ![](https://weimann.digital/redbox.png) The actual development of this project happens here:    
-> [https://pubcode.weimann.digital/projects/nextcloud-jitsi](https://pubcode.weimann.digital/projects/nextcloud-jitsi)  
-> You can easily log in with your GitHub account there.
-
-# Jitsi integration for Nextcloud (unofficial)
+# Jitsi integration for Nextcloud
 
 ## Features
 
@@ -13,7 +9,7 @@
 
 ## Changelog
 
-[See milestones](https://pubcode.weimann.digital/projects/nextcloud-jitsi/milestones)
+[See CHANGELOG.md](./CHANGELOG.md)
 
 ## Setup
 
@@ -31,7 +27,7 @@ Nextcloud setup and configuration:
 
 ## Issues
 
-Report issues and feature requests [here](https://pubcode.weimann.digital/projects/nextcloud-jitsi/issues/list).
+Report issues and feature requests [here](https://github.com/nextcloud/jitsi).
 
 
 ## Translations
