@@ -1,0 +1,8 @@
+{ "translations": {
+    "save" : "guardar",
+    "Copy to clipboard" : "Copiar al portapapeles",
+    "Browser" : "Navegador",
+    "Help" : "Ayuda",
+    "Delete room" : "Eliminar cuarto"
+},"pluralForm" :"nplurals=2; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
+}

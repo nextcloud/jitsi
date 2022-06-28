@@ -1,0 +1,15 @@
+{ "translations": {
+    "save" : "vista",
+    "Failed to save settings" : "Mistókst að vista stillingar",
+    "Failed to load settings" : "Mistókst að hlaða inn stillingum",
+    "Conference" : "Fjarfundur",
+    "Link copied" : "Tengill afritaður",
+    "Copy to clipboard" : "Afrita á klippispjald",
+    "Browser" : "Vafri",
+    "Help" : "Hjálp",
+    "Camera" : "Myndavél",
+    "Microphone" : "Microphone",
+    "Join" : "Taka þátt",
+    "Delete room" : "Eyða spjallsvæði"
+},"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"
+}

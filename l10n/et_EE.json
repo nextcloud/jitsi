@@ -1,0 +1,9 @@
+{ "translations": {
+    "save" : "salvesta",
+    "Conference" : "Konverents",
+    "Link copied" : "Link kopeeritud",
+    "Cannot copy, please copy the link manually" : "Ei saa kopeerida, palun kopeeri link käsitsi",
+    "Copy to clipboard" : "Kopeeri lõikepuhvrisse",
+    "Help" : "Abiinfo"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
