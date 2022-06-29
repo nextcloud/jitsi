@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "loading…" : "kargatzen…",
     "save" : "gorde",
     "saved" : "gordeta",
+    "saving…" : "gordetzen…",
     "Failed to save settings" : "Huts egin du ezarpenak gordetzean",
     "Failed to load settings" : "Huts egin du ezarpenak kargatzean",
     "Conference" : "Biltzarra",
