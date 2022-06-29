@@ -100,7 +100,7 @@
                 <a
                     :href="$root.helpLink + '#permissions'"
                     class="tol-system-checks-permission-denied__button button secondary">
-                    {{ t('jitsi', 'Click here for trouhleshooting help') }}
+                    {{ t('jitsi', 'Click here for troubleshooting help') }}
                 </a>
             </div>
         </div>
