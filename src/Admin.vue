@@ -4,7 +4,7 @@
             <fieldset :disabled="saving">
                 <SettingsSection title="Jitsi">
                     <div v-if="loading">
-                        {{ t('jitsi', 'loading…') }}
+                        {{ t('jitsi', 'Loading …') }}
                     </div>
                     <div v-if="!loading">
                         <div class="group">
@@ -72,7 +72,7 @@
                             <label
                                 for="jitsi_jwt_app_id"
                                 class="label">
-                                {{ t('jitsi', 'JWT App Id') }}
+                                {{ t('jitsi', 'JWT App ID') }}
                             </label>
                             <div class="input-group">
                                 <input
@@ -129,7 +129,7 @@
                             <span
                                 v-if="saving"
                                 class="msg">
-                                {{ t('jitsi', 'saving…') }}
+                                {{ t('jitsi', 'Saving …') }}
                             </span>
                         </div>
                     </div>
@@ -244,7 +244,7 @@ export default {
             this.jwtAppIdMessage = ''
 
             if (this.jwtSecret && !this.jwtAppId) {
-                this.jwtAppIdMessage = this.t('jitsi', 'Please provide the App Id')
+                this.jwtAppIdMessage = this.t('jitsi', 'Please provide the App ID')
             }
         },
         async updateSetting(name, value) {
