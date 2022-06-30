@@ -53,7 +53,7 @@
                                 <li
                                     v-if="browserStatus === 'warning'">
                                     <b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
-                                    <span v-html="t('jitsi', 'Audio and video quality could be poor. It is recommended to use a recent <b>Firefox / Chrome / Chromium</b> version.')" />
+                                    <span v-html="t('jitsi', 'Audio and video quality could be poor. It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version.')" />
                                 </li>
                                 <li v-if="browserStatus === 'error'">
                                     {{ t('jitsi', 'Browser not supported') }}
@@ -85,7 +85,7 @@
                         class="primary room__join-button--browser"
                         :disabled="!systemTestDone || !ready || error || joining"
                         @click="joinBrowser">
-                        {{ t('jitsi', 'click here to join') }}
+                        {{ t('jitsi', 'Click here to join') }}
                     </button>
 
                     <div class="room__options">
