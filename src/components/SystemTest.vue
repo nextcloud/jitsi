@@ -19,10 +19,10 @@
                 </div>
                 <ul>
                     <li>
-                        {{ t('jitsi', '• Accept the microphone / camera access permissions at the top of the screen') }}
+                        {{ t('jitsi', '• Accept the microphone/camera access permissions at the top of the screen') }}
                     </li>
                     <li>
-                        {{ t('jitsi', '• Check the microphone / camera access permissions by clicking the icon next to the address bar. Then reload the page.') }}
+                        {{ t('jitsi', '• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page.') }}
                     </li>
                     <li>
                         {{ t('jitsi', '• If you have DroidCam: Connect to the mobile camera, then reload the page') }}
@@ -63,7 +63,7 @@
             <div class="tol-system-checks-permission-denied__message-container">
                 <CheckStatusIcon class="tol-system-checks-permission-denied__icon" status="error" />
                 <div class="tol-system-checks-permission-denied__title">
-                    {{ t('jitsi', 'No camera / microphone access') }}
+                    {{ t('jitsi', 'No camera/microphone access') }}
                 </div>
             </div>
             <div class="tol-system-checks-permission-denied__message-container">
@@ -95,7 +95,7 @@
             </div>
             <div v-if="$root.helpLink">
                 <div class="tol-system-checks-permission-denied__title2">
-                    {{ t('jitsi', 'Doesn\'t work?') }}
+                    {{ t('jitsi', 'Does not work?') }}
                 </div>
                 <a
                     :href="$root.helpLink + '#permissions'"
