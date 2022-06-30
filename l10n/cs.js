@@ -5,6 +5,7 @@ OC.L10N.register(
     "Jitsi Integration" : "Napojení na Jitsi",
     "Conferences" : "Konference",
     "Jitsi Integration (unofficial)" : "Napojení na Jitsi (neoficiální)",
+    "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "Tato aplikace začleňuje telekonference, konané prostřednictvím služby Jitsi do Nextcloud.\n\nFunkce:\n- 🎥 Snadné online konference v Nextcloud s využitím Jitsi\n- 🔗 Odkazy na konferenční místnosti, které je možné nasdílet\n- 🔎 Zobrazení konferenčních místností ve vyhledávání\n- ✅ Zkouška systému před připojením se ke konferenci\n\nProsím přečtěte si [dokumentaci](https://github.com/nextcloud/jitsi).",
     "loading…" : "načítání…",
     "Server URL (required)" : "URL adresa serveru (vyžadováno)",
     "Help link (optional)" : "Odkaz na nápovědu (volitelné)",

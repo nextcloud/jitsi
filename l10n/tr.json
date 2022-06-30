@@ -3,6 +3,7 @@
     "Jitsi Integration" : "Jitsi bütünleştirmesi",
     "Conferences" : "Conferences",
     "Jitsi Integration (unofficial)" : "Jitsi bütünleştirmesi (resmi olmayan)",
+    "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "Bu uygulama Nextcloud için Jitsi conferences bütünleştirmesi sağlar.\n\nFeatures:\n- 🎥 Nextcloud içinden Jitsi ile kolay konferans düzenleme\n- 🔗 Paylaşılabilir konferans odası bağlantıları\n- 🔎 Genel aramada konferans odalarının görüntülenmesi\n- ✅ Bir konferansa katılmadan önce sistem sınaması\n\nLütfen [belgeleri](https://github.com/nextcloud/jitsi) okuyun.",
     "loading…" : "yükleniyor…",
     "Server URL (required)" : "Sunucu adresi (zorunlu)",
     "Help link (optional)" : "Yardım bağlantısı (isteğe bağlı)",

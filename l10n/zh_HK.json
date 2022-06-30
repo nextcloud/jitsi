@@ -3,6 +3,7 @@
     "Jitsi Integration" : "Jitsi 整合",
     "Conferences" : "會議",
     "Jitsi Integration (unofficial)" : "Jitsi 整合（非官方）",
+    "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "此應用程式將 Jitsi 會議整合到 Nextcloud 中。\n\n特點：\n- 🎥 利用 Jitsi 在 Nextcloud 中輕鬆召開在線會議\n- 🔗 可共享的會議室連結\n- 🔎 在全球搜索中顯示會議室\n- ✅ 加入會議前的系統測試\n\n請閱讀[說明書] (https://github.com/nextcloud/jitsi)。",
     "loading…" : "加載中…",
     "Server URL (required)" : "伺服器 URL（必填）",
     "Help link (optional)" : "幫助連結（非強制的）",
