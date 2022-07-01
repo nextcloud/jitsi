@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Se încarcă…",
+    "Saving …" : "Se salvează",
     "Conference" : "Conferință",
     "Link copied" : "Link copiat",
     "Browser" : "Browser",

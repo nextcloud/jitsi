@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Φόρτωση...",
     "save" : "αποθήκευση",
+    "Saving …" : "Αποθηκεύεται ...",
     "Failed to save settings" : "Αποτυχία αποθήκευσης ρυθμίσεων",
     "Failed to load settings" : "Αποτυχία φόρτωσης ρυθμίσεων",
     "Conference" : "Διάσκεψη",

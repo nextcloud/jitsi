@@ -1,4 +1,5 @@
 { "translations": {
+    "Loading …" : "Cargando …",
     "save" : "guardar",
     "Copy to clipboard" : "Copiar al portapapeles",
     "Browser" : "Navegador",

@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Carregant …",
     "save" : "desa",
+    "Saving …" : "S'està desant...",
     "Failed to save settings" : "Ha fallat desar la configuració",
     "Failed to load settings" : "Ha fallat carregar la configuració",
     "Conference" : "Conferència",

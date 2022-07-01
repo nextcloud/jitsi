@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "جاري التحميل …",
+    "Saving …" : "جاري الحفظ…",
     "Conference" : "مؤتمر",
     "Link copied" : "تم نسخ الرابط",
     "Cannot copy, please copy the link manually" : "لا يمكن النسخ، يرجى نسخ الرابط يدويًا",

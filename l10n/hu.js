@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Betöltés…",
     "save" : "Ment",
     "saved" : "mentett",
+    "Saving …" : "Mentés…",
     "Failed to save settings" : "A beállítások mentése sikertelen",
     "Failed to load settings" : "A beállítások betöltése sikertelen",
     "Conference" : "Konferencia",

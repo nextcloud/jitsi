@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Poteka nalaganje …",
     "save" : "shrani",
     "saved" : "shranjeno",
+    "Saving …" : "Poteka shranjevanje ...",
     "Failed to save settings" : "Shranjevanje nastavitev je spodletelo",
     "Failed to load settings" : "Nalaganje nastavitev je spodletelo.",
     "Conference" : "Konferenca",

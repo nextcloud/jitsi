@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Đang tải...",
+    "Saving …" : "Đang lưu ...",
     "Failed to save settings" : "Lưu cấu hình thất bại",
     "Failed to load settings" : "Tải cấu hình thất bại",
     "Conference" : "Họp",

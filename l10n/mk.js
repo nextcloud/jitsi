@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Се вчитува…",
+    "Saving …" : "Зачувува ...",
     "Failed to save settings" : "Неуспешно зачувување на параметрите",
     "Conference" : "Конференција",
     "Browser not supported" : "Вашиот прелистувач не е поддржан",

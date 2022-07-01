@@ -1,4 +1,6 @@
 { "translations": {
+    "Loading …" : "Se încarcă…",
+    "Saving …" : "Se salvează",
     "Conference" : "Conferință",
     "Link copied" : "Link copiat",
     "Browser" : "Browser",

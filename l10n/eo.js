@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Ŝargas …",
     "save" : "konservi",
     "saved" : "konservita",
+    "Saving …" : "Konservado...",
     "Failed to save settings" : "Konservo de agordoj malsukcesis",
     "Failed to load settings" : "Ŝargo de agordoj malsukcesis",
     "Link copied" : "Ligilo kopiita",

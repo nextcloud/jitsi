@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Saving …" : "กำลังบันทึก …",
     "Browser not supported" : "ไม่รองรับเบราว์เซอร์",
     "Link copied" : "คัดลอกลิงก์แล้ว",
     "Cannot copy, please copy the link manually" : "ไม่สามารถคัดลอก กรุณาคัดลอกลิงก์เอง",

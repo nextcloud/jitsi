@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Ladataan…",
     "save" : "tallenna",
     "saved" : "tallennettu",
+    "Saving …" : "Tallennetaan…",
     "Failed to save settings" : "Asetusten tallentaminen epäonnistui",
     "Failed to load settings" : "Asetusten lataaminen epäonnistui",
     "Conference" : "Konfrenssi",

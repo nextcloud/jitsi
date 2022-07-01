@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "بارگذاری …",
     "save" : "ذخیره",
     "Failed to save settings" : "تنظیمات ذخیره نشدند",
     "Failed to load settings" : "تنظیمات بارگیری نشد",

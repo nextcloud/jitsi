@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Carrigamentu...",
+    "Saving …" : "Sarvende …",
     "Failed to save settings" : "No at fatu a sarvare is informatziones",
     "Failed to load settings" : "No at fatuu a carrigare is impostatziones",
     "Conference" : "Cunferèntzia",

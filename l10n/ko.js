@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "불러오는 중 ...",
+    "Saving …" : "저장중 …",
     "Failed to save settings" : "환경설정 저장 실패",
     "Failed to load settings" : "환경설정 로딩 실패",
     "Conference" : "회의",

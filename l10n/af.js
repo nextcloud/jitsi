@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Laai …",
+    "Saving …" : "Bewaar tans…",
     "Link copied" : "Skakel gekopieer",
     "Help" : "Hulp",
     "Camera" : "Kamera",

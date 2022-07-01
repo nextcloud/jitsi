@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "読み込み中…",
     "save" : "保存",
+    "Saving …" : "保存中...",
     "Failed to save settings" : "設定の保存に失敗しました",
     "Failed to load settings" : "設定の読込に失敗しました",
     "Conference" : "カンファレンス",

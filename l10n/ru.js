@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Загрузка ...",
     "save" : "сохранить",
     "saved" : "сохранено",
+    "Saving …" : "Сохранение…",
     "Failed to save settings" : "Не удалось сохранить настройки",
     "Failed to load settings" : "Не удалось загрузить настройки",
     "Conference" : "Конференция",

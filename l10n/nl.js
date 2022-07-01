@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Laden ...",
     "save" : "opslaan",
     "saved" : "opgeslagen",
+    "Saving …" : "Opslaan ...",
     "Failed to save settings" : "Kon instellingen niet opslaan",
     "Failed to load settings" : "Kon instellingen niet laden",
     "Conference" : "Conferentie",

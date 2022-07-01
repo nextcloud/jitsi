@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "בטעינה…",
     "save" : "שמירה",
+    "Saving …" : "מתבצעת שמירה…",
     "Failed to save settings" : "שמירת ההגדרות נכשלה",
     "Failed to load settings" : "טעינת ההגדרות נכשלה",
     "Conference" : "כנס",

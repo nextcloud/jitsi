@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Saving …" : "Menyimpan ...",
     "Failed to save settings" : "Gagal simpan setelan",
     "Browser not supported" : "Peramban tidak didukung",
     "Link copied" : "Link tersalin",

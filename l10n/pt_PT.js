@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "A carregar...",
     "save" : "guardar",
+    "Saving …" : "A guardar...",
     "Failed to save settings" : "Erro ao gravar as definições",
     "Browser not supported" : "Navegador não suportado",
     "Link copied" : "Hiperligação copiada",

@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Завантаження...",
     "save" : "зберегти",
+    "Saving …" : "Збереження ..",
     "Failed to save settings" : "Неможливо зберегти налаштування",
     "Conference" : "Конференція",
     "Link copied" : "Посилання скопійовано",

@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Načítavam ...",
     "save" : "uložiť",
     "saved" : "uložené",
+    "Saving …" : "Ukladám ...",
     "Failed to save settings" : "Nepodarilo sa uložiť nastavenia",
     "Failed to load settings" : "Nepodarilo sa načítať nastavenia",
     "Conference" : "Konferencia",

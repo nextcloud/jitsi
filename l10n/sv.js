@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Läser in …",
     "save" : "spara",
     "saved" : "sparad",
+    "Saving …" : "Sparar …",
     "Failed to save settings" : "Kunde inte spara inställningarna",
     "Failed to load settings" : "Kunde inte läsa in inställningar",
     "Conference" : "Konferens",

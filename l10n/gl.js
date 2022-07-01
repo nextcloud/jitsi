@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Cargando…",
     "save" : "gardar",
     "saved" : "gardado",
+    "Saving …" : "Gardando…",
     "Failed to save settings" : "Produciuse un fallo ao gardar os axustes",
     "Failed to load settings" : "Produciuse un fallo ao cargar os axustes",
     "Conference" : "Conferencia",

@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Loading …",
     "save" : "save",
     "Link copied" : "Link copied",
     "Copy to clipboard" : "Copy to clipboard",

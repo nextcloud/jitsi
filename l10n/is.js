@@ -1,7 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Hleð inn …",
     "save" : "vista",
+    "Saving …" : "Vista …",
     "Failed to save settings" : "Mistókst að vista stillingar",
     "Failed to load settings" : "Mistókst að hlaða inn stillingum",
     "Conference" : "Fjarfundur",

@@ -1,8 +1,10 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Учитавање…",
     "save" : "сачувај",
     "saved" : "сачувано",
+    "Saving …" : "Чувам…",
     "Failed to save settings" : "Грешка приликом чувања поставки",
     "Failed to load settings" : "Грешка у дохватању поставки",
     "Link copied" : "Веза ископирана",

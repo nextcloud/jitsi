@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "O Kargañ ...",
+    "Saving …" : "Orc'h enrolliñ",
     "Conference" : "Kendiviz",
     "Link copied" : "Liamm eilet",
     "Help" : "Skoazell",

@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Cargando …",
     "save" : "guardar",
     "Copy to clipboard" : "Copiar al portapapeles",
     "Browser" : "Navegador",

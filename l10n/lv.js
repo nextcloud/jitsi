@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Saving …" : "Saglabā ...",
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
     "Help" : "Palīdzība",
