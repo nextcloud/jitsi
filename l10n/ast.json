@@ -1,0 +1,7 @@
+{ "translations": {
+    "Loading …" : "Cargando...",
+    "Saving …" : "Guardando...",
+    "Copy to clipboard" : "Copiar al cartafueyu",
+    "Help" : "Help"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
