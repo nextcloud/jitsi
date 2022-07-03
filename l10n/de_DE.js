@@ -32,7 +32,7 @@ OC.L10N.register(
     "Browser not supported" : "Browser wird nicht unterstützt!",
     "Show system check" : "Systemcheck anzeigen",
     "Your name:" : "Ihr Name:",
-    "Click here to join" : "Zum Beitreten, hier klicken",
+    "Click here to join" : "Zum Beitreten hier klicken",
     "Start muted" : "Stumm geschaltet starten",
     "Start with camera off" : "Mit ausgeschalteter Kamera starten",
     "Join using the Jitsi app" : "Treten Sie mit der Jitsi-App bei",
