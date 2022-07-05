@@ -1,6 +1,9 @@
 OC.L10N.register(
     "jitsi",
     {
+    "conferences" : "conferéncias",
+    "Jitsi Integration" : "integracion Jitsi",
+    "Conferences" : "Conferéncias",
     "Loading …" : "Cargament…",
     "saved" : "enregistrat",
     "Saving …" : "Enregistrament...",

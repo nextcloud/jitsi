@@ -1,4 +1,7 @@
 { "translations": {
+    "conferences" : "conferéncias",
+    "Jitsi Integration" : "integracion Jitsi",
+    "Conferences" : "Conferéncias",
     "Loading …" : "Cargament…",
     "saved" : "enregistrat",
     "Saving …" : "Enregistrament...",
