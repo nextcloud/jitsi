@@ -10,6 +10,7 @@ OC.L10N.register(
     "Help link (optional)" : "Laguntza-esteka (aukerazkoa)",
     "Display \"Join using the Jitsi app\"" : "Erakutsi \"Sartu Jitsi aplikazioa erabiliz\"",
     "JWT Secret (optional)" : "JWT sekretua (aukerazkoa)",
+    "JWT App ID" : "JWT aplikazioaren ID",
     "JWT Audience (optional)" : "JWT audientzia (aukerazkoa)",
     "JWT Issuer (optional)" : "JWT emailea (aukerazkoa)",
     "save" : "gorde",
@@ -20,6 +21,7 @@ OC.L10N.register(
     "Failed to load settings" : "Huts egin du ezarpenak kargatzean",
     "Conference rooms" : "Konferentzia gelak",
     "Conference" : "Biltzarra",
+    "Problems detected" : "Arazoak aurkitu dira",
     "Browser not supported" : "Ez da nabigatzailea onartzen",
     "Your name:" : "Zure izena:",
     "Start muted" : "Hasi mutututa",
@@ -38,6 +40,7 @@ OC.L10N.register(
     "Room not found" : "Ez da gela aurkitu",
     "Audio output" : "Audio irteera",
     "System check" : "Sistema egiaztatu",
-    "Got issues?" : "Arazorik duzu?"
+    "Got issues?" : "Arazorik duzu?",
+    "Does not work?" : "Ez du funtzionatzen?"
 },
 "nplurals=2; plural=(n != 1);");
