@@ -59,6 +59,7 @@
     "System check" : "Sistema egiaztatu",
     "Got issues?" : "Arazorik duzu?",
     "Known problems / what you can try" : "Arazo ezagunak / zer egin dezakezu",
+    "• Accept the microphone/camera access permissions at the top of the screen" : "• Onartu mikrofono/kamera sarbide baimenak pantaila-hasieran",
     "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• IDroidCam baduzu: Konektatu mugikorraren kamerara eta freskatu orria",
     "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Saiatu sartzen Jitsi aplikazioa erabiliz (jarraitu orriaren bukaeran dauden argibideak)",
     "No camera/microphone access" : "Ez dago kamera/mikrofono sarbiderik",
