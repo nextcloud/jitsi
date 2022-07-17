@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "جاري التحميل …",
     "Saving …" : "جاري الحفظ…",
     "Conference" : "مؤتمر",
+    "Browser not supported" : "المتصفح غير مدعوم",
     "Link copied" : "تم نسخ الرابط",
     "Cannot copy, please copy the link manually" : "لا يمكن النسخ، يرجى نسخ الرابط يدويًا",
     "Copy to clipboard" : "نسخ الرابط",
