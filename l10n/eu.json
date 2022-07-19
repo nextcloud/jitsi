@@ -60,6 +60,7 @@
     "Got issues?" : "Arazorik duzu?",
     "Known problems / what you can try" : "Arazo ezagunak / zer egin dezakezu",
     "• Accept the microphone/camera access permissions at the top of the screen" : "• Onartu mikrofono/kamera sarbide baimenak pantaila-hasieran",
+    "• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page." : "• Egiaztatu mikrofono/kamera sarbide baimenak helbide-barra ondoan dagoen ikonoan klik eginez. Gero, freskatu orria.",
     "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• IDroidCam baduzu: Konektatu mugikorraren kamerara eta freskatu orria",
     "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Saiatu sartzen Jitsi aplikazioa erabiliz (jarraitu orriaren bukaeran dauden argibideak)",
     "No camera/microphone access" : "Ez dago kamera/mikrofono sarbiderik",
