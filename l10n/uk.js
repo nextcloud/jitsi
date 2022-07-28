@@ -6,6 +6,7 @@ OC.L10N.register(
     "Saving …" : "Збереження ..",
     "Failed to save settings" : "Неможливо зберегти налаштування",
     "Conference" : "Конференція",
+    "Browser not supported" : "Оглядач не підтримується",
     "Link copied" : "Посилання скопійовано",
     "Browser" : "Переглядач",
     "Help" : "Допомога",
