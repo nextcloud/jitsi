@@ -47,6 +47,7 @@ OC.L10N.register(
     "Play test sound" : "Jouer un son test",
     "System check" : "Vérification du système",
     "Got issues?" : "Des problèmes ?",
-    "Known problems / what you can try" : "Problèmes connus / Ce que vous pouvez essayer"
+    "Known problems / what you can try" : "Problèmes connus / Ce que vous pouvez essayer",
+    "It is recommended to use the latest version of one of the following browsers:" : "Il est recommandé d'utiliser la dernière version de l'un des navigateurs suivants :"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
