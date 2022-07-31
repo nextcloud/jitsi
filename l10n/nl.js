@@ -1,13 +1,19 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Jitsi Integration" : "Jitsi integratie",
+    "Jitsi Integration (unofficial)" : "Jitsi Integratie (niet officiëel)",
     "Loading …" : "Laden ...",
+    "Server URL (required)" : "URL van de server (verplicht)",
     "save" : "opslaan",
     "saved" : "opgeslagen",
     "Saving …" : "Opslaan ...",
+    "The server URL must start with https://" : "De URL van de server moet beginnen met https://",
+    "Please provide the App ID" : "Gelieve de App ID in te voeren",
     "Failed to save settings" : "Kon instellingen niet opslaan",
     "Failed to load settings" : "Kon instellingen niet laden",
     "Conference" : "Conferentie",
+    "Problems detected" : "Problemen gedetecteerd",
     "Browser not supported" : "Browser niet ondersteund",
     "Your name:" : "Je naam:",
     "Start with camera off" : "Start met camera uit",
@@ -15,11 +21,14 @@ OC.L10N.register(
     "Cannot copy, please copy the link manually" : "Kopiëren niet mogelijk, kopieer de link handmatig",
     "Copy to clipboard" : "Kopiëren naar het klembord",
     "Browser" : "Browser",
+    "non-optimal" : "niet optimaal",
     "Help" : "Help",
     "Camera" : "Camera",
     "Microphone" : "Microfoon",
     "Join" : "Deelnemen",
     "Delete room" : "Verwijder ruimte",
-    "Room not found" : "Ruimte niet gevonden"
+    "Room not found" : "Ruimte niet gevonden",
+    "Play test sound" : "Speel een testgeluid af",
+    "Does not work?" : "Werkt het niet?"
 },
 "nplurals=2; plural=(n != 1);");
