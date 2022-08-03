@@ -5,6 +5,7 @@ OC.L10N.register(
     "Jitsi Integration (unofficial)" : "Jitsi Integratie (niet officiëel)",
     "Loading …" : "Laden ...",
     "Server URL (required)" : "URL van de server (verplicht)",
+    "JWT App ID" : "JWT App ID",
     "save" : "opslaan",
     "saved" : "opgeslagen",
     "Saving …" : "Opslaan ...",
@@ -28,6 +29,7 @@ OC.L10N.register(
     "Join" : "Deelnemen",
     "Delete room" : "Verwijder ruimte",
     "Room not found" : "Ruimte niet gevonden",
+    "Audio output" : "Audio output",
     "Play test sound" : "Speel een testgeluid af",
     "Does not work?" : "Werkt het niet?"
 },
