@@ -7,6 +7,7 @@ OC.L10N.register(
     "Failed to save settings" : "Mistókst að vista stillingar",
     "Failed to load settings" : "Mistókst að hlaða inn stillingum",
     "Conference" : "Fjarfundur",
+    "Browser not supported" : "Það er ekki stuðningur við vafrann",
     "Link copied" : "Tengill afritaður",
     "Copy to clipboard" : "Afrita á klippispjald",
     "Browser" : "Vafri",
