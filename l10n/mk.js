@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "Се вчитува…",
     "Saving …" : "Зачувува ...",
     "Failed to save settings" : "Неуспешно зачувување на параметрите",
+    "Failed to load settings" : "Неуспешно вчитување на параметрите",
     "Conference" : "Конференција",
     "Browser not supported" : "Вашиот прелистувач не е поддржан",
     "Link copied" : "Линкот е копиран",
