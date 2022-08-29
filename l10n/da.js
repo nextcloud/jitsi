@@ -6,6 +6,7 @@ OC.L10N.register(
     "Saving …" : "Gemmer ...",
     "Failed to save settings" : "Kunne ikke gemme indstillinger",
     "Failed to load settings" : "Fejl ved indlæsning af indstillinger",
+    "Conference" : "Konference",
     "Browser not supported" : "Browser ikke understøttet",
     "Link copied" : "Link kopieret",
     "Copy to clipboard" : "Kopier til udklipsholder",
