@@ -8,6 +8,7 @@ OC.L10N.register(
     "Failed to save settings" : "Nepavyko įrašyti nustatymų",
     "Failed to load settings" : "Nepavyko įkelti nustatymų",
     "Conference" : "Konferencija",
+    "Browser not supported" : "Naršyklė nepalaikoma",
     "Link copied" : "Nuoroda nukopijuota",
     "Cannot copy, please copy the link manually" : "Nepavyksta nukopijuoti, nukopijuokite nuorodą rankiniu būdu",
     "Copy to clipboard" : "Kopijuoti į iškarpinę",
