@@ -1,12 +1,14 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Conferences" : "Konference",
     "Loading …" : "Poteka nalaganje …",
     "save" : "shrani",
     "saved" : "shranjeno",
     "Saving …" : "Poteka shranjevanje ...",
     "Failed to save settings" : "Shranjevanje nastavitev je spodletelo",
     "Failed to load settings" : "Nalaganje nastavitev je spodletelo.",
+    "Conference rooms" : "Konferenčne sobe",
     "Conference" : "Konferenca",
     "Browser not supported" : "Trenutno uporabljen brskalnik ni podprt!",
     "Link copied" : "Povezava je kopirana",
