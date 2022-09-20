@@ -8,6 +8,7 @@ OC.L10N.register(
     "Conference" : "Конференція",
     "Browser not supported" : "Оглядач не підтримується",
     "Link copied" : "Посилання скопійовано",
+    "Copy to clipboard" : "Скопіювати в буфер обміну ",
     "Browser" : "Переглядач",
     "Help" : "Допомога",
     "Camera" : "Камера",
