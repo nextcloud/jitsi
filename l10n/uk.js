@@ -8,6 +8,7 @@ OC.L10N.register(
     "Conference" : "Конференція",
     "Browser not supported" : "Оглядач не підтримується",
     "Link copied" : "Посилання скопійовано",
+    "Cannot copy, please copy the link manually" : "Неможливо скопіювати, скопіюйте посилання вручну",
     "Copy to clipboard" : "Скопіювати в буфер обміну ",
     "Browser" : "Переглядач",
     "Help" : "Допомога",
