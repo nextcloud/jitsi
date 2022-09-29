@@ -48,6 +48,10 @@ OC.L10N.register(
     "System check" : "Vérification du système",
     "Got issues?" : "Des problèmes ?",
     "Known problems / what you can try" : "Problèmes connus / Ce que vous pouvez essayer",
+    "• Accept the microphone/camera access permissions at the top of the screen" : "• Acceptez les autorisations d'accès au microphone/à la webcam en haut de l'écran.",
+    "• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page." : "• Vérifiez les autorisations d'accès au microphone/à la webcam en cliquant sur l'icône située à côté de la barre d'adresse. Rechargez ensuite la page.",
+    "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• Si vous avez DroidCam : Connectez-vous à la caméra mobile, puis rechargez la page.",
+    "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Essayez de rejoindre en utilisant l'application Jitsi (suivez les instructions au bas de la page).",
     "It is recommended to use the latest version of one of the following browsers:" : "Il est recommandé d'utiliser la dernière version de l'un des navigateurs suivants :"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
