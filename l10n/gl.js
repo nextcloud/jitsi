@@ -8,6 +8,7 @@ OC.L10N.register(
     "Failed to save settings" : "Produciuse un fallo ao gardar os axustes",
     "Failed to load settings" : "Produciuse un fallo ao cargar os axustes",
     "Conference" : "Conferencia",
+    "Browser not supported" : "Este navegador non é compatíbel",
     "Link copied" : "Ligazón copiada",
     "Cannot copy, please copy the link manually" : "Non foi posíbel copiala. Copie a ligazón manualmente",
     "Copy to clipboard" : "Copiar no portapapeis.",
