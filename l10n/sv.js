@@ -16,6 +16,7 @@ OC.L10N.register(
     "Help" : "Hjälp",
     "Camera" : "Kamera",
     "Join" : "Gå med",
-    "Delete room" : "Radera rum"
+    "Delete room" : "Radera rum",
+    "Play test sound" : "Spela upp testljud"
 },
 "nplurals=2; plural=(n != 1);");
