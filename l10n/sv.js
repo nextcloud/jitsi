@@ -15,6 +15,7 @@ OC.L10N.register(
     "Browser" : "Webbläsare",
     "Help" : "Hjälp",
     "Camera" : "Kamera",
+    "Microphone" : "Mikrofon",
     "Join" : "Gå med",
     "Delete room" : "Radera rum",
     "Play test sound" : "Spela upp testljud"
