@@ -111,41 +111,59 @@
                     @camera-selected="onCameraSelected"
                     @speaker-selected="onSpeakerSelected" />
 
+                <div class="room__join-app-buttons-section">
+					<div class="room__join-app-button-section">
+                        <button
+                            class="primary room__join-button--app"
+                            :disabled="!systemTestDone || !ready || error || joining"
+                            @click="joinDesktopApp">
+                            {{ t('jitsi', 'Join with desktop app') }}
+                        </button>
+                    </div>
+					<div class="room__join-app-button-section">
+                        <button
+                            class="primary room__join-button--app"
+                            :disabled="!systemTestDone || !ready || error || joining"
+                            @click="joinMobileApp">
+                            {{ t('jitsi', 'Join with mobile app') }}
+                        </button>
+                    </div>
+				</div>
+
                 <template v-if="displayJoinUsingTheJitsiApp">
                     <div
                         class="room__join-app-toggle"
                         @click="showJoinApp = !showJoinApp">
-                        {{ t('jitsi', 'Join using the Jitsi app') }}
+                        {{ t('jitsi', 'App button not working?') }}
                         <img
                             class="room__join-app-toggle-icon"
                             :class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
                             :src="caretSrc">
                     </div>
-                    <div
-                        v-if="showJoinApp"
-                        class="room__join-app-section">
+                    <div v-if="showJoinApp"
+                         class="room__join-app-section">
                         <ol class="room__app-instructions">
                             <li class="room__app-instructions-item">
                                 <a
                                     target="_blank"
                                     href="https://github.com/jitsi/jitsi-meet-electron#installation">
-                                    {{ t('jitsi', 'Download the app here ↗') }}
+                                    {{ t('jitsi', 'Download the desktop app here ↗') }}
                                 </a>
+                                <br>
+                                {{ t('jitsi', 'The mobile app is available via your device\'s official app store.') }}
+                                <br>
+                                {{ t('jitsi', 'After successful installation try the button again.') }}
                             </li>
-                            <li class="room__app-instructions-item">
-                                <button
-                                    v-if="!joinLink"
-                                    @click="createJoinLink">
-                                    {{ t('jitsi', 'Create participation link') }}
-                                </button>
-                                <span v-if="joinLink" class="room__join-link-container">
+                            <li class="room__app-instructions-item"
+                                v-html="t('jitsi', 'Still not working?<br>Copy the link below and paste it into the input field on the Jitsi App start screen.<br>')" />
+                                <span class="room__join-link-container">
                                     <input
                                         class="room__join-link-input"
-                                        :value="joinLink"
+                                        :value="joinAppLink"
                                         readonly>
                                     <Actions ref="copyLinkActions">
                                         <ActionLink
-                                            :href="joinLink"
+                                            :href="joinAppLink"
                                             :icon="copied && copySuccess ? 'icon-checkmark-color' : 'icon-clippy'"
                                             @click.stop.prevent="copyLink">
                                             {{ clipboardTooltip }}
@@ -153,9 +171,6 @@
                                     </Actions>
                                 </span>
                             </li>
-                            <li
-                                class="room__app-instructions-item"
-                                v-html="t('jitsi', 'Paste the link from above into the<br>input field on the App start screen')" />
                         </ol>
                     </div>
                 </template>
@@ -207,7 +222,8 @@ export default {
             user: null,
             userName: '',
             linkHelperUrl: '',
-            joinLink: '',
+            joinAppLink: '',
+            joinDesktopAppLink: '',
             copied: false,
             copySuccess: false,
             showJoinApp: false,
@@ -327,6 +343,15 @@ export default {
             return
         }
 
+        this.joinAppLink= `${this.serverUrl}${this.room.publicId}`
+        this.joinDesktopAppLink= this.joinAppLink.replace(/^http[s]*/,"jitsi-meet")
+
+        const token = await this.issueToken()
+        if (token !== null) {
+            this.joinDesktopAppLink += `?jwt=${token}`
+            this.joinAppLink += `?jwt=${token}`
+        }
+
         this.ready = true
     },
     methods: {
@@ -340,22 +365,14 @@ export default {
             this.selectedSpeaker = speaker
         },
         async createJoinLink() {
-            const token = await this.issueToken()
-            let joinLink = `${this.serverUrl}${this.room.publicId}`
-
-            if (token !== null) {
-                joinLink += `?jwt=${token}`
-            }
-
-            this.joinLink = joinLink
             await this.copyLink()
             setTimeout(() => {
-                this.joinLink = ''
+                this.joinAppLink = ''
             }, 60 * 1000)
         },
         async copyLink() {
             try {
-                await this.$copyText(this.joinLink)
+                await this.$copyText(this.joinAppLink)
                 // focus and show the tooltip
                 this.$refs.copyLinkActions.$el.focus()
                 this.copySuccess = true
@@ -369,6 +386,14 @@ export default {
                     this.copied = false
                 }, 4000)
             }
+        },
+        async joinDesktopApp() {
+            // We use '_self' to trigger an app launch (the default '_blank' just opens
+            //   Jitsi in a new browser tab on some browsers).
+            window.open(this.joinDesktopAppLink, '_self')
+        },
+        async joinMobileApp() {
+            window.open(this.joinAppLink, '_self')
         },
         async joinBrowser() {
             if (this.joining) {
@@ -548,6 +573,22 @@ export default {
 	margin: 0 auto 32px;
 	padding: 16px 32px;
 	width: 250px;
+}
+
+.room__join-button--app {
+	font-size: 16px;
+	margin: 0 auto 32px;
+	padding: 16px 32px;
+	width: 250px;
+}
+
+.room__join-app-buttons-section {
+	display: inline-block;
+}
+
+.room__join-app-button-section {
+	float: left;
+	padding: 16px;
 }
 
 .room__join-browser-section {
