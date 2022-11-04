@@ -23,8 +23,6 @@ OC.L10N.register(
     "Your name:" : "Il tuo nome:",
     "Start muted" : "Entra con il microfono disattivato",
     "Start with camera off" : "Entra con la videocamera disattivata",
-    "Download the app here ↗" : "Scarica l'app qui",
-    "Create participation link" : "Crea un collegamento per partecipare",
     "Link copied" : "Collegamento copiato",
     "Cannot copy, please copy the link manually" : "Impossibile copiare, copia il collegamento manualmente",
     "Copy to clipboard" : "Copia negli appunti",

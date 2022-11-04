@@ -27,7 +27,6 @@ OC.L10N.register(
     "Click here to join" : "Klik hier om deel te nemen",
     "Start muted" : "Start gedempt",
     "Start with camera off" : "Start met camera uit",
-    "Create participation link" : "Deelnamelink maken",
     "Link copied" : "Link gekopieerd",
     "Cannot copy, please copy the link manually" : "Kopiëren niet mogelijk, kopieer de link handmatig",
     "Copy to clipboard" : "Kopiëren naar het klembord",
