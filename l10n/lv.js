@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "Saving …" : "Saglabā ...",
+    "Failed to save settings" : "Neizdevās saglabāt iestatījumus",
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
     "Help" : "Palīdzība",
