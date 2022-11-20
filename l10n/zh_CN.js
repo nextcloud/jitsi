@@ -18,6 +18,7 @@ OC.L10N.register(
     "Microphone" : "麦克风",
     "Join" : "加入",
     "Delete room" : "删除房间",
-    "Room not found" : "房间未找到"
+    "Room not found" : "房间未找到",
+    "Audio output" : "音频输出"
 },
 "nplurals=1; plural=0;");

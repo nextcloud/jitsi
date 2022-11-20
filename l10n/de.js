@@ -35,6 +35,7 @@ OC.L10N.register(
     "Click here to join" : "Zum Beitreten hier klicken",
     "Start muted" : "Stumm geschaltet starten",
     "Start with camera off" : "Mit ausgeschalteter Kamera starten",
+    "The mobile app is available via your device's official app store." : "Die mobile App ist über den offiziellen App Store deines Geräts verfügbar.",
     "Link copied" : "Link kopiert",
     "Cannot copy, please copy the link manually" : "Kopieren fehlgeschlagen. Bitte kopiere den Link manuell",
     "Copy to clipboard" : "In die Zwischenablage kopieren",
