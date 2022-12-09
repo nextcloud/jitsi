@@ -17,6 +17,7 @@ OC.L10N.register(
     "Camera" : "Cámara",
     "Microphone" : "Micrófono",
     "Join" : "Unirse",
-    "Room not found" : "Non se atopou a sala"
+    "Room not found" : "Non se atopou a sala",
+    "Audio output" : "Saída de audio"
 },
 "nplurals=2; plural=(n != 1);");

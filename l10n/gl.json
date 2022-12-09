@@ -15,6 +15,7 @@
     "Camera" : "Cámara",
     "Microphone" : "Micrófono",
     "Join" : "Unirse",
-    "Room not found" : "Non se atopou a sala"
+    "Room not found" : "Non se atopou a sala",
+    "Audio output" : "Saída de audio"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
