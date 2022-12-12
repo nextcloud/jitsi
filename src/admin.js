@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Admin from './Admin'
 import AppGlobal from './mixins/AppGlobal'
 
+/**
+ * @param fn
+ */
 function ready(fn) {
 	if (document.readyState !== 'loading') {
 		fn()

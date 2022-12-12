@@ -1,191 +1,191 @@
 <template>
-    <div class="app-content">
-        <link
-            rel="preload"
-            :href="link('/svg/core/actions/audio?color=#000')"
-            as="image">
-        <link
-            rel="preload"
-            :href="link('/svg/core/actions/audio-off?color=#000')"
-            as="image">
-        <link
-            rel="preload"
-            :href="link('/svg/core/actions/video?color=#000')"
-            as="image">
-        <link
-            rel="preload"
-            :href="link('/svg/core/actions/video-off?color=#000')"
-            as="image">
+	<div class="app-content">
+		<link
+			rel="preload"
+			:href="link('/svg/core/actions/audio?color=#000')"
+			as="image">
+		<link
+			rel="preload"
+			:href="link('/svg/core/actions/audio-off?color=#000')"
+			as="image">
+		<link
+			rel="preload"
+			:href="link('/svg/core/actions/video?color=#000')"
+			as="image">
+		<link
+			rel="preload"
+			:href="link('/svg/core/actions/video-off?color=#000')"
+			as="image">
 
-        <Breadcrumbs v-if="user">
-            <Breadcrumb :disable-drop="true" title="Home" :href="appHomeUrl" />
-            <Breadcrumb :disable-drop="true" :title="room ? room.name : '?'" />
-        </Breadcrumbs>
+		<Breadcrumbs v-if="user">
+			<Breadcrumb :disable-drop="true" title="Home" :href="appHomeUrl" />
+			<Breadcrumb :disable-drop="true" :title="room ? room.name : '?'" />
+		</Breadcrumbs>
 
-        <div v-if="ready">
-            <div
-                v-if="room"
-                class="room"
-                :style="{ 'padding-top': user ? '46px' : '80px' }">
-                <div class="room__sub-title">
-                    {{ t('jitsi', 'Conference') }}
-                </div>
-                <h1 class="room__title">
-                    {{ room.name }}
-                </h1>
-                <div class="room__join-browser-section">
-                    <div v-if="conferenceDone" class="room__done-info">
-                        {{ t('jitsi', 'Conference left') }}
-                    </div>
-                    <div
-                        v-if="!systemOk"
-                        class="room__system-test-summary room__system-test-summary--warning">
-                        <div class="room__system-test-summary__title__row">
-                            <img
-                                class="room__system-test-summary__icon"
-                                :src="errorSrc">
-                            <div class="room__system-test-summary__title">
-                                {{ t('jitsi', 'Problems detected') }}
-                            </div>
-                        </div>
-                        <div class="room__system-test-summary__text">
-                            <ul class="tol-ul-icons">
-                                <li
-                                    v-if="browserStatus === 'warning'">
-                                    <b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
-                                    <span v-html="t('jitsi', 'Audio and video quality could be poor. It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version.')" />
-                                </li>
-                                <li v-if="browserStatus === 'error'">
-                                    {{ t('jitsi', 'Browser not supported') }}
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="room__system-test-summary__actions">
-                            <a
-                                class="button secondary"
-                                href="#system-test">
-                                {{ t('jitsi', 'Show system check') }}
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        v-if="!user"
-                        class="room__username">
-                        <label
-                            class="room__username-label">
-                            {{ t('jitsi', 'Your name:') }}
-                        </label><br>
-                        <input
-                            v-model="userName"
-                            class="room__username-input"
-                            type="text"
-                            maxlength="20">
-                    </div>
-                    <button
-                        class="primary room__join-button--browser"
-                        :disabled="!systemTestDone || !ready || error || joining"
-                        @click="joinBrowser">
-                        {{ t('jitsi', 'Click here to join') }}
-                    </button>
+		<div v-if="ready">
+			<div
+				v-if="room"
+				class="room"
+				:style="{ 'padding-top': user ? '46px' : '80px' }">
+				<div class="room__sub-title">
+					{{ t('jitsi', 'Conference') }}
+				</div>
+				<h1 class="room__title">
+					{{ room.name }}
+				</h1>
+				<div class="room__join-browser-section">
+					<div v-if="conferenceDone" class="room__done-info">
+						{{ t('jitsi', 'Conference left') }}
+					</div>
+					<div
+						v-if="!systemOk"
+						class="room__system-test-summary room__system-test-summary--warning">
+						<div class="room__system-test-summary__title__row">
+							<img
+								class="room__system-test-summary__icon"
+								:src="errorSrc">
+							<div class="room__system-test-summary__title">
+								{{ t('jitsi', 'Problems detected') }}
+							</div>
+						</div>
+						<div class="room__system-test-summary__text">
+							<ul class="tol-ul-icons">
+								<li
+									v-if="browserStatus === 'warning'">
+									<b>{{ t('jitsi', 'Your browser is non-optimal:') }}</b><br>
+									<span v-html="t('jitsi', 'Audio and video quality could be poor. It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version.')" />
+								</li>
+								<li v-if="browserStatus === 'error'">
+									{{ t('jitsi', 'Browser not supported') }}
+								</li>
+							</ul>
+						</div>
+						<div class="room__system-test-summary__actions">
+							<a
+								class="button secondary"
+								href="#system-test">
+								{{ t('jitsi', 'Show system check') }}
+							</a>
+						</div>
+					</div>
+					<div
+						v-if="!user"
+						class="room__username">
+						<label
+							class="room__username-label">
+							{{ t('jitsi', 'Your name:') }}
+						</label><br>
+						<input
+							v-model="userName"
+							class="room__username-input"
+							type="text"
+							maxlength="20">
+					</div>
+					<button
+						class="primary room__join-button--browser"
+						:disabled="!systemTestDone || !ready || error || joining"
+						@click="joinBrowser">
+						{{ t('jitsi', 'Click here to join') }}
+					</button>
 
-                    <div class="room__options">
-                        <label class="room__option">
-                            <input
-                                v-model="startMuted"
-                                class="room__option__checkbox"
-                                type="checkbox"> {{ t('jitsi', 'Start muted') }}
-                        </label>
-                        <label class="room__option">
-                            <input
-                                v-model="startCameraOff"
-                                class="room__option__checkbox"
-                                type="checkbox"> {{ t('jitsi', 'Start with camera off') }}
-                        </label>
-                    </div>
-                </div>
-
-                <SystemTest
-                    id="system-test"
-                    class="tol-system-test-section"
-                    @microphone-selected="onMicrophoneSelected"
-                    @camera-selected="onCameraSelected"
-                    @speaker-selected="onSpeakerSelected" />
-
-                <div class="room__join-app-buttons-section">
-					<div class="room__join-app-button-section">
-                        <button
-                            class="primary room__join-button--app"
-                            :disabled="!systemTestDone || !ready || error || joining"
-                            @click="joinDesktopApp">
-                            {{ t('jitsi', 'Join with desktop app') }}
-                        </button>
-                    </div>
-					<div class="room__join-app-button-section">
-                        <button
-                            class="primary room__join-button--app"
-                            :disabled="!systemTestDone || !ready || error || joining"
-                            @click="joinMobileApp">
-                            {{ t('jitsi', 'Join with mobile app') }}
-                        </button>
-                    </div>
+					<div class="room__options">
+						<label class="room__option">
+							<input
+								v-model="startMuted"
+								class="room__option__checkbox"
+								type="checkbox"> {{ t('jitsi', 'Start muted') }}
+						</label>
+						<label class="room__option">
+							<input
+								v-model="startCameraOff"
+								class="room__option__checkbox"
+								type="checkbox"> {{ t('jitsi', 'Start with camera off') }}
+						</label>
+					</div>
 				</div>
 
-                <template v-if="displayJoinUsingTheJitsiApp">
-                    <div
-                        class="room__join-app-toggle"
-                        @click="showJoinApp = !showJoinApp">
-                        {{ t('jitsi', 'App button not working?') }}
-                        <img
-                            class="room__join-app-toggle-icon"
-                            :class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
-                            :src="caretSrc">
-                    </div>
-                    <div v-if="showJoinApp"
-                         class="room__join-app-section">
-                        <ol class="room__app-instructions">
-                            <li class="room__app-instructions-item">
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/jitsi/jitsi-meet-electron#installation">
-                                    {{ t('jitsi', 'Download the desktop app here ↗') }}
-                                </a>
-                                <br>
-                                {{ t('jitsi', 'The mobile app is available via your device\'s official app store.') }}
-                                <br>
-                                {{ t('jitsi', 'After successful installation try the button again.') }}
-                            </li>
-                            <li class="room__app-instructions-item"
-                                v-html="t('jitsi', 'Still not working?<br>Copy the link below and paste it into the input field on the Jitsi App start screen.<br>')" />
-                                <span class="room__join-link-container">
-                                    <input
-                                        class="room__join-link-input"
-                                        :value="joinAppLink"
-                                        readonly>
-                                    <Actions ref="copyLinkActions">
-                                        <ActionLink
-                                            :href="joinAppLink"
-                                            :icon="copied && copySuccess ? 'icon-checkmark-color' : 'icon-clippy'"
-                                            @click.stop.prevent="copyLink">
-                                            {{ clipboardTooltip }}
-                                        </ActionLink>
-                                    </Actions>
-                                </span>
-                            </li>
-                        </ol>
-                    </div>
-                </template>
-            </div>
-            <div
-                ref="conferenceContainer"
-                class="conference-container"
-                :class="{ 'conference-container--running': conferenceRunning }" />
-            <a
-                ref="linkHelper"
-                class="link-helper"
-                :href="linkHelperUrl" />
-        </div>
-        <RoomNotFound v-else-if="roomNotFound" />
-    </div>
+				<SystemTest
+					id="system-test"
+					class="tol-system-test-section"
+					@microphone-selected="onMicrophoneSelected"
+					@camera-selected="onCameraSelected"
+					@speaker-selected="onSpeakerSelected" />
+
+				<div class="room__join-app-buttons-section">
+					<div class="room__join-app-button-section">
+						<button
+							class="primary room__join-button--app"
+							:disabled="!systemTestDone || !ready || error || joining"
+							@click="joinDesktopApp">
+							{{ t('jitsi', 'Join with desktop app') }}
+						</button>
+					</div>
+					<div class="room__join-app-button-section">
+						<button
+							class="primary room__join-button--app"
+							:disabled="!systemTestDone || !ready || error || joining"
+							@click="joinMobileApp">
+							{{ t('jitsi', 'Join with mobile app') }}
+						</button>
+					</div>
+				</div>
+
+				<template v-if="displayJoinUsingTheJitsiApp">
+					<div
+						class="room__join-app-toggle"
+						@click="showJoinApp = !showJoinApp">
+						{{ t('jitsi', 'App button not working?') }}
+						<img
+							class="room__join-app-toggle-icon"
+							:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
+							:src="caretSrc">
+					</div>
+					<div v-if="showJoinApp"
+						class="room__join-app-section">
+						<ol class="room__app-instructions">
+							<li class="room__app-instructions-item">
+								<a
+									target="_blank"
+									href="https://github.com/jitsi/jitsi-meet-electron#installation">
+									{{ t('jitsi', 'Download the desktop app here ↗') }}
+								</a>
+								<br>
+								{{ t('jitsi', 'The mobile app is available via your device\'s official app store.') }}
+								<br>
+								{{ t('jitsi', 'After successful installation try the button again.') }}
+							</li>
+							<li class="room__app-instructions-item"
+								v-html="t('jitsi', 'Still not working?<br>Copy the link below and paste it into the input field on the Jitsi App start screen.<br>')">
+								<span class="room__join-link-container">
+									<input
+										class="room__join-link-input"
+										:value="joinAppLink"
+										readonly>
+									<Actions ref="copyLinkActions">
+										<ActionLink
+											:href="joinAppLink"
+											:icon="copied && copySuccess ? 'icon-checkmark-color' : 'icon-clippy'"
+											@click.stop.prevent="copyLink">
+											{{ clipboardTooltip }}
+										</ActionLink>
+									</Actions>
+								</span>
+							</li>
+						</ol>
+					</div>
+				</template>
+			</div>
+			<div
+				ref="conferenceContainer"
+				class="conference-container"
+				:class="{ 'conference-container--running': conferenceRunning }" />
+			<a
+				ref="linkHelper"
+				class="link-helper"
+				:href="linkHelperUrl" />
+		</div>
+		<RoomNotFound v-else-if="roomNotFound" />
+	</div>
 </template>
 
 <script>
@@ -204,335 +204,338 @@ import RoomNotFound from './components/RoomNotFound'
 import '../css/styles.css'
 
 export default {
-    name: 'Room',
-    components: {
-        RoomNotFound,
-        ActionLink,
-        Actions,
-        Breadcrumb,
-        Breadcrumbs,
-        SystemTest,
-    },
-    data() {
-        return {
-            joining: false,
-            conferenceRunning: false,
-            conferenceDone: false,
-            room: null,
-            user: null,
-            userName: '',
-            linkHelperUrl: '',
-            joinAppLink: '',
-            joinDesktopAppLink: '',
-            copied: false,
-            copySuccess: false,
-            showJoinApp: false,
-            _startCameraOff: false,
-            _startMuted: false,
-            serverUrl: null,
-            serverHost: null,
-            selectedCamera: null,
-            selectedMicrophone: null,
-            selectedSpeaker: null,
-            permissionDenied: false,
-            browserStatus: null,
-            displayJoinUsingTheJitsiApp: true,
-            ready: false,
-            error: false,
-            roomNotFound: false,
-            browser: null,
-            blinkBasedBrowser: false,
-            systemTestDone: false,
-        }
-    },
-    computed: {
-        appHomeUrl() {
-            return window.location.protocol + '//'
+	name: 'Room',
+	components: {
+		RoomNotFound,
+		ActionLink,
+		Actions,
+		Breadcrumb,
+		Breadcrumbs,
+		SystemTest,
+	},
+	data() {
+		return {
+			joining: false,
+			conferenceRunning: false,
+			conferenceDone: false,
+			room: null,
+			user: null,
+			userName: '',
+			linkHelperUrl: '',
+			joinAppLink: '',
+			joinDesktopAppLink: '',
+			copied: false,
+			copySuccess: false,
+			showJoinApp: false,
+			// eslint-disable-next-line
+			_startCameraOff: false,
+			// eslint-disable-next-line
+			_startMuted: false,
+			serverUrl: null,
+			serverHost: null,
+			selectedCamera: null,
+			selectedMicrophone: null,
+			selectedSpeaker: null,
+			permissionDenied: false,
+			browserStatus: null,
+			displayJoinUsingTheJitsiApp: true,
+			ready: false,
+			error: false,
+			roomNotFound: false,
+			browser: null,
+			blinkBasedBrowser: false,
+			systemTestDone: false,
+		}
+	},
+	computed: {
+		appHomeUrl() {
+			return window.location.protocol + '//'
 				+ window.location.host
 				+ generateUrl('/apps/jitsi')
-        },
-        clipboardTooltip() {
-            if (this.copied) {
-                return this.copySuccess
-                    ? t('jjitsi', this.t('jitsi', 'Link copied'))
-                    : t('jjitsi', this.t('jitsi', 'Cannot copy, please copy the link manually'))
-            }
-            return t('jjitsi', this.t('jitsi', 'Copy to clipboard'))
-        },
-        systemOk() {
-            if (this.browserStatus && this.browserStatus !== 'ok') {
-                return false
-            }
+		},
+		clipboardTooltip() {
+			if (this.copied) {
+				return this.copySuccess
+					? t('jjitsi', this.t('jitsi', 'Link copied'))
+					: t('jjitsi', this.t('jitsi', 'Cannot copy, please copy the link manually'))
+			}
+			return t('jjitsi', this.t('jitsi', 'Copy to clipboard'))
+		},
+		systemOk() {
+			if (this.browserStatus && this.browserStatus !== 'ok') {
+				return false
+			}
 
-            return true
-        },
-        startMuted: {
-            get() {
-                return this._startMuted
-            },
-            set(startMuted) {
-                this._startMuted = startMuted
-                localStorage.setItem('jitsi.startMuted', startMuted)
-            }
-        },
-        startCameraOff: {
-            get() {
-                return this._startCameraOff
-            },
-            set(startCameraOff) {
-                this._startCameraOff = startCameraOff
-                localStorage.setItem('jitsi.startCameraOff', startCameraOff)
-            }
-        },
-        caretSrc() {
-            return this.link('/svg/core/actions/caret?color=000000')
-        },
-        errorSrc() {
-            return this.link('/svg/core/actions/error?color=ea580c')
-        },
-        displayName() {
-            return this.user ? this.user.displayName : this.userName
-        },
-    },
-    async created() {
-        this.browser = Bowser.getParser(window.navigator.userAgent)
-        const engineName = this?.browser?.parsedResult?.engine?.name
+			return true
+		},
+		startMuted: {
+			get() {
+				return this._startMuted
+			},
+			set(startMuted) {
+				this._startMuted = startMuted
+				localStorage.setItem('jitsi.startMuted', startMuted)
+			},
+		},
+		startCameraOff: {
+			get() {
+				return this._startCameraOff
+			},
+			set(startCameraOff) {
+				this._startCameraOff = startCameraOff
+				localStorage.setItem('jitsi.startCameraOff', startCameraOff)
+			},
+		},
+		caretSrc() {
+			return this.link('/svg/core/actions/caret?color=000000')
+		},
+		errorSrc() {
+			return this.link('/svg/core/actions/error?color=ea580c')
+		},
+		displayName() {
+			return this.user ? this.user.displayName : this.userName
+		},
+	},
+	async created() {
+		this.browser = Bowser.getParser(window.navigator.userAgent)
+		const engineName = this?.browser?.parsedResult?.engine?.name
 
-        if (engineName && engineName.toLowerCase() === 'blink') {
-            this.blinkBasedBrowser = true
-        }
+		if (engineName && engineName.toLowerCase() === 'blink') {
+			this.blinkBasedBrowser = true
+		}
 
-        this.startMuted = localStorage.getItem('jitsi.startMuted') === 'true'
-        this.startCameraOff = localStorage.getItem('jitsi.startCameraOff') === 'true'
+		this.startMuted = localStorage.getItem('jitsi.startMuted') === 'true'
+		this.startCameraOff = localStorage.getItem('jitsi.startCameraOff') === 'true'
 
-        this.$root.$on('jitsi.device_permission_denied', () => {
-            this.permissionDenied = true
-        })
+		this.$root.$on('jitsi.device_permission_denied', () => {
+			this.permissionDenied = true
+		})
 
-        this.$root.$on('jitsi.system_test_done', () => {
-            this.systemTestDone = true
-        })
+		this.$root.$on('jitsi.system_test_done', () => {
+			this.systemTestDone = true
+		})
 
-        this.$root.$on('tol-browser-status', (status) => {
-            this.browserStatus = status
-        })
+		this.$root.$on('tol-browser-status', (status) => {
+			this.browserStatus = status
+		})
 
-        const jitsiEle = document.getElementById('jitsi')
-        this.serverUrl = jitsiEle.dataset.serverUrl
-        this.$root.helpLink = jitsiEle.dataset.helpLink
-        this.displayJoinUsingTheJitsiApp = jitsiEle.dataset.displayJoinUsingTheJitsiApp === 'true'
-        const url = new URL(this.serverUrl)
-        this.serverHost = url.host
+		const jitsiEle = document.getElementById('jitsi')
+		this.serverUrl = jitsiEle.dataset.serverUrl
+		this.$root.helpLink = jitsiEle.dataset.helpLink
+		this.displayJoinUsingTheJitsiApp = jitsiEle.dataset.displayJoinUsingTheJitsiApp === 'true'
+		const url = new URL(this.serverUrl)
+		this.serverHost = url.host
 
-        const userResponse = await axios.get(generateUrl('/apps/jitsi/api/user'))
-        this.user = userResponse.data.user
+		const userResponse = await axios.get(generateUrl('/apps/jitsi/api/user'))
+		this.user = userResponse.data.user
 
-        if (!this.user) {
-            this.userName = localStorage.getItem('jitsi.userName')
-        }
+		if (!this.user) {
+			this.userName = localStorage.getItem('jitsi.userName')
+		}
 
-        try {
-            const roomResponse = await axios.get(generateUrl(`/apps/jitsi/api/rooms/${this.extractRoomId()}`))
-            this.room = roomResponse.data
-        } catch (e) {
-            if (e?.response?.status === 404) {
-                this.roomNotFound = true
-            } else {
-                this.error = true
-            }
-            return
-        }
+		try {
+			const roomResponse = await axios.get(generateUrl(`/apps/jitsi/api/rooms/${this.extractRoomId()}`))
+			this.room = roomResponse.data
+		} catch (e) {
+			if (e?.response?.status === 404) {
+				this.roomNotFound = true
+			} else {
+				this.error = true
+			}
+			return
+		}
 
-        this.joinAppLink= `${this.serverUrl}${this.room.publicId}`
-        this.joinDesktopAppLink= this.joinAppLink.replace(/^http[s]*/,"jitsi-meet")
+		this.joinAppLink = `${this.serverUrl}${this.room.publicId}`
+		this.joinDesktopAppLink = this.joinAppLink.replace(/^http[s]*/, 'jitsi-meet')
 
-        const token = await this.issueToken()
-        if (token !== null) {
-            this.joinDesktopAppLink += `?jwt=${token}`
-            this.joinAppLink += `?jwt=${token}`
-        }
+		const token = await this.issueToken()
+		if (token !== null) {
+			this.joinDesktopAppLink += `?jwt=${token}`
+			this.joinAppLink += `?jwt=${token}`
+		}
 
-        this.ready = true
-    },
-    methods: {
-        onCameraSelected(camera) {
-            this.selectedCamera = camera
-        },
-        onMicrophoneSelected(microphone) {
-            this.selectedMicrophone = microphone
-        },
-        onSpeakerSelected(speaker) {
-            this.selectedSpeaker = speaker
-        },
-        async createJoinLink() {
-            await this.copyLink()
-            setTimeout(() => {
-                this.joinAppLink = ''
-            }, 60 * 1000)
-        },
-        async copyLink() {
-            try {
-                await this.$copyText(this.joinAppLink)
-                // focus and show the tooltip
-                this.$refs.copyLinkActions.$el.focus()
-                this.copySuccess = true
-                this.copied = true
-            } catch (error) {
-                this.copySuccess = false
-                this.copied = true
-            } finally {
-                setTimeout(() => {
-                    this.copySuccess = false
-                    this.copied = false
-                }, 4000)
-            }
-        },
-        async joinDesktopApp() {
-            // We use '_self' to trigger an app launch (the default '_blank' just opens
-            //   Jitsi in a new browser tab on some browsers).
-            window.open(this.joinDesktopAppLink, '_self')
-        },
-        async joinMobileApp() {
-            window.open(this.joinAppLink, '_self')
-        },
-        async joinBrowser() {
-            if (this.joining) {
-                return
-            }
+		this.ready = true
+	},
+	methods: {
+		onCameraSelected(camera) {
+			this.selectedCamera = camera
+		},
+		onMicrophoneSelected(microphone) {
+			this.selectedMicrophone = microphone
+		},
+		onSpeakerSelected(speaker) {
+			this.selectedSpeaker = speaker
+		},
+		async createJoinLink() {
+			await this.copyLink()
+			setTimeout(() => {
+				this.joinAppLink = ''
+			}, 60 * 1000)
+		},
+		async copyLink() {
+			try {
+				await this.$copyText(this.joinAppLink)
+				// focus and show the tooltip
+				this.$refs.copyLinkActions.$el.focus()
+				this.copySuccess = true
+				this.copied = true
+			} catch (error) {
+				this.copySuccess = false
+				this.copied = true
+			} finally {
+				setTimeout(() => {
+					this.copySuccess = false
+					this.copied = false
+				}, 4000)
+			}
+		},
+		async joinDesktopApp() {
+			// We use '_self' to trigger an app launch (the default '_blank' just opens
+			//   Jitsi in a new browser tab on some browsers).
+			window.open(this.joinDesktopAppLink, '_self')
+		},
+		async joinMobileApp() {
+			window.open(this.joinAppLink, '_self')
+		},
+		async joinBrowser() {
+			if (this.joining) {
+				return
+			}
 
-            this.joining = true
+			this.joining = true
 
-            if (!this.user && this.userName) {
-                localStorage.setItem('jitsi.userName', this.userName)
-            }
+			if (!this.user && this.userName) {
+				localStorage.setItem('jitsi.userName', this.userName)
+			}
 
-            await this.stopStreams()
+			await this.stopStreams()
 
-            const token = await this.issueToken()
+			const token = await this.issueToken()
 
-            const options = {
-                parentNode: this.$refs.conferenceContainer,
-                width: '100%',
-                height: '100%',
-                roomName: this.room.publicId,
-                devices: {},
-                userInfo: {
-                    displayName: this.displayName,
-                },
-            }
+			const options = {
+				parentNode: this.$refs.conferenceContainer,
+				width: '100%',
+				height: '100%',
+				roomName: this.room.publicId,
+				devices: {},
+				userInfo: {
+					displayName: this.displayName,
+				},
+			}
 
-            if (token !== null) {
+			if (token !== null) {
 			    options.jwt = token
-            }
+			}
 
-            const configOverwrite = {
-                disableDeepLinking: true,
-                prejoinPageEnabled: false,
-                disableInviteFunctions: true,
-            }
+			const configOverwrite = {
+				disableDeepLinking: true,
+				prejoinPageEnabled: false,
+				disableInviteFunctions: true,
+			}
 
-            if (this._startMuted) {
-                configOverwrite.startWithAudioMuted = true
-            }
+			if (this._startMuted) {
+				configOverwrite.startWithAudioMuted = true
+			}
 
-            if (this._startCameraOff) {
-                configOverwrite.startWithVideoMuted = true
-            }
+			if (this._startCameraOff) {
+				configOverwrite.startWithVideoMuted = true
+			}
 
-            if (this.selectedCamera) {
-                options.devices.videoInput = this.selectedCamera.label
-            }
+			if (this.selectedCamera) {
+				options.devices.videoInput = this.selectedCamera.label
+			}
 
-            if (this.selectedMicrophone) {
-                options.devices.audioInput = this.selectedMicrophone.label
-            }
+			if (this.selectedMicrophone) {
+				options.devices.audioInput = this.selectedMicrophone.label
+			}
 
-            if (this.selectedSpeaker) {
-                options.devices.audioOutput = this.selectedSpeaker.label
-            }
+			if (this.selectedSpeaker) {
+				options.devices.audioOutput = this.selectedSpeaker.label
+			}
 
-            options.configOverwrite = configOverwrite
+			options.configOverwrite = configOverwrite
 
-            // workaround
-            // https://community.jitsi.org/t/error-after-update-google-chrome-on-jitsi-with-iframe/109972/8
-            if (this.blinkBasedBrowser) {
-                let frameUrl = null
+			// workaround
+			// https://community.jitsi.org/t/error-after-update-google-chrome-on-jitsi-with-iframe/109972/8
+			if (this.blinkBasedBrowser) {
+				let frameUrl = null
 
-                options.onload = (e) => {
-                    const frame = e.target
+				options.onload = (e) => {
+					const frame = e.target
 
-                    if (frameUrl === null) {
-                        frameUrl = frame.src
+					if (frameUrl === null) {
+						frameUrl = frame.src
 
-                        frame.src = generateUrl('/apps/jitsi/blank')
-                        setTimeout(() => {
-                            console.log('[jitsi] reloading frame')
-                            frame.src = frameUrl
-                        }, 1000)
-                    }
-                }
-            }
+						frame.src = generateUrl('/apps/jitsi/blank')
+						setTimeout(() => {
+							// eslint-disable-next-line
+							console.log('[jitsi] reloading frame')
+							frame.src = frameUrl
+						}, 1000)
+					}
+				}
+			}
 
-            this.conferenceRunning = true
-            const api = new JitsiMeetExternalAPI(this.serverHost, options)
-            api.executeCommand('subject', this.room.name)
+			this.conferenceRunning = true
+			const api = new JitsiMeetExternalAPI(this.serverHost, options)
+			api.executeCommand('subject', this.room.name)
 
-            if (this.user) {
-                api.executeCommand('avatarUrl', this.user.avatarURL)
-            }
+			if (this.user) {
+				api.executeCommand('avatarUrl', this.user.avatarURL)
+			}
 
-            api.addEventListener('readyToClose', () => {
-                this.joining = false
-                api.dispose()
-                this.conferenceRunning = false
-                this.conferenceDone = true
-                this.$root.$emit('resume-preview')
-            })
-        },
-        async stopStreams() {
-            return new Promise((resolve) => {
-                let micStopped = false
-                let camStopped = false
+			api.addEventListener('readyToClose', () => {
+				this.joining = false
+				api.dispose()
+				this.conferenceRunning = false
+				this.conferenceDone = true
+				this.$root.$emit('resume-preview')
+			})
+		},
+		async stopStreams() {
+			return new Promise((resolve) => {
+				let micStopped = false
+				let camStopped = false
 
-                this.$root.$once('mic-stopped', () => {
-                    micStopped = true
-                    if (camStopped) {
-                        resolve()
-                    }
-                })
+				this.$root.$once('mic-stopped', () => {
+					micStopped = true
+					if (camStopped) {
+						resolve()
+					}
+				})
 
-                this.$root.$once('cam-stopped', () => {
-                    camStopped = true
-                    if (micStopped) {
-                        resolve()
-                    }
-                })
+				this.$root.$once('cam-stopped', () => {
+					camStopped = true
+					if (micStopped) {
+						resolve()
+					}
+				})
 
-                this.$root.$emit('stop-streams')
-            })
-        },
-        async issueToken() {
-            const data = {
-                displayName: this.user ? this.user.displayName : this.userName,
-            }
-            const url = generateUrl(`/apps/jitsi/api/rooms/${this.room.publicId}/tokens`)
-            try {
-                const response = await axios.post(url, data)
-                return response.data.token
-            } catch (err) {
+				this.$root.$emit('stop-streams')
+			})
+		},
+		async issueToken() {
+			const data = {
+				displayName: this.user ? this.user.displayName : this.userName,
+			}
+			const url = generateUrl(`/apps/jitsi/api/rooms/${this.room.publicId}/tokens`)
+			try {
+				const response = await axios.post(url, data)
+				return response.data.token
+			} catch (err) {
 			    return null
-            }
-        },
-        extractRoomId() {
-            const urlParts = window.location.href.split('/').slice(-3)
+			}
+		},
+		extractRoomId() {
+			const urlParts = window.location.href.split('/').slice(-3)
 
-            if (urlParts[0] === 'rooms') {
-                return urlParts[1]
-            }
+			if (urlParts[0] === 'rooms') {
+				return urlParts[1]
+			}
 
-            return urlParts[2]
-        },
-    },
+			return urlParts[2]
+		},
+	},
 }
 </script>
 
