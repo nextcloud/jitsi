@@ -1,28 +1,11 @@
 <template>
 	<div class="app-content">
-		<link
-			rel="preload"
-			:href="link('/svg/core/actions/audio?color=#000')"
-			as="image">
-		<link
-			rel="preload"
-			:href="link('/svg/core/actions/audio-off?color=#000')"
-			as="image">
-		<link
-			rel="preload"
-			:href="link('/svg/core/actions/video?color=#000')"
-			as="image">
-		<link
-			rel="preload"
-			:href="link('/svg/core/actions/video-off?color=#000')"
-			as="image">
-
 		<Breadcrumbs v-if="user">
 			<Breadcrumb :disable-drop="true" title="Home" :href="appHomeUrl" />
 			<Breadcrumb :disable-drop="true" :title="room ? room.name : '?'" />
 		</Breadcrumbs>
 
-		<div v-if="ready">
+		<div class="app-body" v-if="ready">
 			<div
 				v-if="room"
 				class="room"
@@ -41,9 +24,8 @@
 						v-if="!systemOk"
 						class="room__system-test-summary room__system-test-summary--warning">
 						<div class="room__system-test-summary__title__row">
-							<img
-								class="room__system-test-summary__icon"
-								:src="errorSrc">
+							<CloseThickIcon
+								class="room__system-test-summary__icon" />
 							<div class="room__system-test-summary__title">
 								{{ t('jitsi', 'Problems detected') }}
 							</div>
@@ -135,10 +117,9 @@
 						class="room__join-app-toggle"
 						@click="showJoinApp = !showJoinApp">
 						{{ t('jitsi', 'App button not working?') }}
-						<img
+						<ChevronUpIcon
 							class="room__join-app-toggle-icon"
-							:class="{ 'room__join-app-toggle-icon--up': showJoinApp }"
-							:src="caretSrc">
+							:class="{ 'room__join-app-toggle-icon--up': showJoinApp }" />
 					</div>
 					<div v-if="showJoinApp"
 						class="room__join-app-section">
@@ -200,12 +181,17 @@ import Breadcrumb from '@nextcloud/vue/dist/Components/Breadcrumb'
 import Breadcrumbs from '@nextcloud/vue/dist/Components/Breadcrumbs'
 import SystemTest from './components/SystemTest'
 import RoomNotFound from './components/RoomNotFound'
+import ChevronUpIcon from 'vue-material-design-icons/ChevronUp.vue'
+import CloseThickIcon from 'vue-material-design-icons/CloseThick.vue'
 
+import 'vue-material-design-icons/styles.css'
 import '../css/styles.css'
 
 export default {
 	name: 'Room',
 	components: {
+		ChevronUpIcon,
+		CloseThickIcon,
 		RoomNotFound,
 		ActionLink,
 		Actions,
@@ -285,12 +271,6 @@ export default {
 				this._startCameraOff = startCameraOff
 				localStorage.setItem('jitsi.startCameraOff', startCameraOff)
 			},
-		},
-		caretSrc() {
-			return this.link('/svg/core/actions/caret?color=000000')
-		},
-		errorSrc() {
-			return this.link('/svg/core/actions/error?color=ea580c')
 		},
 		displayName() {
 			return this.user ? this.user.displayName : this.userName
@@ -610,12 +590,11 @@ export default {
 }
 
 .room__join-app-toggle-icon {
-	height: 24px;
 	position: relative;
-	top: 8px;
 }
 
 .room__join-app-toggle-icon--up {
+	top: -4px;
 	transform: rotate(180deg);
 }
 

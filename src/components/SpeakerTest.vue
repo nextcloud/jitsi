@@ -29,9 +29,8 @@
 				<div
 					class="tol-play-button button secondary"
 					@click="playTestSound">
-					<img
-						class="tol-play-button__icon"
-						:src="playSrc"> {{ t('jitsi', 'Play test sound') }}
+					<PlayIcon class="tol-play-button__icon" />
+				    {{ t('jitsi', 'Play test sound') }}
 				</div>
 			</div>
 		</div>
@@ -42,10 +41,14 @@
 
 import CheckStatusIcon from './CheckStatusIcon'
 import { generateUrl } from '@nextcloud/router'
+import PlayIcon from 'vue-material-design-icons/Play.vue'
 
 export default {
 	name: 'SpeakerTest',
-	components: { CheckStatusIcon },
+    components: { 
+		CheckStatusIcon,
+		PlayIcon,
+	},
 	props: {
 		browser: Object,
 		speakers: Array,

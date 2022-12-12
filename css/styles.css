@@ -1,3 +1,14 @@
+.app-content {
+	background-color: var(--color-main-background);
+	border-radius: var(--body-container-radius);
+	padding: 5px;
+}
+
+.app-body {
+	max-height: 100%;
+	overflow: scoll;
+}
+
 .jitsi-info-container {
 	align-items: center;
 	display: flex;

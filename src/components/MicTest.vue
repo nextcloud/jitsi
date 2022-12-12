@@ -29,9 +29,7 @@
 				<div
 					ref="meter"
 					class="meter">
-					<img
-						class="meter__icon"
-						:src="audioSrc">
+					<VolumeHighIcon class="meter__icon" />
 				</div>
 			</div>
 		</div>
@@ -41,10 +39,14 @@
 <script>
 
 import CheckStatusIcon from './CheckStatusIcon'
+import VolumeHighIcon from 'vue-material-design-icons/VolumeHigh.vue'
 
 export default {
 	name: 'MicTest',
-	components: { CheckStatusIcon },
+	components: {
+		CheckStatusIcon,
+		VolumeHighIcon,
+	},
 	props: {
 		microphones: Array,
 		permissionDenied: Boolean,
@@ -71,9 +73,6 @@ export default {
 
 				await this.startPreview()
 			},
-		},
-		audioSrc() {
-			return this.link('/svg/core/actions/audio?color=cccccc')
 		},
 	},
 	created() {
@@ -211,11 +210,6 @@ export default {
 
 .meter--active {
 	background-color: #059669;
-}
-
-.meter__icon {
-	height: 32px;
-	width: 32px;
 }
 
 </style>

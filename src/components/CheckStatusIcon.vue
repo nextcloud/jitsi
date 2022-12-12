@@ -2,36 +2,36 @@
 	<div
 		class="check-result-icon"
 		:class="statusIconClass">
-		<img
-			class="check-result-icon__img"
-			:src="statusIconSrc">
+		<CheckBoldIcon v-if="status === 'ok'" />
+		<TimerSandEmptyIcon v-else-if="status === 'pending'" />
+		<CloseThickIcon v-else-if="status === 'error'" />
+		<ExclamationThickIcon v-else-if="status === 'warning'" />
+		<VolumeHighIcon v-else-if="status === 'sound'" />
+		<CloseThickIcon v-else />
 	</div>
 </template>
 
 <script>
 
+import CheckBoldIcon from 'vue-material-design-icons/CheckBold.vue'
+import CloseThickIcon from 'vue-material-design-icons/CloseThick.vue'
+import ExclamationThickIcon from 'vue-material-design-icons/ExclamationThick.vue'
+import TimerSandEmptyIcon from 'vue-material-design-icons/TimerSandEmpty.vue'
+import VolumeHighIcon from 'vue-material-design-icons/VolumeHigh.vue'
+
 export default {
 	name: 'CheckStatusIcon',
+	components: {
+		CheckBoldIcon,
+		CloseThickIcon,
+		ExclamationThickIcon,
+		TimerSandEmptyIcon,
+		VolumeHighIcon,
+	},
 	props: [
 		'status',
 	],
 	computed: {
-		statusIconSrc() {
-			switch (this.status) {
-			case 'pending':
-				return this.link('/svg/core/actions/more?color=ffffff')
-			case 'error':
-				return this.link('/svg/core/actions/close?color=ffffff')
-			case 'warning':
-				return this.link('/svg/core/actions/details?color=ffffff')
-			case 'ok':
-				return this.link('/svg/core/actions/checkmark?color=ffffff')
-			case 'sound':
-				return this.link('/svg/core/actions/sound?color=ffffff')
-			default:
-				return this.link('/svg/core/actions/close?color=ffffff')
-			}
-		},
 		statusIconClass() {
 			return `check-result-icon--${this.status}`
 		},
@@ -44,11 +44,13 @@ export default {
 .check-result-icon {
 	align-items: center;
 	border-radius: 50%;
+	color: var(--color-primary-text);
 	display: flex;
-	height: 16px;
 	justify-content: center;
 	margin-top: 4px;
-	width: 16px;
+    padding: 4px;
+    position: relative;
+    top: -3px;
 }
 
 .check-result-icon--pending,
@@ -66,11 +68,6 @@ export default {
 
 .check-result-icon--warning {
 	background-color: #D97706;
-}
-
-.check-result-icon__img {
-	height: 12px;
-	width: 12px;
 }
 
 </style>
