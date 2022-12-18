@@ -9,7 +9,7 @@
 			<div
 				v-if="room"
 				class="room"
-				:style="{ 'padding-top': user ? '46px' : '80px' }">
+				:style="{ 'padding-top': user ? '16px' : '64px' }">
 				<div class="room__sub-title">
 					{{ t('jitsi', 'Conference') }}
 				</div>
@@ -537,7 +537,7 @@ export default {
 	color: var(--color-text-lighter);
 	font-size: 48px;
 	line-height: 1.2;
-	margin-bottom: 80px;
+	margin-bottom: 64px;
 	text-align: center;
 }
 
@@ -577,7 +577,7 @@ export default {
 	align-items: center;
 	display: inline-flex;
 	flex-direction: column;
-	margin-bottom: 80px;
+	margin-bottom: 48px;
 }
 
 .room__join-app-section {
