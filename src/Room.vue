@@ -93,26 +93,26 @@
 					@camera-selected="onCameraSelected"
 					@speaker-selected="onSpeakerSelected" />
 
-				<div class="room__join-app-buttons-section">
-					<div class="room__join-app-button-section">
-						<button
-							class="primary room__join-button--app"
-							:disabled="!systemTestDone || !ready || error || joining"
-							@click="joinDesktopApp">
-							{{ t('jitsi', 'Join with desktop app') }}
-						</button>
-					</div>
-					<div class="room__join-app-button-section">
-						<button
-							class="primary room__join-button--app"
-							:disabled="!systemTestDone || !ready || error || joining"
-							@click="joinMobileApp">
-							{{ t('jitsi', 'Join with mobile app') }}
-						</button>
-					</div>
-				</div>
-
 				<template v-if="displayJoinUsingTheJitsiApp">
+					<div class="room__join-app-buttons-section">
+						<div class="room__join-app-button-section">
+							<button
+								class="primary room__join-button--app"
+								:disabled="!systemTestDone || !ready || error || joining"
+								@click="joinDesktopApp">
+								{{ t('jitsi', 'Join with desktop app') }}
+							</button>
+						</div>
+						<div class="room__join-app-button-section">
+							<button
+								class="primary room__join-button--app"
+								:disabled="!systemTestDone || !ready || error || joining"
+								@click="joinMobileApp">
+								{{ t('jitsi', 'Join with mobile app') }}
+							</button>
+						</div>
+					</div>
+
 					<div
 						class="room__join-app-toggle"
 						@click="showJoinApp = !showJoinApp">
@@ -131,28 +131,27 @@
 									{{ t('jitsi', 'Download the desktop app here ↗') }}
 								</a>
 								<br>
-								{{ t('jitsi', 'The mobile app is available via your device\'s official app store.') }}
+								{{ t('jitsi', 'The mobile app is available via the app store of your choice.') }}
 								<br>
 								{{ t('jitsi', 'After successful installation try the button again.') }}
 							</li>
 							<li class="room__app-instructions-item"
-								v-html="t('jitsi', 'Still not working?<br>Copy the link below and paste it into the input field on the Jitsi App start screen.<br>')">
-								<span class="room__join-link-container">
-									<input
-										class="room__join-link-input"
-										:value="joinAppLink"
-										readonly>
-									<Actions ref="copyLinkActions">
-										<ActionLink
-											:href="joinAppLink"
-											:icon="copied && copySuccess ? 'icon-checkmark-color' : 'icon-clippy'"
-											@click.stop.prevent="copyLink">
-											{{ clipboardTooltip }}
-										</ActionLink>
-									</Actions>
-								</span>
-							</li>
+								v-html="t('jitsi', 'Still not working? Copy the link below and paste it into the input field on the Jitsi App start screen.')" />
 						</ol>
+						<div class="room__join-link-container">
+							<input
+								class="room__join-link-input"
+								:value="joinAppLink"
+								readonly>
+							<Actions ref="copyLinkActions">
+								<ActionLink
+									:href="joinAppLink"
+									:icon="copied && copySuccess ? 'icon-checkmark-color' : 'icon-clippy'"
+									@click.stop.prevent="copyLink">
+									{{ clipboardTooltip }}
+								</ActionLink>
+							</Actions>
+						</div>
 					</div>
 				</template>
 			</div>
@@ -591,10 +590,11 @@ export default {
 
 .room__join-app-toggle-icon {
 	position: relative;
+	top: 1px;
 }
 
 .room__join-app-toggle-icon--up {
-	top: -4px;
+	top: 4px;
 	transform: rotate(180deg);
 }
 

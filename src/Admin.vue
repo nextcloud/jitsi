@@ -48,6 +48,8 @@
 								<input
 									id="display_join_using_the_jitsi_app"
 									v-model="displayJoinUsingTheJitsiApp"
+									true-value="1"
+									false-value="0"
 									class="admin-checkbox"
 									type="checkbox">
 							</div>
@@ -163,18 +165,10 @@ export default {
 			serverUrlStatus: false,
 			serverUrlMessage: '',
 			helpLink: '',
-			rawDisplayJoinUsingTheJitsiApp: 0,
+			displayJoinUsingTheJitsiApp: 0,
 		}
 	},
 	computed: {
-		displayJoinUsingTheJitsiApp: {
-			get() {
-				return this.rawDisplayJoinUsingTheJitsiApp === '1'
-			},
-			set(value) {
-				this.rawDisplayJoinUsingTheJitsiApp = value ? '1' : '0'
-			},
-		},
 		hasError() {
 			return this.serverUrlStatus === 'error' || this.jwtAppIdMessage
 		},
@@ -186,10 +180,7 @@ export default {
 		this.jwtIssuer = await this.loadSetting('jwt_issuer')
 		this.serverUrl = await this.loadSetting('jitsi_server_url')
 		this.helpLink = await this.loadSetting('help_link')
-
-		const rawDisplayJoinUsingTheJitsiApp = await this.loadSetting('display_join_using_the_jitsi_app', '1')
-		this.rawDisplayJoinUsingTheJitsiApp = parseInt(rawDisplayJoinUsingTheJitsiApp, 10)
-
+		this.displayJoinUsingTheJitsiApp = await this.loadSetting('display_join_using_the_jitsi_app', '1')
 		this.loading = false
 	},
 	methods: {
@@ -211,7 +202,7 @@ export default {
 				await this.updateSetting('jwt_audience', this.jwtAudience),
 				await this.updateSetting('jwt_issuer', this.jwtIssuer),
 				await this.updateSetting('help_link', this.helpLink),
-				await this.updateSetting('display_join_using_the_jitsi_app', this.rawDisplayJoinUsingTheJitsiApp),
+				await this.updateSetting('display_join_using_the_jitsi_app', this.displayJoinUsingTheJitsiApp),
 			])
 
 			this.saving = false
