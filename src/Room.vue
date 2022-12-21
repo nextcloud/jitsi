@@ -402,6 +402,11 @@ export default {
 				userInfo: {
 					displayName: this.displayName,
 				},
+				interfaceConfigOverwrite: {
+					HIDE_INVITE_MORE_HEADER: true,
+					MOBILE_APP_PROMO: false,
+					SHARING_FEATURES: [],
+				},
 			}
 
 			if (token !== null) {
@@ -411,6 +416,10 @@ export default {
 			const configOverwrite = {
 				disableDeepLinking: true,
 				prejoinPageEnabled: false,
+				'prejoinConfig.enabled': false,
+				prejoinConfig: {
+					enabled: false,
+				},
 				disableInviteFunctions: true,
 			}
 
