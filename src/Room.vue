@@ -381,6 +381,8 @@ export default {
 				return
 			}
 
+			document.getElementById('header').style.display = 'none'
+
 			this.joining = true
 
 			if (!this.user && this.userName) {
@@ -468,6 +470,7 @@ export default {
 				api.dispose()
 				this.conferenceRunning = false
 				this.conferenceDone = true
+				document.getElementById('header').style.display = ''
 				this.$root.$emit('resume-preview')
 			})
 		},
