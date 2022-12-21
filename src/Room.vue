@@ -97,7 +97,7 @@
 					<div class="room__join-app-buttons-section">
 						<div class="room__join-app-button-section">
 							<button
-								class="primary room__join-button--app"
+								class="secondary room__join-button--app"
 								:disabled="!systemTestDone || !ready || error || joining"
 								@click="joinDesktopApp">
 								{{ t('jitsi', 'Join with desktop app') }}
@@ -105,7 +105,7 @@
 						</div>
 						<div class="room__join-app-button-section">
 							<button
-								class="primary room__join-button--app"
+								class="secondary room__join-button--app"
 								:disabled="!systemTestDone || !ready || error || joining"
 								@click="joinMobileApp">
 								{{ t('jitsi', 'Join with mobile app') }}
