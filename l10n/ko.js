@@ -14,6 +14,7 @@ OC.L10N.register(
     "Camera" : "카메라",
     "Microphone" : "마이크",
     "Join" : "참가",
-    "Delete room" : "방 삭제"
+    "Delete room" : "방 삭제",
+    "Audio output" : "오디오 출력"
 },
 "nplurals=1; plural=0;");

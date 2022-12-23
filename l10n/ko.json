@@ -12,6 +12,7 @@
     "Camera" : "카메라",
     "Microphone" : "마이크",
     "Join" : "참가",
-    "Delete room" : "방 삭제"
+    "Delete room" : "방 삭제",
+    "Audio output" : "오디오 출력"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
