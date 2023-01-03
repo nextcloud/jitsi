@@ -1,8 +1,13 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Jitsi Integration" : "Združevalnik Jitsi",
     "Conferences" : "Konference",
+    "Jitsi Integration (unofficial)" : "Združevalnik Jitsi (neuradna različica)",
+    "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "Program omogoči podporo za videokonferenčne dogodke Jitsi znotraj oblaka Nextcloud.\n\nMožnosti:\n- 🎥 Enostavno izvajanje videokonferenčnih dogodkov v oblaku z uporabo programa Jitsi\n- 🔗 Povezave do videokonferenčnih mest so objavljive\n- 🔎 Program pokaže konferenčna mesta v splošnem iskalniku\n- ✅ Program preizkusi sistemske nastavitve pred priklopom v dogodek\n\nVeč podrobnosti je zbranih v [dokumentaciji](https://github.com/nextcloud/jitsi).",
     "Loading …" : "Poteka nalaganje …",
+    "Server URL (required)" : "Naslov URL strežnika (zahtevano)",
+    "Help link (optional)" : "Podporna povezava (izbirno)",
     "save" : "shrani",
     "saved" : "shranjeno",
     "Saving …" : "Poteka shranjevanje ...",
@@ -20,6 +25,8 @@ OC.L10N.register(
     "Microphone" : "Mikrofon",
     "Join" : "Pridruži se",
     "Room not found" : "Sobe ni mogoče najti",
-    "Audio output" : "Odvod zvoka"
+    "Audio output" : "Odvod zvoka",
+    "Play test sound" : "Predvajaj preizkusni zvok",
+    "System check" : "Sistemsko preverjanje"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");
