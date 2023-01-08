@@ -30,7 +30,7 @@
 					class="tol-play-button button secondary"
 					@click="playTestSound">
 					<PlayIcon class="tol-play-button__icon" />
-				    {{ t('jitsi', 'Play test sound') }}
+					{{ t('jitsi', 'Play test sound') }}
 				</div>
 			</div>
 		</div>
@@ -45,7 +45,7 @@ import PlayIcon from 'vue-material-design-icons/Play.vue'
 
 export default {
 	name: 'SpeakerTest',
-    components: { 
+	components: {
 		CheckStatusIcon,
 		PlayIcon,
 	},

@@ -1,6 +1,6 @@
 {
   "name": "@weimann.digital/nextcloud-jitsi",
-  "version": "1.0.0",
+  "version": "0.16.2",
   "description": "Nextcloud Jitsi integration",
   "directories": {
     "lib": "lib",

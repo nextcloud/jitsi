@@ -5,7 +5,7 @@
 			<Breadcrumb :disable-drop="true" :title="room ? room.name : '?'" />
 		</Breadcrumbs>
 
-		<div class="app-body" v-if="ready">
+		<div v-if="ready" class="app-body">
 			<div
 				v-if="room"
 				class="room"
