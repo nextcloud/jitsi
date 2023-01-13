@@ -5,6 +5,7 @@ OC.L10N.register(
     "Saving …" : "Se salvează",
     "Conference" : "Conferință",
     "Link copied" : "Link copiat",
+    "Copy to clipboard" : "Copiază în clipboard",
     "Browser" : "Browser",
     "Help" : "Ajutor",
     "Camera" : "Camera"
