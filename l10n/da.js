@@ -9,6 +9,7 @@ OC.L10N.register(
     "Conference" : "Konference",
     "Browser not supported" : "Browser ikke understøttet",
     "Link copied" : "Link kopieret",
+    "Cannot copy, please copy the link manually" : "Kan ikke kopiere, kopier venligst linket manuelt",
     "Copy to clipboard" : "Kopier til udklipsholder",
     "Browser" : "Browser",
     "Help" : "Hjælp",
