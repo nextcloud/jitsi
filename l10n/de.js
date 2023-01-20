@@ -67,7 +67,7 @@ OC.L10N.register(
     "• Accept the microphone/camera access permissions at the top of the screen" : "• Akzeptiere die Zugriffsberechtigungen für das Mikrofon/die Kamera oben auf dem Bildschirm.",
     "• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page." : "• Überprüfe die Zugriffsberechtigungen für Mikrofon/Kamera, indem du auf das Symbol neben der Adressleiste klickst. Lade dann die Seite neu.",
     "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• Wenn du DroidCam verwendest: Verbinde dich mit der mobilen Kamera und lade dann die Seite neu",
-    "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Versuche, mit der Jitsi-App beizutreten (folgen Sie den Anweisungen unten auf der Seite).",
+    "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Versuche, mit der Jitsi-App beizutreten (folge den Anweisungen unten auf der Seite).",
     "No camera/microphone access" : "Kein Zugriff auf Kamera/Mikrofon",
     "Review your browser camera and microphone access settings" : "Überprüfe die Kamera- und Mikrofonzugriffseinstellungen deines Browsers",
     "Click here for {browser} instructions" : "Klicke hier, um Anweisungen für {Browser} zu erhalten",
