@@ -4,6 +4,7 @@ OC.L10N.register(
     "save" : "guardar",
     "Browser not supported" : "Navegador no compatible",
     "Link copied" : "Enlace copiado",
+    "Cannot copy, please copy the link manually" : "No se ha podido copiar, por favor, copia el enlace manualmente",
     "Copy to clipboard" : "Copiar al portapapeles",
     "Browser" : "Navegador",
     "Help" : "Ayuda",
