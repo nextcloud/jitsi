@@ -81,7 +81,7 @@ export default {
 					? t('jjitsi', this.t('Link copied'))
 					: t('jjitsi', this.t('Cannot copy, please copy the link manually'))
 			}
-			return t('jjitsi', 'Copy to clipboard')
+			return t('jjitsi', this.t('Copy to clipboard'))
 		},
 	},
 	methods: {
