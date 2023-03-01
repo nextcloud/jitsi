@@ -56,7 +56,7 @@ OC.L10N.register(
     "Create the first room:" : "Sortu lehen gela:",
     "Microphone" : "Mikrofonoa",
     "Join" : "Batu",
-    "Delete room" : "Gela borratu",
+    "Delete room" : "Gela ezabatu",
     "Room not found" : "Ez da gela aurkitu",
     "Please check the link/URL and ask your host" : "Mesedez egiaztatu esteka/URLa eta galdetu zure ostalariari",
     "Audio output" : "Audio irteera",
