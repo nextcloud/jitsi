@@ -15,6 +15,7 @@ OC.L10N.register(
     "Help" : "Помоћ",
     "Camera" : "Камера",
     "Join" : "Придружи се",
-    "Delete room" : "Обриши собу"
+    "Delete room" : "Обриши собу",
+    "Audio output" : "Аудио излаз"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");
