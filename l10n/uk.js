@@ -10,7 +10,7 @@ OC.L10N.register(
     "Browser not supported" : "Оглядач не підтримується",
     "Link copied" : "Посилання скопійовано",
     "Cannot copy, please copy the link manually" : "Неможливо скопіювати, скопіюйте посилання вручну",
-    "Copy to clipboard" : "Скопіювати в буфер обміну ",
+    "Copy to clipboard" : "Копіювати до буферу обміну",
     "Browser" : "Переглядач",
     "Help" : "Допомога",
     "Camera" : "Камера",
