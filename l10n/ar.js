@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Loading …" : "جاري التحميل …",
     "Saving …" : "جاري الحفظ…",
+    "Failed to save settings" : "فشل حفظ الإعدادات",
     "Conference" : "مؤتمر",
     "Browser not supported" : "المتصفح غير مدعوم",
     "Link copied" : "تم نسخ الرابط",
