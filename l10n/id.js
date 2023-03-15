@@ -5,6 +5,7 @@ OC.L10N.register(
     "Failed to save settings" : "Gagal simpan setelan",
     "Browser not supported" : "Peramban tidak didukung",
     "Link copied" : "Link tersalin",
+    "Copy to clipboard" : "Salin ke papan klip",
     "Help" : "Bantuan",
     "Camera" : "Kamera",
     "Join" : "Gabung",
