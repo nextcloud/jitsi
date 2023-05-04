@@ -1,6 +1,6 @@
 {
-  "name": "@weimann.digital/nextcloud-jitsi",
-  "version": "1.0.0",
+  "name": "@nextcloud/jitsi",
+  "version": "0.17.0",
   "description": "Nextcloud Jitsi integration",
   "directories": {
     "lib": "lib",
@@ -41,8 +41,8 @@
     "webpack-cli": "^4.4.0"
   },
   "engines": {
-    "node": "^16.0.0",
-    "npm": "^7.0.0 || ^8.0.0"
+    "node": "^20.0.0",
+    "npm": "^9.0.0"
   },
   "browserslist": [
     "> 0.5%",
