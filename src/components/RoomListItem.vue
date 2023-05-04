@@ -86,7 +86,7 @@ export default {
 	},
 	methods: {
 		async deleteRoom() {
-			await axios.delete(generateUrl('/apps/jitsi/rooms/' + this.room.id))
+			await axios.delete(generateUrl('/apps/jitsi/rooms/' + this.room.publicId))
 			this.$emit('deleted')
 		},
 		async copyLink() {

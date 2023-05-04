@@ -78,8 +78,8 @@ class RoomController extends AbstractController {
 	/**
 	 * @NoAdminRequired
 	 */
-	public function delete(int $id): DataResponse {
-		$room = $this->roomMapper->findOneById($id);
+	public function delete(string $id): DataResponse {
+		$room = $this->roomMapper->findOneByPublicId($id);
 
 		if ($room === null) {
 			return new DataResponse([], Http::STATUS_NOT_FOUND);
