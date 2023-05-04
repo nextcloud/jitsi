@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Not all rooms visible in long room list
 - Room list button tooltips ([#22](https://github.com/nextcloud/jitsi/issues/22))
+- Translation of „Copy to clipboard“ button tooltip ([#23](https://github.com/nextcloud/jitsi/pull/23))
 
 ### Changed
 - Updated translations
