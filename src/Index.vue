@@ -102,6 +102,10 @@ export default {
 	width: 100%;
 }
 
+.breadcrumb {
+    flex: 0 0 auto;
+}
+
 @media only screen and (min-width: 576px) {
 	.app-content {
 		margin-left: auto;
