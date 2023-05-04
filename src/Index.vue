@@ -42,7 +42,6 @@ import CreateRoomItem from './components/CreateRoomItem'
 import Breadcrumb from '@nextcloud/vue/dist/Components/Breadcrumb'
 import Breadcrumbs from '@nextcloud/vue/dist/Components/Breadcrumbs'
 
-import 'vue-material-design-icons/styles.css'
 import '../css/styles.css'
 
 export default {

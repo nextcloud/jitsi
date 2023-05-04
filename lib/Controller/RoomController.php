@@ -85,6 +85,10 @@ class RoomController extends AbstractController {
 			return new DataResponse([], Http::STATUS_NOT_FOUND);
 		}
 
+        if ($room->getCreatorId() !== $this->userId) {
+            return new DataResponse(null, Http::STATUS_FORBIDDEN);
+        }
+
 		$this->roomMapper->delete($room);
 		return new DataResponse($room);
 	}
