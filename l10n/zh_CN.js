@@ -5,8 +5,8 @@ OC.L10N.register(
     "save" : "保存",
     "saved" : "已保存",
     "Saving …" : "正在保存…",
-    "Failed to save settings" : "无法保存设置",
-    "Failed to load settings" : "无法加载设置",
+    "Failed to save settings" : "保存设置失败",
+    "Failed to load settings" : "加载设置失败",
     "Conference" : "会议",
     "Browser not supported" : "浏览器不受支持",
     "Link copied" : "已复制链接",
@@ -19,6 +19,7 @@ OC.L10N.register(
     "Join" : "加入",
     "Delete room" : "删除房间",
     "Room not found" : "房间未找到",
-    "Audio output" : "音频输出"
+    "Audio output" : "音频输出",
+    "Got issues?" : "有问题吗？"
 },
 "nplurals=1; plural=0;");
