@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "جاري التحميل …",
     "Saving …" : "جاري الحفظ…",
     "Failed to save settings" : "فشل حفظ الإعدادات",
+    "Failed to load settings" : "إخفاق في تحميل الإعدادات",
     "Conference" : "مؤتمر",
     "Browser not supported" : "المتصفح غير مدعوم",
     "Link copied" : "تم نسخ الرابط",

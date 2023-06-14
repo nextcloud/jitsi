@@ -18,6 +18,6 @@ OC.L10N.register(
     "Microphone" : "Micrófono",
     "Join" : "Unirse",
     "Room not found" : "Non se atopou a sala",
-    "Audio output" : "Saída de audio"
+    "Audio output" : "Saída de son"
 },
 "nplurals=2; plural=(n != 1);");
