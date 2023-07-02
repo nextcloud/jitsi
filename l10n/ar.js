@@ -14,7 +14,9 @@ OC.L10N.register(
     "Help" : "مساعدة",
     "Camera" : "الكاميرا",
     "Microphone" : "الميكروفون",
+    "Join" : "إن",
     "Delete room" : "حذف الغرفة",
+    "Room not found" : "الغرفة غير موجودة",
     "Audio output" : "مخرج الصوت"
 },
 "nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;");
