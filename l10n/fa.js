@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Loading …" : "بارگذاری …",
     "save" : "ذخیره",
+    "Saving …" : "ذخیره کردن …",
     "Failed to save settings" : "تنظیمات ذخیره نشدند",
     "Failed to load settings" : "تنظیمات بارگیری نشد",
     "Conference" : "کنفرانس",
