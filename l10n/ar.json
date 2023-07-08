@@ -1,4 +1,5 @@
 { "translations": {
+    "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "يدمج هذا التطبيق برنامج المؤتمرات جيتسي كونفرانس في نكست كلود.\n\nالميزات: \n- 🎥 إجراء مؤتمرات سهلة عبر الإنترنت في نكست كلود باستخدام برنامج جيتسي\n- 🔗 روابط غرف المؤتمرات قابلة للمشاركة\n-🔎 يُظهر قاعات المؤتمرات في البحث العالمي\n- ✅ اختبار النظام قبل الانضمام إلى مؤتمر \n\nيرجى قراءة [الوثائق] (https://github.com/nextcloud/jitsi).",
     "Loading …" : "جاري التحميل …",
     "Saving …" : "جاري الحفظ…",
     "Failed to save settings" : "فشل حفظ الإعدادات",
