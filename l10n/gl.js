@@ -11,7 +11,7 @@ OC.L10N.register(
     "Help link (optional)" : "Ligazón de axuda (opcional)",
     "Display \"Join using the Jitsi app\"" : "Amosar «Únase empregando a aplicación Jitsi»",
     "JWT Secret (optional)" : "Segredo JWT (opcional)",
-    "JWT App ID" : "ID da apli JWT",
+    "JWT App ID" : "ID da aplicación JWT",
     "JWT Audience (optional)" : "Audiencia JWT (opcional)",
     "JWT Issuer (optional)" : "Emisor JWT (opcional)",
     "save" : "gardar",
