@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "Conferences" : "Isaragen",
+    "Loading …" : "Asali ...",
     "Conference" : "Asarag",
     "Link copied" : "Aseɣwen yettwanɣel",
     "Copy to clipboard" : "Copier dans le presse-papiers",
