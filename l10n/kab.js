@@ -11,6 +11,7 @@ OC.L10N.register(
     "Camera" : "Takamiṛat",
     "Microphone" : "Asawaḍ",
     "Join" : "Semlil",
-    "Room not found" : "Ur tettwaf ara texxamt"
+    "Room not found" : "Ur tettwaf ara texxamt",
+    "Audio output" : "Anekcum n umeslaw"
 },
 "nplurals=2; plural=(n != 1);");
