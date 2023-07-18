@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "Loading …",
     "save" : "guardar",
     "Saving …" : "Saving …",
+    "Link copied" : "Enlace copiado",
     "Copy to clipboard" : "Copiar al portapapeles",
     "Browser" : "Navegador",
     "Help" : "Ayuda",
