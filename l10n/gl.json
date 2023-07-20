@@ -5,7 +5,7 @@
     "Jitsi Integration (unofficial)" : "Integración Jitsi (non oficial)",
     "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "Esta aplicación integra as conferencias Jitsi en Nextcloud.\n\nCaracterísticas:\n- 🎥 Conferencias sinxelas en liña en Nextcloud empregando Jitsi\n- 🔗 Ligazóns para salas de conferencias compartíbeis\n- 🔎 Amosa as salas de conferencias na busca global\n- ✅ Probe do sistema antes de unirse a unha conferencia\n\nLea a [documentación](https://github.com/nextcloud/jitsi).",
     "Loading …" : "Cargando…",
-    "Server URL (required)" : "URL do servidor (obrigatorio)",
+    "Server URL (required)" : "URL do servidor (necesario)",
     "Help link (optional)" : "Ligazón de axuda (opcional)",
     "Display \"Join using the Jitsi app\"" : "Amosar «Únase empregando a aplicación Jitsi»",
     "JWT Secret (optional)" : "Segredo JWT (opcional)",
