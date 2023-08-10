@@ -6,6 +6,7 @@ OC.L10N.register(
     "Failed to save settings" : "Lưu cấu hình thất bại",
     "Failed to load settings" : "Tải cấu hình thất bại",
     "Conference" : "Họp",
+    "Browser not supported" : "Trình duyệt không được hỗ trợ",
     "Link copied" : "Đã sao chép liên kết",
     "Browser" : "Trình duyệt",
     "Help" : "Trợ giúp",
