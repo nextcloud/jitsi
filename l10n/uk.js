@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Loading …" : "Завантаження...",
     "save" : "зберегти",
-    "Saving …" : "Збереження ..",
+    "Saving …" : "Збереження …",
     "Failed to save settings" : "Неможливо зберегти налаштування",
     "Failed to load settings" : "Не вдалося завантажити налаштування",
     "Conference" : "Конференція",
