@@ -8,6 +8,7 @@ OC.L10N.register(
     "Conference" : "Họp",
     "Browser not supported" : "Trình duyệt không được hỗ trợ",
     "Link copied" : "Đã sao chép liên kết",
+    "Cannot copy, please copy the link manually" : "Không thể sao chép, vui lòng sao chép liên kết bằng tay",
     "Copy to clipboard" : "Sao chép vào clipboard",
     "Browser" : "Trình duyệt",
     "Help" : "Trợ giúp",
