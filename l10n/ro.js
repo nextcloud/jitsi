@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "Se încarcă…",
     "Saving …" : "Se salvează",
     "Conference" : "Conferință",
+    "Browser not supported" : "Browser incompatibil",
     "Link copied" : "Link copiat",
     "Copy to clipboard" : "Copiază în clipboard",
     "Browser" : "Browser",
