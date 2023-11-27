@@ -9,6 +9,7 @@ OC.L10N.register(
     "Conference" : "Fjarfundur",
     "Browser not supported" : "Það er ekki stuðningur við vafrann",
     "Link copied" : "Tengill afritaður",
+    "Cannot copy, please copy the link manually" : "Mistókst að afrita, afritaðu tengilinn handvirkt",
     "Copy to clipboard" : "Afrita á klippispjald",
     "Browser" : "Vafri",
     "Help" : "Hjálp",
