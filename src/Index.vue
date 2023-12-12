@@ -2,31 +2,31 @@
 	<div class="app-content">
 		<Breadcrumbs>
 			<Breadcrumb :disable-drop="true" title="Home" />
-        </Breadcrumbs>
-        <div class="app-title">
-            <h1 class="h1 app-title__text">
-                {{ t('jitsi', 'Conference rooms') }}
-            </h1>
-            <button
-                v-if="rooms.length > 0"
-                class="icon-add app-title__button"
-                @click="showCreateRoom = true" />
-        </div>
-        <CreateRoomItem
-            v-if="showCreateRoom"
-            @cancelled="showCreateRoom = false"
-            @created="onRoomCreated" />
-        <RoomList>
-            <RoomListItem
-                v-for="room in rooms"
-                :key="room.id"
-                :room="room"
-                @deleted="refreshRooms" />
-            <EmptyRoomListItem
-                v-if="rooms.length === 0"
-                @created="onRoomCreated" />
-        </RoomList>
-    </div>
+		</Breadcrumbs>
+		<div class="app-title">
+			<h1 class="h1 app-title__text">
+				{{ t('jitsi', 'Conference rooms') }}
+			</h1>
+			<button
+				v-if="rooms.length > 0"
+				class="icon-add app-title__button"
+				@click="showCreateRoom = true" />
+		</div>
+		<CreateRoomItem
+			v-if="showCreateRoom"
+			@cancelled="showCreateRoom = false"
+			@created="onRoomCreated" />
+		<RoomList>
+			<RoomListItem
+				v-for="room in rooms"
+				:key="room.id"
+				:room="room"
+				@deleted="refreshRooms" />
+			<EmptyRoomListItem
+				v-if="rooms.length === 0"
+				@created="onRoomCreated" />
+		</RoomList>
+	</div>
 </template>
 
 <script>
