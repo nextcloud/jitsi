@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saving …" : "Saglabā ...",
     "Failed to save settings" : "Neizdevās saglabāt iestatījumus",
+    "Conference" : "Konference",
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
     "Help" : "Palīdzība",
