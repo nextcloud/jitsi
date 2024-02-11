@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "save" : "guardar",
+    "Saving …" : "Guardando ...",
     "Browser not supported" : "Navegador no compatible",
     "Link copied" : "Enlace copiado",
     "Cannot copy, please copy the link manually" : "No se ha podido copiar, por favor, copia el enlace manualmente",
