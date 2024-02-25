@@ -4,7 +4,7 @@ OC.L10N.register(
     "Loading …" : "Carrigamentu...",
     "Saving …" : "Sarvende …",
     "Failed to save settings" : "No at fatu a sarvare is informatziones",
-    "Failed to load settings" : "No at fatuu a carrigare is impostatziones",
+    "Failed to load settings" : "Impossìbile carrigare sa cunfiguratzione",
     "Conference" : "Cunferèntzia",
     "Browser not supported" : "Navigadore non suportadu",
     "Link copied" : "Ligòngiu copiadu",
