@@ -7,6 +7,8 @@ OC.L10N.register(
     "Link copied" : "Copióse l'enllaz",
     "Cannot copy, please copy the link manually" : "Nun se pue copiar. Copia l'enllaz manualmente",
     "Copy to clipboard" : "Copiar nel cartafueyu",
-    "Help" : "Ayuda"
+    "Help" : "Ayuda",
+    "Join" : "Xunise",
+    "Room not found" : "Nun s'atopó la sala"
 },
 "nplurals=2; plural=(n != 1);");
