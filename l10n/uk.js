@@ -8,6 +8,7 @@ OC.L10N.register(
     "Failed to load settings" : "Не вдалося завантажити налаштування",
     "Conference" : "Конференція",
     "Browser not supported" : "Оглядач не підтримується",
+    "Download the desktop app here ↗" : "Отримати настільний застосунок ↗",
     "Link copied" : "Посилання скопійовано",
     "Cannot copy, please copy the link manually" : "Неможливо скопіювати, скопіюйте посилання вручну",
     "Copy to clipboard" : "Копіювати до буферу обміну",
