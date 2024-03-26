@@ -9,7 +9,7 @@ OC.L10N.register(
     "Loading …" : "Yükleniyor…",
     "Server URL (required)" : "Sunucu adresi (zorunlu)",
     "Help link (optional)" : "Yardım bağlantısı (isteğe bağlı)",
-    "Display \"Join using the Jitsi app\"" : "\"Jitsi ile katılın\" iletisi görüntülensin",
+    "Display \"Join using the Jitsi app\"" : "\"Jitsi ile katıl\" iletisi görüntülensin",
     "JWT Secret (optional)" : "JWT parolası (isteğe bağlı)",
     "JWT App ID" : "JWT uygulama kimliği",
     "JWT Audience (optional)" : "JWT dinleyicileri (isteğe bağlı)",
