@@ -10,7 +10,9 @@ OC.L10N.register(
     "Cannot copy, please copy the link manually" : "Nun se pue copiar. Copia l'enllaz manualmente",
     "Copy to clipboard" : "Copiar nel cartafueyu",
     "Help" : "Ayuda",
+    "Camera" : "Cámara",
     "Join" : "Xunise",
-    "Room not found" : "Nun s'atopó la sala"
+    "Room not found" : "Nun s'atopó la sala",
+    "Audio output" : "Salida d'audiu"
 },
 "nplurals=2; plural=(n != 1);");
