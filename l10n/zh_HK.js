@@ -64,7 +64,7 @@ OC.L10N.register(
     "System check" : "系統檢查",
     "Got issues?" : "有問題?",
     "Known problems / what you can try" : "已知問題/您可以嘗試什麼",
-    "• Accept the microphone/camera access permissions at the top of the screen" : "• 接受屏幕頂部的米高風/相機存取權限",
+    "• Accept the microphone/camera access permissions at the top of the screen" : "• 接受螢幕頂部的米高風/相機存取權限",
     "• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page." : "• 通過單擊地址欄旁邊的圖標檢查米高風/相機存取權限。然後重新加載頁面。",
     "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• 如果您有 DroidCam：連接到手機相機，然後重新加載頁面",
     "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• 嘗試使用 Jitsi 應用程式加入（按照頁面底部的說明進行操作）",
