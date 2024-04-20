@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Cargando …",
     "save" : "guardar",
     "Saving …" : "Guardando ...",
     "Browser not supported" : "Navegador no compatible",
