@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Učitavanje...",
     "Link copied" : "Veza iskopirana",
     "Browser" : "Pregledač",
     "Help" : "Pomoć",
