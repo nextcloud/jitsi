@@ -4,6 +4,7 @@ OC.L10N.register(
     "Loading …" : "Á lódáil…",
     "Saving …" : "Shábháil …",
     "Browser not supported" : "Ní thacaítear leis an mbrabhsálaí",
+    "Link copied" : "Cóipeáladh an nasc",
     "Cannot copy, please copy the link manually" : "Ní féidir cóip a dhéanamh, cóipeáil an nasc de láimh",
     "Browser" : "Brabhsálaí",
     "Help" : "Cabhrú",
