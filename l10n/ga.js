@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Loading …" : "Á lódáil…",
     "Saving …" : "Shábháil …",
+    "Failed to save settings" : "Theip ar na socruithe a shábháil",
+    "Failed to load settings" : "Theip ar lódáil na socruithe",
     "Browser not supported" : "Ní thacaítear leis an mbrabhsálaí",
     "Link copied" : "Cóipeáladh an nasc",
     "Cannot copy, please copy the link manually" : "Ní féidir cóip a dhéanamh, cóipeáil an nasc de láimh",
