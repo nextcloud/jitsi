@@ -2,7 +2,7 @@
 
 forked from https://github.com/nextcloud/jitsi
 fork on github: https://github.com/fairkom/nextcloud-fairmeeting-integration
-fork on gitlab: 
+fork on gitlab: https://git.fairkom.net/hosting/nextcloud-fairmeeting-integration
 opimized for: https://www.fairkom.eu/en/fairmeeting
 faq: https://git.fairkom.net/hosting/fairmeeting/-/wikis/home
 
