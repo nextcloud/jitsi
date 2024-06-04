@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Admin from './Admin'
+import Admin from './Admin.vue'
 import AppGlobal from './mixins/AppGlobal'
 
 /**

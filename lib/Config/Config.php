@@ -15,6 +15,7 @@ class Config {
 	public const KEY_JWT_ISSUER = 'jwt_issuer';
 	public const KEY_HELP_LINK = 'help_link';
 	public const KEY_DISPLAY_JOIN_USING_THE_JITSI_APP = 'display_join_using_the_jitsi_app';
+	public const KEY_ALL_SHARING_INVITES = 'display_all_sharing_invites';
 
 	public const BOOL_TRUE = '1';
 	public const BOOL_FALSE = '0';
@@ -61,6 +62,11 @@ class Config {
 	public function displayJoinUsingTheJitsiApp(): bool {
 		// @phpstan-ignore-next-line
 		return $this->readBool(self::KEY_DISPLAY_JOIN_USING_THE_JITSI_APP, true);
+	}
+
+	public function displayAllSharingInvites(): bool {
+		// @phpstan-ignore-next-line
+		return $this->readBool(self::KEY_ALL_SHARING_INVITES, true);
 	}
 
 	private function readBool(string $key, ?bool $default = null): ?bool {

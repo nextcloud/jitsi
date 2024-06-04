@@ -64,6 +64,7 @@ class PageController extends AbstractController {
 				'serverUrl' => $this->appConfig->jitsiServerUrl(),
 				'helpLink' => $this->appConfig->helpLink(),
 				'display_join_using_the_jitsi_app' => $this->appConfig->displayJoinUsingTheJitsiApp(),
+				'display_all_sharing_invites' =>  $this->appConfig->displayAllSharingInvites(),
 			],
 			$renderAs
 		);

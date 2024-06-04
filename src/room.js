@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Room from './Room'
+import Room from './Room.vue'
 import AppGlobal from './mixins/AppGlobal'
 import VueClipboard from 'vue-clipboard2'
 

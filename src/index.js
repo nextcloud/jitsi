@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Index from './Index'
+import Index from './Index.vue'
 import AppGlobal from './mixins/AppGlobal'
 import VueClipboard from 'vue-clipboard2'
 
