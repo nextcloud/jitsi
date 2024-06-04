@@ -1,11 +1,12 @@
 {
-    "name": "weimann.digital/nextcloud-jitsi",
-    "description": "Nextcloud Jitsi Integration",
+    "name": "fairkom/nextcloud-fairmeeting-integration",
+    "description": "Nextcloud fairmeeting Integration",
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "authors": [
         {
-            "name": "Michael Weimann"
+            "name": "Michael Weimann",
+            "name": "Philipp Monz"
         }
     ],
     "require": {

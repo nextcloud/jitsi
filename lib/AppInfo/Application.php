@@ -35,7 +35,7 @@ class Application extends App implements IBootstrap {
 		$serverUrl = $config->jitsiServerUrl();
 
 		if (empty($serverUrl)) {
-			$config->updateJitsiServerUrl('https://meet.jit.si/');
+			$config->updateJitsiServerUrl('https://fairmeeting.net/');
 			return;
 		}
 

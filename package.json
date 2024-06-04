@@ -1,56 +1,56 @@
 {
-  "name": "@nextcloud/jitsi",
-  "version": "0.17.0",
-  "description": "Nextcloud Jitsi integration",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack --mode=development --watch",
-    "lint": "eslint --ext .js,.vue src",
-    "lint:fix": "eslint --ext .js,.vue src --fix"
-  },
-  "author": "Michael Weimann <michael.weimann@tolondo.cloud>",
-  "license": "AGPL-3.0-or-later",
-  "dependencies": {
-    "@nextcloud/axios": "^1.4.0",
-    "@nextcloud/router": "^1.2.0",
-    "@nextcloud/vue": "^5.0.0",
-    "bowser": "^2.11.0",
-    "lodash": "^4.17.20",
-    "vue": "^2.6.12",
-    "vue-clipboard2": "^0.3.1",
-    "vue-material-design-icons": "^5.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/eslint-parser": "^7.15.0",
-    "@babel/preset-env": "^7.12.11",
-    "@nextcloud/babel-config": "^1.0.0",
-    "@nextcloud/eslint-config": "^6.1.0",
-    "@nextcloud/eslint-plugin": "^2.0.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^5.0.0",
-    "eslint": "^7.32.0",
-    "node-polyfill-webpack-plugin": "^2.0.1",
-    "vue-loader": "^15.9.3",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.4.0"
-  },
-  "engines": {
-    "node": "^20.0.0",
-    "npm": "^9.0.0"
-  },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead",
-    "Safari > 10",
-    "not IE 11"
-  ]
+	"name": "@nextcloud/fairmeeting-integration",
+	"version": "0.17.0",
+	"description": "Nextcloud fairmeeting integration",
+	"directories": {
+		"lib": "lib",
+		"test": "tests"
+	},
+	"scripts": {
+		"build": "webpack ",
+		"watch": "webpack --mode=development --watch",
+		"lint": "eslint --ext .js,.vue src",
+		"lint:fix": "eslint --ext .js,.vue src --fix"
+	},
+	"author": "Michael Weimann <michael.weimann@tolondo.cloud>",
+	"license": "AGPL-3.0-or-later",
+	"dependencies": {
+		"@nextcloud/axios": "^1.4.0",
+		"@nextcloud/router": "^1.2.0",
+		"@nextcloud/vue": "^5.0.0",
+		"bowser": "^2.11.0",
+		"lodash": "^4.17.20",
+		"vue": "^2.6.12",
+		"vue-clipboard2": "^0.3.1",
+		"vue-material-design-icons": "^5.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.0",
+		"@babel/eslint-parser": "^7.15.0",
+		"@babel/preset-env": "^7.12.11",
+		"@nextcloud/babel-config": "^1.0.0",
+		"@nextcloud/eslint-config": "^6.1.0",
+		"@nextcloud/eslint-plugin": "^2.0.0",
+		"babel-loader": "^8.1.0",
+		"css-loader": "^5.0.0",
+		"eslint": "^7.32.0",
+		"node-polyfill-webpack-plugin": "^2.0.1",
+		"vue-loader": "^15.9.3",
+		"vue-style-loader": "^4.1.2",
+		"vue-template-compiler": "^2.6.12",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.4.0"
+	},
+	"engines": {
+		"node": "^20.0.0",
+		"npm": "^9.0.0"
+	},
+	"browserslist": [
+		"> 0.5%",
+		"last 2 versions",
+		"Firefox ESR",
+		"not dead",
+		"Safari > 10",
+		"not IE 11"
+	]
 }
