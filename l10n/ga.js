@@ -13,6 +13,7 @@ OC.L10N.register(
     "Help" : "Cabhrú",
     "Camera" : "Ceamara",
     "Join" : "Bígí",
+    "Room not found" : "Seomra gan aimsiú",
     "Audio output" : "Aschur fuaime"
 },
 "nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);");
