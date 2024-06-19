@@ -6,6 +6,7 @@ OC.L10N.register(
     "Conference" : "Konference",
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
+    "Browser" : "Pārlūks",
     "Help" : "Palīdzība",
     "Join" : "Pievienoties"
 },
