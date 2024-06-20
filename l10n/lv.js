@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Ielādē…",
     "Saving …" : "Saglabā ...",
     "Failed to save settings" : "Neizdevās saglabāt iestatījumus",
     "Conference" : "Konference",
