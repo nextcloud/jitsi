@@ -33,7 +33,7 @@ OC.L10N.register(
     "Show system check" : "Amosar a comprobación do sistema",
     "Your name:" : "O seu nome:",
     "Click here to join" : "Prema aquí para unirse",
-    "Start muted" : "Comezar silenciado",
+    "Start muted" : "Comezar enmudecido",
     "Start with camera off" : "Comezar coa cámara apagada",
     "Join with desktop app" : "Unirse coa aplicación de escritorio",
     "Join with mobile app" : "Unirse coa aplicación móbil",
