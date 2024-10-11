@@ -22,7 +22,7 @@ OC.L10N.register(
     "It is highly recommended to set up a dedicated Jitsi instance" : "يوصى بشدة بإعداد مثيل جيتسي مخصص",
     "Please provide the App ID" : "يرجى التزويد بمعرف التطبيق",
     "Failed to save settings" : "فشل حفظ الإعدادات",
-    "Failed to load settings" : "إخفاق في تحميل الإعدادات",
+    "Failed to load settings" : "فشل في تحميل الإعدادات",
     "Conference rooms" : "غرف المؤتمرات",
     "Conference" : "مؤتمر",
     "Conference left" : "مغادرة المؤتمر",
