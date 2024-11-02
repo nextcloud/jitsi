@@ -1,6 +1,6 @@
 {
   "name": "@nextcloud/jitsi",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "description": "Nextcloud Jitsi integration",
   "directories": {
     "lib": "lib",
