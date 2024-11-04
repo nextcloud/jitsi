@@ -16,6 +16,7 @@
     "Microphone" : "Mikrofon",
     "Join" : "Gå med",
     "Delete room" : "Radera rum",
+    "Audio output" : "Ljudutgång",
     "Play test sound" : "Spela upp testljud"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

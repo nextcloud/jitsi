@@ -18,6 +18,7 @@ OC.L10N.register(
     "Microphone" : "Mikrofon",
     "Join" : "Gå med",
     "Delete room" : "Radera rum",
+    "Audio output" : "Ljudutgång",
     "Play test sound" : "Spela upp testljud"
 },
 "nplurals=2; plural=(n != 1);");

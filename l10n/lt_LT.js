@@ -29,6 +29,7 @@ OC.L10N.register(
     "Join" : "Prisijungti",
     "Delete room" : "Ištrinti kambarį",
     "Room not found" : "Kambarys nerastas",
+    "Audio output" : "Garso išvestis",
     "Play test sound" : "Atkurti bandomąjį garsą",
     "Got issues?" : "Susidūrėte su problemomis?",
     "Known problems / what you can try" : "Žinomos problemos / ką galite išbandyti",

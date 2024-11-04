@@ -6,7 +6,7 @@ OC.L10N.register(
     "Conferences" : "المؤتمرات",
     "Jitsi Integration (unofficial)" : "تكامل جيتسي (غير رسمي)",
     "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "يدمج هذا التطبيق برنامج المؤتمرات Jitsi conferences في نكست كلود.\n\nالميزات: \n- 🎥 إجراء مؤتمرات سهلة عبر الإنترنت في نكست كلود باستخدام برنامج Jitsi\n- 🔗 روابط غرف المؤتمرات قابلة للمشاركة\n-🔎 يُظهر قاعات المؤتمرات في البحث العالمي\n- ✅ اختبار النظام قبل الانضمام إلى مؤتمر \n\nيرجى قراءة [الوثائق] (https://github.com/nextcloud/jitsi).",
-    "Loading …" : "جاري التحميل …",
+    "Loading …" : "التحميل جارٍ ...",
     "Server URL (required)" : "عنوان URL للخادم (مطلوب)",
     "Help link (optional)" : "رابط المساعدة (اختياري)",
     "Display \"Join using the Jitsi app\"" : "عرض \"الانضمام باستخدام تطبيق Jitsi\"",
@@ -22,7 +22,7 @@ OC.L10N.register(
     "It is highly recommended to set up a dedicated Jitsi instance" : "يوصى بشدة بإعداد مثيل جيتسي مخصص",
     "Please provide the App ID" : "يرجى التزويد بمعرف التطبيق",
     "Failed to save settings" : "فشل حفظ الإعدادات",
-    "Failed to load settings" : "إخفاق في تحميل الإعدادات",
+    "Failed to load settings" : "فشل في تحميل الإعدادات",
     "Conference rooms" : "غرف المؤتمرات",
     "Conference" : "مؤتمر",
     "Conference left" : "مغادرة المؤتمر",

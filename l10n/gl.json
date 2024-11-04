@@ -17,7 +17,7 @@
     "Saving …" : "Gardando…",
     "Please provide a Jitsi instance URL" : "Forneza un URL dunha instancia de Jitsi",
     "The server URL must start with https://" : "O URL do servidor debe comezar por https://",
-    "It is highly recommended to set up a dedicated Jitsi instance" : "É moi recomendábel estabelecer unha instancia Jitsi dedicada",
+    "It is highly recommended to set up a dedicated Jitsi instance" : "É moi recomendábel definir unha instancia Jitsi específica",
     "Please provide the App ID" : "Forneza o ID da aplicación",
     "Failed to save settings" : "Produciuse un fallo ao gardar os axustes",
     "Failed to load settings" : "Produciuse un fallo ao cargar os axustes",
@@ -31,7 +31,7 @@
     "Show system check" : "Amosar a comprobación do sistema",
     "Your name:" : "O seu nome:",
     "Click here to join" : "Prema aquí para unirse",
-    "Start muted" : "Comezar silenciado",
+    "Start muted" : "Comezar enmudecido",
     "Start with camera off" : "Comezar coa cámara apagada",
     "Join with desktop app" : "Unirse coa aplicación de escritorio",
     "Join with mobile app" : "Unirse coa aplicación móbil",
@@ -72,7 +72,7 @@
     "Does not work?" : "Non funciona?",
     "Click here for troubleshooting help" : "Prema aquí para obter axuda para solucionar problemas",
     "Conferences app not yet configured" : "A aplicación de conferencias aínda non está configurada",
-    "Please contact your administrator to set up the conferences app." : "Póñase en contacto coa administración desta instancia para estabelecer a aplicación de conferencias.",
+    "Please contact your administrator to set up the conferences app." : "Póñase en contacto coa administración desta instancia para definir a aplicación de conferencias.",
     "Your browser (%1$s) is outdated and<br>no longer supported" : "O seu navegador (%1$s) está desactualizado e <br>xa non é compatíbel",
     "It is recommended to use the latest version of one of the following browsers:" : "Recoméndase usar a última versión dun dos seguintes navegadores:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
