@@ -74,7 +74,7 @@ OC.L10N.register(
     "Does not work?" : "İşe yaramadı mı?",
     "Click here for troubleshooting help" : "Sorun çözme yardımı için buraya tıklayın",
     "Conferences app not yet configured" : "Conferences uygulaması henüz yapılandırılmamış",
-    "Please contact your administrator to set up the conferences app." : "Lütfen Conferences uygulamasını kurması için BT yöneticinizle görüşün.",
+    "Please contact your administrator to set up the conferences app." : "Lütfen Conferences uygulamasını kurması için BT yöneticiniz ile görüşün.",
     "Your browser (%1$s) is outdated and<br>no longer supported" : "Tarayıcınız (%1$s) eskimiş ve<br>artık desteklenmiyor",
     "It is recommended to use the latest version of one of the following browsers:" : "Şu tarayıcılardan birinin güncel sürümünü kullanmanız önerilir:"
 },
