@@ -70,12 +70,12 @@ OC.L10N.register(
     "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Jitsi دېتالىنى ئىشلىتىپ سىناپ بېقىڭ (بەتنىڭ ئاستىدىكى كۆرسەتمىگە ئەگىشىڭ)",
     "No camera/microphone access" : "كامېرا / مىكروفون زىيارەت قىلىنمايدۇ",
     "Review your browser camera and microphone access settings" : "توركۆرگۈ كامېراسى ۋە مىكروفون زىيارەت تەڭشەكلىرىنى تەكشۈرۈڭ",
-    "Click here for {browser} instructions" : "{توركۆرگۈ} كۆرسەتمىسى ئۈچۈن بۇ يەرنى چېكىڭ",
+    "Click here for {browser} instructions" : "{browser} كۆرسەتمىسى ئۈچۈن بۇ يەرنى چېكىڭ",
     "Does not work?" : "ئىشلىمەيدۇ؟",
     "Click here for troubleshooting help" : "بۇ مەسىلىنى ھەل قىلىش ئۈچۈن بۇ يەرنى چېكىڭ",
     "Conferences app not yet configured" : "يىغىن ئەپلىرى تېخى تەڭشەلمىدى",
     "Please contact your administrator to set up the conferences app." : "يىغىن ئەپىنى تەڭشەش ئۈچۈن باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ.",
-    "Your browser (%1$s) is outdated and<br>no longer supported" : "توركۆرگۈڭىز (% 1 $ s) ۋاقتى ئۆتتى ، <br> ئەمدى قوللىمايدۇ",
+    "Your browser (%1$s) is outdated and<br>no longer supported" : "توركۆرگۈڭىز (%1 $ s) ۋاقتى ئۆتتى ، <br> ئەمدى قوللىمايدۇ",
     "It is recommended to use the latest version of one of the following browsers:" : "تۆۋەندىكى توركۆرگۈچلەرنىڭ ئەڭ يېڭى نەشرىنى ئىشلىتىش تەۋسىيە قىلىنىدۇ:"
 },
 "nplurals=2; plural=(n != 1);");
