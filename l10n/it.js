@@ -47,6 +47,7 @@ OC.L10N.register(
     "Browser" : "Browser",
     "non-optimal" : "non ottimale",
     "not supported" : "non supportato",
+    "Audio and video quality could be poor.<br> It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version." : "La qualità audio e video potrebbe essere scarsa.<br> Si consiglia di utilizzare un recente versione di <b>Firefox/Chrome/Chromium</b>.",
     "Help" : "Assistenza",
     "Camera" : "Fotocamera",
     "Name of the new room" : "Nome della stanza nuova",
