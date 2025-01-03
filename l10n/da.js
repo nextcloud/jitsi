@@ -15,6 +15,7 @@ OC.L10N.register(
     "Help" : "Hjælp",
     "Camera" : "Kamera",
     "Join" : "Deltag",
-    "Delete room" : "Slet rum"
+    "Delete room" : "Slet rum",
+    "Audio output" : "Lydudgang"
 },
 "nplurals=2; plural=(n != 1);");

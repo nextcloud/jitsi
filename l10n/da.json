@@ -13,6 +13,7 @@
     "Help" : "Hjælp",
     "Camera" : "Kamera",
     "Join" : "Deltag",
-    "Delete room" : "Slet rum"
+    "Delete room" : "Slet rum",
+    "Audio output" : "Lydudgang"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
