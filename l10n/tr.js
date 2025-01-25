@@ -13,7 +13,7 @@ OC.L10N.register(
     "JWT Secret (optional)" : "JWT parolası (isteğe bağlı)",
     "JWT App ID" : "JWT uygulama kimliği",
     "JWT Audience (optional)" : "JWT dinleyicileri (isteğe bağlı)",
-    "JWT Issuer (optional)" : "JWT yayıncısı (isteğe bağlı)",
+    "JWT Issuer (optional)" : "JWT yayınlayacısı (isteğe bağlı)",
     "save" : "kaydet",
     "saved" : "kaydedildi",
     "Saving …" : "Kaydediliyor…",
