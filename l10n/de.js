@@ -9,7 +9,7 @@ OC.L10N.register(
     "Loading …" : "Lade …",
     "Server URL (required)" : "Server-URL (wird benötigt)",
     "Help link (optional)" : "Hilfe-Link (optional)",
-    "Display \"Join using the Jitsi app\"" : "„Mit der Jitsi-App beitreten“ anzeigen",
+    "Display \"Join using the Jitsi app\"" : "\"Mit der Jitsi-App beitreten\" anzeigen",
     "JWT Secret (optional)" : "JWT-Secret (optional)",
     "JWT App ID" : "JWT App-ID",
     "JWT Audience (optional)" : "JWT-Zielgruppe (optional)",
