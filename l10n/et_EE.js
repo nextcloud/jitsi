@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Laadimine ...",
     "save" : "salvesta",
     "Saving …" : "Salvestamine …",
     "Conference" : "Konverents",
