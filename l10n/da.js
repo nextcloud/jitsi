@@ -1,7 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
-    "Loading …" : "Loading …",
+    "Loading …" : "Indlæser …",
     "save" : "Gem",
     "Saving …" : "Gemmer ...",
     "Failed to save settings" : "Kunne ikke gemme indstillinger",
