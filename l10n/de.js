@@ -74,7 +74,7 @@ OC.L10N.register(
     "Does not work?" : "Funktioniert es nicht?",
     "Click here for troubleshooting help" : "Klicke hier, um Hilfe bei der Fehlerbehebung zu erhalten",
     "Conferences app not yet configured" : "Konferenz-App noch nicht konfiguriert",
-    "Please contact your administrator to set up the conferences app." : "Bitte wende dich an deinen Administrator, um die Konferenz-App einzurichten.",
+    "Please contact your administrator to set up the conferences app." : "Bitte wende dich an deine Administration, um die Konferenz-App einzurichten.",
     "Your browser (%1$s) is outdated and<br>no longer supported" : "Dein Browser (%1$s) ist veraltet und <br> wird nicht mehr unterstützt",
     "It is recommended to use the latest version of one of the following browsers:" : "Es wird empfohlen, die neueste Version eines der folgenden Browser zu verwenden:"
 },
