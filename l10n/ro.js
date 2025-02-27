@@ -3,11 +3,11 @@ OC.L10N.register(
     {
     "Loading …" : "Se încarcă…",
     "Saving …" : "Se salvează",
-    "Conference" : "Conferință",
-    "Browser not supported" : "Browser incompatibil",
     "Link copied" : "Link copiat",
     "Cannot copy, please copy the link manually" : "Nu s-a putut copia, vă rugăm să copiați link-ul manual",
     "Copy to clipboard" : "Copiază în clipboard",
+    "Conference" : "Conferință",
+    "Browser not supported" : "Browser incompatibil",
     "Browser" : "Browser",
     "Help" : "Ajutor",
     "Camera" : "Camera"

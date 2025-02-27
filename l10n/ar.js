@@ -6,6 +6,12 @@ OC.L10N.register(
     "Conferences" : "المؤتمرات",
     "Jitsi Integration (unofficial)" : "تكامل جيتسي (غير رسمي)",
     "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "يدمج هذا التطبيق برنامج المؤتمرات Jitsi conferences في نكست كلود.\n\nالميزات: \n- 🎥 إجراء مؤتمرات سهلة عبر الإنترنت في نكست كلود باستخدام برنامج Jitsi\n- 🔗 روابط غرف المؤتمرات قابلة للمشاركة\n-🔎 يُظهر قاعات المؤتمرات في البحث العالمي\n- ✅ اختبار النظام قبل الانضمام إلى مؤتمر \n\nيرجى قراءة [الوثائق] (https://github.com/nextcloud/jitsi).",
+    "Please provide a Jitsi instance URL" : "يرجى تقديم عنوان URL لمثيل جيتسي",
+    "The server URL must start with https://" : "يجب أن يبدأ عنوان URL للخادم بـ https:// ",
+    "It is highly recommended to set up a dedicated Jitsi instance" : "يوصى بشدة بإعداد مثيل جيتسي مخصص",
+    "Please provide the App ID" : "يرجى التزويد بمعرف التطبيق",
+    "Failed to save settings" : "فشل حفظ الإعدادات",
+    "Failed to load settings" : "فشل في تحميل الإعدادات",
     "Loading …" : "التحميل جارٍ ...",
     "Server URL (required)" : "عنوان URL للخادم (مطلوب)",
     "Help link (optional)" : "رابط المساعدة (اختياري)",
@@ -17,13 +23,10 @@ OC.L10N.register(
     "save" : "حفظ",
     "saved" : "تم الحفظ",
     "Saving …" : "جاري الحفظ…",
-    "Please provide a Jitsi instance URL" : "يرجى تقديم عنوان URL لمثيل جيتسي",
-    "The server URL must start with https://" : "يجب أن يبدأ عنوان URL للخادم بـ https:// ",
-    "It is highly recommended to set up a dedicated Jitsi instance" : "يوصى بشدة بإعداد مثيل جيتسي مخصص",
-    "Please provide the App ID" : "يرجى التزويد بمعرف التطبيق",
-    "Failed to save settings" : "فشل حفظ الإعدادات",
-    "Failed to load settings" : "فشل في تحميل الإعدادات",
     "Conference rooms" : "غرف المؤتمرات",
+    "Link copied" : "تم نسخ الرابط",
+    "Cannot copy, please copy the link manually" : "لا يمكن النسخ، يرجى نسخ الرابط يدويًا",
+    "Copy to clipboard" : "نسخ الرابط",
     "Conference" : "مؤتمر",
     "Conference left" : "مغادرة المؤتمر",
     "Problems detected" : "تم الكشف عن وجود مشاكل",
@@ -42,9 +45,6 @@ OC.L10N.register(
     "The mobile app is available via the app store of your choice." : "تطبيق الهاتف متاح عبر متجر التطبيقات الذي تختاره.",
     "After successful installation try the button again." : "بعد التثبيت الناجح قم بتجربة الزر مرة أخرى.",
     "Still not working? Copy the link below and paste it into the input field on the Jitsi App start screen." : "ما زلت لا تعمل؟ انسخ الرابط أدناه والصقه في حقل الإدخال في شاشة بدء تطبيق Jitsi.",
-    "Link copied" : "تم نسخ الرابط",
-    "Cannot copy, please copy the link manually" : "لا يمكن النسخ، يرجى نسخ الرابط يدويًا",
-    "Copy to clipboard" : "نسخ الرابط",
     "Browser" : "المتصفح",
     "non-optimal" : "غير مثالي",
     "not supported" : "غير مدعوم",

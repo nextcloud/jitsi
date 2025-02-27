@@ -1,13 +1,13 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Failed to save settings" : "Neizdevās saglabāt iestatījumus",
     "Loading …" : "Ielādē…",
     "Saving …" : "Saglabā ...",
-    "Failed to save settings" : "Neizdevās saglabāt iestatījumus",
-    "Conference" : "Konference",
-    "Browser not supported" : "Pārlūkprogramma netiek atbalstīta",
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
+    "Conference" : "Konference",
+    "Browser not supported" : "Pārlūkprogramma netiek atbalstīta",
     "Browser" : "Pārlūks",
     "Help" : "Palīdzība",
     "Join" : "Pievienoties"

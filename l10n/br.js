@@ -3,8 +3,8 @@ OC.L10N.register(
     {
     "Loading …" : "O Kargañ ...",
     "Saving …" : "Orc'h enrolliñ",
-    "Conference" : "Kendiviz",
     "Link copied" : "Liamm eilet",
+    "Conference" : "Kendiviz",
     "Help" : "Skoazell",
     "Camera" : "Kamera",
     "Microphone" : "Mikro :",

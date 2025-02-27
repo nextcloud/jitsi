@@ -1,15 +1,15 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Failed to save settings" : "שמירת ההגדרות נכשלה",
+    "Failed to load settings" : "טעינת ההגדרות נכשלה",
     "Loading …" : "בטעינה…",
     "save" : "שמירה",
     "Saving …" : "מתבצעת שמירה…",
-    "Failed to save settings" : "שמירת ההגדרות נכשלה",
-    "Failed to load settings" : "טעינת ההגדרות נכשלה",
-    "Conference" : "כנס",
     "Link copied" : "הקישור הועתק",
     "Cannot copy, please copy the link manually" : "לא ניתן להעתיק, נא להעתיק את הקישור ידנית",
     "Copy to clipboard" : "העתקה ללוח הגזירים",
+    "Conference" : "כנס",
     "Browser" : "דפדפן",
     "Help" : "עזרה",
     "Camera" : "מצלמה",

@@ -1,14 +1,14 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Failed to save settings" : "Erro ao gravar as definições",
     "Loading …" : "A carregar...",
     "save" : "guardar",
     "Saving …" : "A guardar...",
-    "Failed to save settings" : "Erro ao gravar as definições",
-    "Browser not supported" : "Navegador não suportado",
     "Link copied" : "Hiperligação copiada",
     "Cannot copy, please copy the link manually" : "Não foi possível copiar, copie a ligação manualmente",
     "Copy to clipboard" : "Copiar para área de transferência",
+    "Browser not supported" : "Navegador não suportado",
     "Browser" : "Navegador",
     "Help" : "Ajuda",
     "Camera" : "Câmera",

@@ -3,9 +3,9 @@ OC.L10N.register(
     {
     "Conferences" : "Isaragen",
     "Loading …" : "Asali ...",
-    "Conference" : "Asarag",
     "Link copied" : "Aseɣwen yettwanɣel",
     "Copy to clipboard" : "Copier dans le presse-papiers",
+    "Conference" : "Asarag",
     "Browser" : "Iminig",
     "Help" : "Tallalt",
     "Camera" : "Takamiṛat",
