@@ -16,6 +16,7 @@ OC.L10N.register(
     "Camera" : "Kamera",
     "Join" : "Deltag",
     "Delete room" : "Slet rum",
+    "Room not found" : "Rum ikke fundet",
     "Audio output" : "Lydudgang"
 },
 "nplurals=2; plural=(n != 1);");
