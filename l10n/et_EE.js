@@ -9,6 +9,8 @@ OC.L10N.register(
     "Copy to clipboard" : "Kopeeri lõikepuhvrisse",
     "Conference" : "Konverents",
     "Browser not supported" : "Brauser pole toetatud",
-    "Help" : "Abiinfo"
+    "Help" : "Abiinfo",
+    "Camera" : "Kaamera",
+    "Audio output" : "Heliväljund"
 },
 "nplurals=2; plural=(n != 1);");
