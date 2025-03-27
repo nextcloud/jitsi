@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Failed to save settings" : "Seadistuste salvestamine ei õnnestunud",
+    "Failed to load settings" : "Seadistuste laadimine ei õnnestunud",
     "Loading …" : "Laadimine ...",
     "save" : "salvesta",
     "Saving …" : "Salvestamine …",
