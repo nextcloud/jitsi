@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "Failed to save settings" : "Gagal simpan setelan",
+    "Loading …" : "Memuat …",
     "Saving …" : "Menyimpan ...",
     "Link copied" : "Link tersalin",
     "Copy to clipboard" : "Salin ke papan klip",
