@@ -5,6 +5,7 @@ OC.L10N.register(
     "Saving …" : "Orc'h enrolliñ",
     "Link copied" : "Liamm eilet",
     "Conference" : "Kendiviz",
+    "Browser" : "Merdeer",
     "Help" : "Skoazell",
     "Camera" : "Kamera",
     "Microphone" : "Mikro :",
