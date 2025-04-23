@@ -6,6 +6,7 @@ OC.L10N.register(
     "Saving …" : "Saqlanmoqda...",
     "Link copied" : "Havola nusxalandi",
     "Browser not supported" : "Brauzer qo'llab-quvvatlanmaydi",
-    "Help" : "Help"
+    "Help" : "Help",
+    "Camera" : "Kamera"
 },
 "nplurals=1; plural=0;");
