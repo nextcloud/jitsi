@@ -11,6 +11,7 @@ OC.L10N.register(
     "Copy to clipboard" : "Kopeeri lõikepuhvrisse",
     "Conference" : "Konverents",
     "Browser not supported" : "Brauser pole toetatud",
+    "Browser" : "Veebilehitseja",
     "Help" : "Abiinfo",
     "Camera" : "Kaamera",
     "Audio output" : "Heliväljund"
