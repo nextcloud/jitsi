@@ -14,6 +14,7 @@ OC.L10N.register(
     "Browser" : "Veebilehitseja",
     "Help" : "Abiinfo",
     "Camera" : "Kaamera",
+    "Join" : "Liitu",
     "Audio output" : "Heliväljund"
 },
 "nplurals=2; plural=(n != 1);");
