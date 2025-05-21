@@ -15,6 +15,7 @@ OC.L10N.register(
     "Help" : "Abiinfo",
     "Camera" : "Kaamera",
     "Join" : "Liitu",
+    "Room not found" : "Jututuba ei leidu",
     "Audio output" : "Heliväljund"
 },
 "nplurals=2; plural=(n != 1);");

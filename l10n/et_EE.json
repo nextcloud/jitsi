@@ -13,6 +13,7 @@
     "Help" : "Abiinfo",
     "Camera" : "Kaamera",
     "Join" : "Liitu",
+    "Room not found" : "Jututuba ei leidu",
     "Audio output" : "Heliväljund"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
