@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Inapakia",
     "Saving …" : "Inahifadhi...",
     "Cannot copy, please copy the link manually" : "Haiwezi kunakili, tafadhali nakili kiungio kwa njia za kawaida",
     "Copy to clipboard" : "Nakili kwenye ubao wa kunakili",
