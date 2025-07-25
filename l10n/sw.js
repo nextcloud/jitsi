@@ -9,6 +9,7 @@ OC.L10N.register(
     "Copy to clipboard" : "Nakili kwenye ubao wa kunakili",
     "Browser not supported" : "Kivinjari hakitumiki",
     "Help" : "Msaada",
+    "Camera" : "Camera",
     "Audio output" : "Kitolea sauti"
 },
 "nplurals=2; plural=(n != 1);");
