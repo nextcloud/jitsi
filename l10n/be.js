@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "Saving …" : "Захаванне …",
+    "Link copied" : "Спасылка скапіявана",
     "Copy to clipboard" : "Капіяваць у буфер абмену",
     "Browser not supported" : "Браўзер не падтрымліваецца",
     "Help" : "Даведка"
