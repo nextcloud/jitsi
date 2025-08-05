@@ -8,7 +8,7 @@ OC.L10N.register(
     "Link copied" : "Saite nokopēta",
     "Copy to clipboard" : "Kopēt starpliktuvē",
     "Conference" : "Konference",
-    "Browser not supported" : "Pārlūkprogramma netiek atbalstīta",
+    "Browser not supported" : "Pārlūks nav atbalstīts",
     "Browser" : "Pārlūks",
     "Help" : "Palīdzība",
     "Join" : "Pievienoties"
