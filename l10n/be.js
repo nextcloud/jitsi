@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Loading …" : "Загрузка …",
     "Saving …" : "Захаванне …",
     "Link copied" : "Спасылка скапіявана",
     "Copy to clipboard" : "Капіяваць у буфер абмену",

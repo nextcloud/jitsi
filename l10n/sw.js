@@ -12,6 +12,8 @@ OC.L10N.register(
     "Browser" : "Browser",
     "Help" : "Msaada",
     "Camera" : "Camera",
+    "Join" : "Join",
+    "Room not found" : "Room not found",
     "Audio output" : "Kitolea sauti"
 },
 "nplurals=2; plural=(n != 1);");

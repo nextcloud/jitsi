@@ -10,6 +10,8 @@
     "Browser" : "Browser",
     "Help" : "Msaada",
     "Camera" : "Camera",
+    "Join" : "Join",
+    "Room not found" : "Room not found",
     "Audio output" : "Kitolea sauti"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
