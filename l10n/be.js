@@ -1,6 +1,7 @@
 OC.L10N.register(
     "jitsi",
     {
+    "Failed to save settings" : "Не ўдалося захаваць налады",
     "Loading …" : "Загрузка …",
     "Saving …" : "Захаванне …",
     "Link copied" : "Спасылка скапіявана",
