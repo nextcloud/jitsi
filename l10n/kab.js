@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Conferences" : "Isaragen",
     "Loading …" : "Asali ...",
+    "Saving …" : "Asekles ...",
     "Link copied" : "Aseɣwen yettwanɣel",
     "Copy to clipboard" : "Copier dans le presse-papiers",
     "Conference" : "Asarag",
