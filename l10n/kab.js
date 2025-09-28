@@ -5,7 +5,7 @@ OC.L10N.register(
     "Loading …" : "Asali ...",
     "Saving …" : "Asekles ...",
     "Link copied" : "Aseɣwen yettwanɣel",
-    "Copy to clipboard" : "Copier dans le presse-papiers",
+    "Copy to clipboard" : "Nɣel-it ar tecfawit",
     "Conference" : "Asarag",
     "Browser" : "Iminig",
     "Help" : "Tallalt",
