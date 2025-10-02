@@ -6,6 +6,7 @@ OC.L10N.register(
     "Loading …" : "Загрузка …",
     "Saving …" : "Захаванне …",
     "Link copied" : "Спасылка скапіявана",
+    "Cannot copy, please copy the link manually" : "Немагчыма скапіяваць, скапіюйце спасылку ўручную",
     "Copy to clipboard" : "Капіяваць у буфер абмену",
     "Conference" : "Канферэнцыя",
     "Browser not supported" : "Браўзер не падтрымліваецца",
