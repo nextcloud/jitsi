@@ -4,6 +4,7 @@ OC.L10N.register(
     "Failed to save settings" : "Sozlamalarni saqlab bo'lmadi",
     "Failed to load settings" : "Sozlamalarni yuklab bo'lmadi",
     "save" : "Saqlash",
+    "saved" : "saqlangan",
     "Saving …" : "Saqlanmoqda...",
     "Link copied" : "Havola nusxalandi",
     "Browser not supported" : "Brauzer qo'llab-quvvatlanmaydi",
