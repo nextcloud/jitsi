@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Failed to save settings" : "Sozlamalarni saqlab bo'lmadi",
     "Failed to load settings" : "Sozlamalarni yuklab bo'lmadi",
+    "Loading …" : "Yuklanmoqda…",
     "save" : "Saqlash",
     "saved" : "saqlangan",
     "Saving …" : "Saqlanmoqda...",
