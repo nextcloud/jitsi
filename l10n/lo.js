@@ -13,6 +13,7 @@ OC.L10N.register(
     "Help" : "ການຊ່ວຍເຫຼືອ",
     "Camera" : "ກ້ອງຖ່າຍຮຸບ",
     "Join" : "Join",
+    "Room not found" : "ບໍ່ພົບຫ້ອງ",
     "Audio output" : "Audio output"
 },
 "nplurals=1; plural=0;");
