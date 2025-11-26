@@ -1,6 +1,8 @@
 OC.L10N.register(
     "jitsi",
     {
+    "conferences" : "会议",
+    "Conferences" : "会议",
     "Failed to save settings" : "保存设置失败",
     "Failed to load settings" : "加载设置失败",
     "Loading …" : "正在加载...",
