@@ -5,6 +5,7 @@ OC.L10N.register(
     "Loading …" : "Memuat …",
     "Saving …" : "Menyimpan ...",
     "Link copied" : "Link tersalin",
+    "Cannot copy, please copy the link manually" : "Tidak dapat menyalin, silakan salin tautan secara manual",
     "Copy to clipboard" : "Salin ke papan klip",
     "Browser not supported" : "Peramban tidak didukung",
     "Help" : "Bantuan",
