@@ -2,6 +2,7 @@ OC.L10N.register(
     "jitsi",
     {
     "Failed to save settings" : "Gagal simpan setelan",
+    "Failed to load settings" : "Gagal memuat pengaturan",
     "Loading …" : "Memuat …",
     "Saving …" : "Menyimpan ...",
     "Link copied" : "Link tersalin",
@@ -11,6 +12,7 @@ OC.L10N.register(
     "Help" : "Bantuan",
     "Camera" : "Kamera",
     "Join" : "Gabung",
-    "Room not found" : "Ruang tidak ditemukan"
+    "Room not found" : "Ruang tidak ditemukan",
+    "Audio output" : "Keluaran audio"
 },
 "nplurals=1; plural=0;");

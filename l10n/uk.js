@@ -26,7 +26,7 @@ OC.L10N.register(
     "Conference rooms" : "Конференц-зали",
     "Link copied" : "Посилання скопійовано",
     "Cannot copy, please copy the link manually" : "Неможливо скопіювати, скопіюйте посилання вручну",
-    "Copy to clipboard" : "Копіювати до буферу обміну",
+    "Copy to clipboard" : "Копіювати до буфера обміну",
     "Conference" : "Конференція",
     "Conference left" : "Конференція зліва",
     "Problems detected" : "Виявлені проблеми",

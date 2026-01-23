@@ -1,5 +1,6 @@
 { "translations": {
     "Failed to save settings" : "Gagal simpan setelan",
+    "Failed to load settings" : "Gagal memuat pengaturan",
     "Loading …" : "Memuat …",
     "Saving …" : "Menyimpan ...",
     "Link copied" : "Link tersalin",
@@ -9,6 +10,7 @@
     "Help" : "Bantuan",
     "Camera" : "Kamera",
     "Join" : "Gabung",
-    "Room not found" : "Ruang tidak ditemukan"
+    "Room not found" : "Ruang tidak ditemukan",
+    "Audio output" : "Keluaran audio"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
