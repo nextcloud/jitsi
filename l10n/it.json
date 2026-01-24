@@ -12,7 +12,7 @@
     "Failed to load settings" : "Caricamento impostazioni non riuscito",
     "Loading …" : "Caricamento …",
     "Server URL (required)" : "URL del server (obbligatorio)",
-    "Help link (optional)" : "Link di aiuto (facoltativo)",
+    "Help link (optional)" : "Collegamento di aiuto (facoltativo)",
     "Display \"Join using the Jitsi app\"" : "Mostra \"Entra con l'applicazione Jitsi\"",
     "JWT Secret (optional)" : "Segreto JWT (facoltativo)",
     "JWT App ID" : "JWT App ID",
