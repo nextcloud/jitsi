@@ -4,6 +4,7 @@ OC.L10N.register(
     "conferences" : "conferéncias",
     "Jitsi Integration" : "integracion Jitsi",
     "Conferences" : "Conferéncias",
+    "Failed to save settings" : "Fracàs de l’enregistrament dels paramètres",
     "Loading …" : "Cargament…",
     "saved" : "enregistrat",
     "Saving …" : "Enregistrament...",
