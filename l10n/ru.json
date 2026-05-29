@@ -16,6 +16,8 @@
     "Display \"Join using the Jitsi app\"" : "Показать «Присоединиться с помощью приложения Jitsi»",
     "JWT Secret (optional)" : "Секрет JWT (необязательно)",
     "JWT App ID" : "JWT Идентификатор приложения",
+    "JWT Audience (optional)" : " JWT аудитория (необязательно)",
+    "JWT Issuer (optional)" : "JWT эмитент (необязательно)",
     "save" : "сохранить",
     "saved" : "сохранено",
     "Saving …" : "Сохранение…",
@@ -42,6 +44,7 @@
     "After successful installation try the button again." : "После успешной установки попробуйте нажать кнопку еще раз.",
     "Still not working? Copy the link below and paste it into the input field on the Jitsi App start screen." : "Все еще не работает? Скопируйте ссылку ниже и вставьте ее в поле ввода на стартовом экране приложения Jitsi.",
     "Browser" : "Браузер",
+    "non-optimal" : "не оптимально",
     "not supported" : "Не поддерживается",
     "Audio and video quality could be poor.<br> It is recommended to use a recent <b>Firefox/Chrome/Chromium</b> version." : "Качество звука и видео может быть низким.<br> Рекомендуется использовать последнюю версию <b>Firefox/Chrome/Chromium</b>.",
     "Help" : "Помощь",
@@ -57,6 +60,8 @@
     "Audio output" : "Аудиовыход",
     "Play test sound" : "Воспроизвести тестовый звук",
     "System check" : "Проверка системы",
+    "Got issues?" : "Есть проблемы?",
+    "Known problems / what you can try" : "Известные проблемы/что можно попробовать",
     "• Accept the microphone/camera access permissions at the top of the screen" : "• Примите разрешения на доступ к микрофону/камере в верхней части экрана.",
     "• Check the microphone/camera access permissions by clicking the icon next to the address bar. Then reload the page." : "• Проверьте разрешения на доступ к микрофону/камере, щелкнув значок рядом с адресной строкой. Затем перезагрузите страницу.",
     "• If you have DroidCam: Connect to the mobile camera, then reload the page" : "• Если у вас есть DroidCam: подключитесь к мобильной камере, затем перезагрузите страницу.",
@@ -68,6 +73,7 @@
     "Click here for troubleshooting help" : "Щелкните здесь, чтобы получить помощь по устранению неполадок",
     "Conferences app not yet configured" : "Приложение для конференций еще не настроено",
     "Please contact your administrator to set up the conferences app." : "Обратитесь к администратору, чтобы настроить приложение для конференций.",
+    "Your browser (%1$s) is outdated and<br>no longer supported" : "Ваш браузер (%1$s) устарел и <br>больше не поддерживается",
     "It is recommended to use the latest version of one of the following browsers:" : "Рекомендуется использовать последнюю версию одного из следующих браузеров:"
 },"pluralForm" :"nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);"
 }
