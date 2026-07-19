@@ -1,14 +1,14 @@
 OC.L10N.register(
     "jitsi",
     {
-    "Failed to save settings" : "Kunde inte spara inställningarna",
-    "Failed to load settings" : "Kunde inte läsa in inställningar",
+    "Failed to save settings" : "Det gick inte att spara inställningarna",
+    "Failed to load settings" : "Det gick inte att läsa in inställningarna",
     "Loading …" : "Läser in …",
     "save" : "spara",
     "saved" : "sparad",
     "Saving …" : "Sparar …",
     "Link copied" : "Länken har kopierats",
-    "Cannot copy, please copy the link manually" : "Kan inte kopiera, länken måste kopieras manuellt",
+    "Cannot copy, please copy the link manually" : "Det gick inte att kopiera länken. Kopiera den manuellt.",
     "Copy to clipboard" : "Kopiera till urklipp",
     "Conference" : "Konferens",
     "Browser not supported" : "Webbläsaren stöds inte",
@@ -17,7 +17,7 @@ OC.L10N.register(
     "Camera" : "Kamera",
     "Microphone" : "Mikrofon",
     "Join" : "Gå med",
-    "Delete room" : "Radera rum",
+    "Delete room" : "Ta bort rum",
     "Audio output" : "Ljudutgång",
     "Play test sound" : "Spela upp testljud"
 },
