@@ -10,6 +10,7 @@ OC.L10N.register(
     "Conference" : "Konference",
     "Browser not supported" : "Pārlūks nav atbalstīts",
     "Browser" : "Pārlūks",
+    "not supported" : "nav atbalstīts",
     "Help" : "Palīdzība",
     "Join" : "Pievienoties"
 },

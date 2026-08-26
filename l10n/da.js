@@ -14,6 +14,7 @@ OC.L10N.register(
     "Browser" : "Browser",
     "Help" : "Hjælp",
     "Camera" : "Kamera",
+    "Microphone" : "Mikrofoner",
     "Join" : "Deltag",
     "Delete room" : "Slet rum",
     "Room not found" : "Rum ikke fundet",
