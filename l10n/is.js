@@ -16,6 +16,7 @@ OC.L10N.register(
     "Camera" : "Myndavél",
     "Microphone" : "Microphone",
     "Join" : "Taka þátt",
-    "Delete room" : "Eyða spjallsvæði"
+    "Delete room" : "Eyða spjallsvæði",
+    "Audio output" : "Hljóðúttak"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
