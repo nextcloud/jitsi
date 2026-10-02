@@ -39,7 +39,7 @@ OC.L10N.register(
     "Start muted" : "Spustiť so stlmeným mikrofónom",
     "Start with camera off" : "Spustiť s vypnutou kamerou",
     "Join with desktop app" : "Pripojiť s desktopovou aplikáciou",
-    "Join with mobile app" : "Pripojiť s mobilnou aplikáciou",
+    "Join with mobile app" : "Pripojiť sa pomocou mobilnej aplikácie",
     "App button not working?" : "Tlačítko aplikácie nefunguje?",
     "Download the desktop app here ↗" : "Stiahnite si destktopovú verziu tu ↗",
     "The mobile app is available via the app store of your choice." : "Mobilná aplikácia je dostupná prostredníctvom obchodu s aplikáciami podľa vášho výberu.",
