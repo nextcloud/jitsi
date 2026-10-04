@@ -43,7 +43,7 @@ OC.L10N.register(
     "App button not working?" : "Tlačítko aplikácie nefunguje?",
     "Download the desktop app here ↗" : "Stiahnite si destktopovú verziu tu ↗",
     "The mobile app is available via the app store of your choice." : "Mobilná aplikácia je dostupná prostredníctvom obchodu s aplikáciami podľa vášho výberu.",
-    "After successful installation try the button again." : "Po úspešnej inštalácii skúste tlačítko znova.",
+    "After successful installation try the button again." : "Po úspešnej inštalácii skúste tlačidlo znova.",
     "Still not working? Copy the link below and paste it into the input field on the Jitsi App start screen." : "Stále nefunguje? Skopírujte nižšie uvedený odkaz a vložte ho do vstupného poľa na úvodnej obrazovke aplikácie Jitsi.",
     "Browser" : "Prehliadač",
     "non-optimal" : "neoptimálne",
