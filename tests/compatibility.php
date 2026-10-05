@@ -68,7 +68,9 @@ $controller = new class($config) extends OCA\jitsi\Controller\PageController {
 	}
 };
 $_SERVER['HTTP_HOST'] = 'cloud.example.org';
-$response = new OCP\AppFramework\Http\Response();
+// Nextcloud 25's constructor needs OC::$server to populate request headers.
+// This standalone test only exercises policy setters/getters, not headers.
+$response = (new ReflectionClass(OCP\AppFramework\Http\Response::class))->newInstanceWithoutConstructor();
 $setPolicies = new ReflectionMethod(OCA\jitsi\Controller\PageController::class, 'setPolicies');
 $setPolicies->invoke($controller, $response);
 check(strpos($response->getContentSecurityPolicy()->buildPolicy(), 'meet.example.org') !== false, 'Jitsi frame blocked by CSP');
