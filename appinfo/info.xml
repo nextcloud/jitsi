@@ -30,7 +30,7 @@ Please read the [documentation](https://github.com/nextcloud/jitsi).
 	</settings>
 
     <dependencies>
-        <nextcloud min-version="25" max-version="35"/>
+        <nextcloud min-version="33" max-version="35"/>
     </dependencies>
     <navigations>
         <navigation>
