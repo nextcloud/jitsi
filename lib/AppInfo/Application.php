@@ -30,7 +30,7 @@ class Application extends App implements IBootstrap {
 
 	private function setUpJitsiServerUrl(IBootContext $context): void {
 		/** @var Config $config */
-		$config = $context->getAppContainer()->query(Config::class);
+		$config = $context->getAppContainer()->get(Config::class);
 
 		$serverUrl = $config->jitsiServerUrl();
 
