@@ -5,7 +5,7 @@
     "Jitsi Integration (unofficial)" : "Jitsi integrácia (neoficiálna)",
     "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n- 🎥 Easy online conferences in Nextcloud utilising Jitsi\n- 🔗 Sharable conference room links\n- 🔎 Shows conference rooms in the global search\n- ✅ System test before joining a conference\n\nPlease read the [documentation](https://github.com/nextcloud/jitsi)." : "Táto aplikácia integruje Jitsi konferencie do Nextcloud.\n\nVlastnosti:\n- 🎥 Jednoduché online konferencie v Nextcloud s využitím Jitsi\n- 🔗 Odkazy na zdieľané konferenčné miestnosti\n- 🔎 Zobrazuje konferenčné miestnosti v globálnom vyhľadávaní\n- ✅ Test systému pred vstupom na konferenciu\n\nPrečítajte si [dokumentáciu](https://github.com/nextcloud/jitsi).",
     "Please provide a Jitsi instance URL" : "Prosím zadajte URL inštancie Jistsi",
-    "The server URL must start with https://" : "URL serveru musí začínať na https://",
+    "The server URL must start with https://" : "URL servera musí začínať na https://",
     "It is highly recommended to set up a dedicated Jitsi instance" : "Dôrazne sa odporúča nastaviť dedikovanú inštanciu Jitsi",
     "Please provide the App ID" : "Prosím zadajte ID applikácie",
     "Failed to save settings" : "Nepodarilo sa uložiť nastavenia",
