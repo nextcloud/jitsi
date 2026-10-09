@@ -74,7 +74,7 @@ OC.L10N.register(
     "Does not work?" : "Nefunguje?",
     "Click here for troubleshooting help" : "Kliknite sem pre pomoc s riešením problémov",
     "Conferences app not yet configured" : "Aplikácie Konferencie nie je nakonfigurovaná",
-    "Please contact your administrator to set up the conferences app." : "Požiadajte svojho správcu, aby povolil aplikáciu Konferencie.",
+    "Please contact your administrator to set up the conferences app." : "Požiadajte svojho správcu, aby nainštaloval aplikáciu Konferencie.",
     "Your browser (%1$s) is outdated and<br>no longer supported" : "Váš prehliadač (%1$s) je zastaraný a<br>už nie je podporovaný",
     "It is recommended to use the latest version of one of the following browsers:" : "Odporúča sa používať najnovšiu verziu jedného z nasledujúcich prehliadačov:"
 },
