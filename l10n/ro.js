@@ -13,6 +13,7 @@ OC.L10N.register(
     "Browser" : "Browser",
     "Help" : "Ajutor",
     "Camera" : "Camera",
+    "Join" : "Alătură-te",
     "Audio output" : "Audio de ieșire"
 },
 "nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");
