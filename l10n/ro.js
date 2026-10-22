@@ -13,6 +13,7 @@ OC.L10N.register(
     "Browser" : "Browser",
     "Help" : "Ajutor",
     "Camera" : "Camera",
+    "Microphone" : "Microfon",
     "Join" : "Alătură-te",
     "Audio output" : "Audio de ieșire"
 },
