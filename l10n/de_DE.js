@@ -70,7 +70,7 @@ OC.L10N.register(
     "• Try join using the Jitsi app (follow the instructions at the bottom of the page)" : "• Versuchen Sie, mit der Jitsi-App beizutreten (folgen Sie den Anweisungen unten auf der Seite).",
     "No camera/microphone access" : "Kein Zugriff auf Kamera/Mikrofon",
     "Review your browser camera and microphone access settings" : "Überprüfen Sie die Kamera- und Mikrofonzugriffseinstellungen Ihres Browsers",
-    "Click here for {browser} instructions" : "Klicken Sie hier, um Anweisungen für {Browser} zu erhalten",
+    "Click here for {browser} instructions" : "Klicken Sie hier, um Anweisungen für {browser} zu erhalten",
     "Does not work?" : "Funktioniert nicht?",
     "Click here for troubleshooting help" : "Klicken Sie hier, um Hilfe bei der Fehlerbehebung zu erhalten",
     "Conferences app not yet configured" : "Konferenz-App noch nicht konfiguriert",
