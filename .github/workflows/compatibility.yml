@@ -1,0 +1,66 @@
+name: Nextcloud compatibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 8 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+  api:
+    name: Nextcloud ${{ matrix.nextcloud }} / PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - nextcloud: stable25
+            php: '8.1'
+          - nextcloud: stable31
+            php: '8.2'
+          - nextcloud: stable34
+            php: '8.2'
+          - nextcloud: stable35
+            php: '8.3'
+          - nextcloud: stable35
+            php: '8.5'
+          - nextcloud: master
+            php: '8.5'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: nextcloud/server
+          ref: ${{ matrix.nextcloud }}
+          path: .nextcloud
+          persist-credentials: false
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, xml
+          coverage: none
+      - run: composer install --no-dev --prefer-dist --no-interaction
+      - name: PHP syntax
+        run: find lib templates appinfo tests -name '*.php' -print0 | xargs -0 -n 1 php -l
+      - name: Public API smoke checks
+        run: php tests/compatibility.php .nextcloud

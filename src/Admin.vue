@@ -247,25 +247,30 @@ export default {
 					})
 				)
 			} catch (e) {
-				this.error = this.t('jitsi', 'Failed to save settings')
+				this.errorMessage = this.t('jitsi', 'Failed to save settings')
 				throw e
 			}
 		},
-		async loadSetting(name, defaultValue = null) {
+		async loadSetting(name, defaultValue = '') {
 			try {
-				const resDocument = await new Promise((resolve, reject) =>
+				const result = await new Promise((resolve, reject) =>
 					OCP.AppConfig.getValue('jitsi', name, defaultValue, {
 						success: resolve,
 						error: reject,
 					})
 				)
-				if (resDocument.querySelector('status').textContent !== 'ok') {
-					this.errorMessage = this.t('jitsi', 'Failed to load settings')
-					console.error('Failed request', resDocument)
-					return
+				// Recent Nextcloud versions return JSON data; older versions return XML.
+				if (typeof result?.querySelector !== 'function') {
+					if (typeof result?.data !== 'string') {
+						throw new Error('Invalid app configuration response')
+					}
+					return result.data
 				}
-				const dataEl = resDocument.querySelector('data')
-				return dataEl.firstElementChild.textContent
+				if (result.querySelector('status')?.textContent !== 'ok') {
+					throw new Error('Failed app configuration request')
+				}
+				const dataEl = result.querySelector('data')
+				return dataEl?.firstElementChild?.textContent ?? defaultValue
 			} catch (e) {
 				this.errorMessage = this.t('jitsi', 'Failed to load settings')
 				throw e
