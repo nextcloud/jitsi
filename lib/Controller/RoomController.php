@@ -133,6 +133,7 @@ class RoomController extends AbstractController {
 		$context = [
 			'user' => [
 				'name' => $displayName,
+                                'lobby' => $user === null,			
 			],
 		];
 
